@@ -25,4 +25,7 @@ We will use Python as the programming for the Pico microcontroller, but all code
 - Connect motor controller to Motors
 - Connect Motor controller to pico
 - Connect 5V regulator to Battery connector
+- Connect connect battery power to Pico
+- Connect laser to pico
+- Connect Photo resistor to Pico
 - 
