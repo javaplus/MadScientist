@@ -17,4 +17,12 @@ This is a tutorial for building a JAWS Rover.  A JAWS Rover is just like it soun
 Nearly all the plastic parts are 3D printed and the brain is a Raspberry Pi Pico.  You will assemble the plastic bits and install the pico, the motors, wires, and other electronics to make a functioning autonomous rover.
 We will use Python as the programming for the Pico microcontroller, but all code will be provided.
 
-
+# Overview/Agenda
+- Verify Parts from Parts Kit (link goes here to parts list and pictures)
+- Assemble Tank Treads
+- Snap Wheels on Body
+- Add motors (Maybe connect wires to motors)
+- Connect motor controller to Motors
+- Connect Motor controller to pico
+- Connect 5V regulator to Battery connector
+- 
