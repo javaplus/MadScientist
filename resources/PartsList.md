@@ -11,7 +11,7 @@
 - 1 x Mini Laser Pointer 3V - https://www.aliexpress.us/item/2251800404204813.html?spm=a2g0o.order_list.order_list_main.58.66241802U9bvYN&gatewayAdapt=glo2usa
 - 1 x 5mm full-color LED RGB (Transparents Cathode) - https://www.aliexpress.us/item/3256805804520441.html?spm=a2g0o.order_list.order_list_main.74.66241802U9bvYN&gatewayAdapt=glo2usa
 - 10K Ohm Resistors
-- 
+- 1 x Box : https://www.amazon.com/gp/product/B0C1MW7RXZ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1
 
 ## 3D Printed Parts
 - 1 x Chasis
