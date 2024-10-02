@@ -8,4 +8,12 @@
 - 1 x 9 Volt Battery
 - 1 x Photoresistor 5528 - https://www.aliexpress.us/item/3256805782399608.html?spm=a2g0o.order_list.order_list_main.53.66241802U9bvYN&gatewayAdapt=glo2usa
 - 1 x Mini Laser Pointer 3V - https://www.aliexpress.us/item/2251800404204813.html?spm=a2g0o.order_list.order_list_main.58.66241802U9bvYN&gatewayAdapt=glo2usa
+- 1 x 5mm full-color LED RGB (Transparents Cathode) - https://www.aliexpress.us/item/3256805804520441.html?spm=a2g0o.order_list.order_list_main.74.66241802U9bvYN&gatewayAdapt=glo2usa
+- 1 x Chasis
+- 1 x treads (need better wording and maybe individual tracks)
+- 4 x wheels
+- 2 or 4 x wheel inserts
+- 1 x front shark head
+- 1 x rear shark tail
+- 1 x Pico and Motor Controller plate
 - 
