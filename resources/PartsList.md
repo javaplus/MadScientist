@@ -16,7 +16,7 @@
 ## 3D Printed Parts
 - 1 x Chasis
 - 1 x treads (need better wording and maybe individual tracks)
-- 4 x wheels
+- 4 x wheels/Drive Sprockets
 - 2 or 4 x wheel inserts
 - 1 x front shark head
 - 1 x rear shark tail
