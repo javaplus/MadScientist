@@ -1,4 +1,4 @@
-# MadScientist
+# Mad Scientist Labs
 
 Fun learning with Electronics and Raspberry Pi Pico
 
