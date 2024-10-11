@@ -13,4 +13,7 @@ BlueTooth Spec docs:  https://www.bluetooth.com/wp-content/uploads/Files/Specifi
 MicroPython Bluetooth docs: https://docs.micropython.org/en/latest/library/bluetooth.html#bluetooth.BLE.gatts_register_services
 
 
+### Testing Bluetooth 
+
+Web Bluetooth samples: https://googlechrome.github.io/samples/web-bluetooth/
 
