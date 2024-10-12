@@ -17,3 +17,7 @@ MicroPython Bluetooth docs: https://docs.micropython.org/en/latest/library/bluet
 
 Web Bluetooth samples: https://googlechrome.github.io/samples/web-bluetooth/
 
+
+Web Bluetooth tutorial
+https://novelbits.io/web-bluetooth-getting-started-guide/
+
