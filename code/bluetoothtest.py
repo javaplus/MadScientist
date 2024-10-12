@@ -4,22 +4,10 @@ import asyncio
 import struct
 from sys import exit
 
-# Define UUIDs for the service and characteristic
-# NOT USED??? _SERVICE_UUID = bluetooth.UUID(0x1848) #Media Control Service 
-# NOT USED??? _CHARACTERISTIC_UUID = bluetooth.UUID(0x2A6E)
-
 # IAM = "Central" # Change to 'Peripheral' or 'Central'
 #IAM = "Central"
 IAM = "Peripheral"
-
-if IAM not in ['Peripheral','Central']:
-    print("IAM must be either Peripheral or Central")
-    exit()
-
-if IAM == "Central":
-    IAM_SENDING_TO = "Peripheral"
-else:
-    IAM_SENDING_TO = "Central"
+IAM_SENDING_TO = "Central"
 
 MESSAGE = f"Hello from {IAM}!"
 
@@ -38,43 +26,9 @@ BLE_WINDOW = 30000
 # state variables
 message_count = 0
 
-# def encode_message(message):
-#     """ Encode a message to bytes """
-#     return message.encode('utf-8')
-
 def decode_message(message):
     """ Decode a message from bytes """
     return message.decode('utf-8')
-
-# async def send_data_task(connection, characteristic):
-#     """ Send data to the connected device """
-#     global message_count
-#     while True:
-#         if not connection:
-#             print("error - no connection in send data")
-#             continue
-
-#         if not characteristic:
-#             print("error no characteristic provided in send data")
-#             continue
-
-#         message = f"{MESSAGE} {message_count}"
-#         message_count +=1
-#         print(f"sending {message}")
-
-#         try:
-#             msg = encode_message(message)
-#             characteristic.write(msg)
-
-#             await asyncio.sleep(0.5)
-#             response = decode_message(characteristic.read())
-
-#             print(f"{IAM} sent: {message}, response {response}")
-#         except Exception as e:
-#             print(f"writing error {e}")
-#             continue
-
-#         await asyncio.sleep(0.5)
 
 async def receive_data_task(characteristic):
     """ Receive data from the connected device """
@@ -83,6 +37,7 @@ async def receive_data_task(characteristic):
     while True:
         try:
             # data = await characteristic.read()
+            # not sure why written() works and read does not??
             connection, data = await characteristic.written()
 
             if data:
