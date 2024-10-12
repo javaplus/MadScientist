@@ -4,11 +4,7 @@ import asyncio
 import struct
 from sys import exit
 
-# IAM = "Central" # Change to 'Peripheral' or 'Central'
 IAM = "Peripheral"
-IAM_SENDING_TO = "Central"
-
-MESSAGE = f"Hello from {IAM}!"
 
 # Bluetooth parameters
 BLE_NAME = f"{IAM}"  # You can dynamically change this if you want unique names

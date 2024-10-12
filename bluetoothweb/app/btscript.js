@@ -43,23 +43,7 @@ async function BLEManager() {
 
     try {
         const temperatureCharacteristic = await envService.getCharacteristic("temperature");    
-        console.log("Characteristics discovered");
-        console.log('> Characteristic UUID:  ' + temperatureCharacteristic.uuid);
-        console.log('> Broadcast:            ' + temperatureCharacteristic.properties.broadcast);
-        console.log('> Broadcast:            ' + temperatureCharacteristic.properties.broadcast);
-        console.log('> Broadcast:            ' + temperatureCharacteristic.properties.broadcast);
-        console.log('> Read:                 ' + temperatureCharacteristic.properties.read);
-        console.log('> Broadcast:            ' + temperatureCharacteristic.properties.broadcast);
-        console.log('> Write w/o response:   ' +
-            temperatureCharacteristic.properties.writeWithoutResponse);
-        console.log('> Write:                ' + temperatureCharacteristic.properties.write);
-        console.log('> Notify:               ' + temperatureCharacteristic.properties.notify);
-        console.log('> Indicate:             ' + temperatureCharacteristic.properties.indicate);
-        console.log('> Signed Write:         ' +
-            temperatureCharacteristic.properties.authenticatedSignedWrites);
-        console.log('> Queued Write:         ' + temperatureCharacteristic.properties.reliableWrite);
-        console.log('> Writable Auxiliaries: ' +
-            temperatureCharacteristic.properties.writableAuxiliaries);
+ 
 
         // await new Promise(r => setTimeout(r, 2000));
         let encoder = new TextEncoder('utf-8');
