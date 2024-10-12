@@ -61,9 +61,9 @@ async function BLEManager() {
         console.log('> Writable Auxiliaries: ' +
             temperatureCharacteristic.properties.writableAuxiliaries);
 
-        await new Promise(r => setTimeout(r, 2000));
+        // await new Promise(r => setTimeout(r, 2000));
         let encoder = new TextEncoder('utf-8');
-        let value = encoder.encode("hello");
+        let value = encoder.encode("forward");
         //let value = Uint8Array.of(0x01)
         console.log("Sending message:" + value);
 
