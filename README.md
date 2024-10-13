@@ -28,4 +28,9 @@ We will use Python as the programming for the Pico microcontroller, but all code
 - Connect connect battery power to Pico
 - Connect laser to pico
 - Connect Photo resistor to Pico
-- 
+
+
+# BlueTooth Remote
+
+https://javaplus.github.io/MadScientist/
+
