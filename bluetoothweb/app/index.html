@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -10,103 +10,95 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
 
-    
-
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-      }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        /* Centering the buttons */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .row {
+            margin: 10px 0; /* Add spacing between rows */
+        }
+
+        button {
+            width: 100%; /* Make buttons full width within their column */
+        }
     </style>
 
-    
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/29a0e7fb9c.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    
+</head>
+<body>
 <div class="col-lg-8 mx-auto p-3 py-md-5">
-  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
-      <span class="fs-4">Bluetooth tester</span>
-    </a>
-  </header>
+    <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+        <span class="fs-4">Bluetooth tester</span>
+    </header>
 
-  <main>
-    <div class="row">
-      <div class="col-10">
-        <input class="form-control" id="deviceNameInput" placeholder="Enter device name">
-      </div>
-      <div class="col-2">
-        <button type="button" id="controlButton" class="btn btn-primary">Connect</button>
-      </div>
-    </div> 
-    <div class="row">
-
-      <div class="col-3 gy-4">
-        <h5>Connection Status</h5>
-      </div>
-
-      <div class="col-9 gy-4">
-        <h5 id="connectionStatus">IDLE</h5>
-      </div>
-
-    </div>
-    
-    <div class="row">
-      <div class="col-6 gy-4 text-center">
-        <div class="col-6 gy-4">
-          <!-- Control buttons for the car with Font Awesome icons -->
-          <button id="forwardButton"><i class="fas fa-arrow-up"></i> Forward</button>
+    <main>
+        <div class="row">
+            <div class="col-10">
+                <input class="form-control" id="deviceNameInput" placeholder="Enter device name">
+            </div>
+            <div class="col-2">
+                <button type="button" id="controlButton" class="btn btn-primary">Connect</button>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-3 gy-4">
+                <h5>Connection Status</h5>
+            </div>
+            <div class="col-9 gy-4">
+                <h5 id="connectionStatus">IDLE</h5>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-6 gy-4 text-center">
-        <div class="col-6 gy-4">
-          <!-- Control buttons for the car with Font Awesome icons -->
-          <button id="leftButton"><i class="fas fa-arrow-left"></i> Left</button>
+        
+        <div class="button-container">
+            <div class="row">
+                <div class="col-12">
+                    <button id="forwardButton"><i class="fas fa-arrow-up fa-4x"></i></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button id="leftButton"><i class="fas fa-arrow-left fa-4x"></i></button>
+                </div>
+                <div class="col-6">
+                    <button id="rightButton"><i class="fas fa-arrow-right fa-4x"></i></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button id="backwardButton"><i class="fas fa-arrow-down fa-4x" ></i></button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-6 gy-4 text-center">
-        <div class="col-6 gy-4">
-          <!-- Control buttons for the car with Font Awesome icons -->
-          <button id="rightButton"><i class="fas fa-arrow-right"></i> Right</button>
-        </div>
-      </div>
-    </div>
-
-      <div class="row">
-        <div class="col-6 gy-4 text-center">
-          <div class="col-6 gy-4">
-            <!-- Control buttons for the car with Font Awesome icons -->
-            <button id="backwardButton"><i class="fas fa-arrow-down"></i> Backward</button>
-          </div>
-        </div>
-      </div>
-    
-
-  </main>
-  <footer class="pt-5 my-5 text-muted border-top">
-    Created by the Some Idiot Playing &middot; &copy; 2024
-  </footer>
+    </main>
+    <footer class="pt-5 my-5 text-muted border-top">
+        Created by the Some Idiot Playing &middot; &copy; 2024
+    </footer>
 </div>
 
-    <script src="btscript.js"></script>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
-  </body>
+<script src="btscript.js"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
