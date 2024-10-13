@@ -69,7 +69,7 @@ class MotorController:
         if self.current_direction is None:
             # Set initial direction and speed
             self.current_direction = new_direction
-            self.current_speed = MIN_SPEED
+            self.current_speed = self.MIN_SPEED
             self.set_motor_direction(self.current_direction)
             return
 
@@ -83,7 +83,7 @@ class MotorController:
                     self.current_speed = max(self.current_speed - self.SPEED_CHANGE_STEP, 0)
                     if self.current_speed == 0:
                         self.current_direction = 'backward'
-                        self.current_speed = MIN_SPEED
+                        self.current_speed = self.MIN_SPEED
             else:
                 # For left or right turns, we can just stop the opposing motor
                 self.set_motor_direction(new_direction)
