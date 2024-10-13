@@ -20,13 +20,7 @@ right_motor_backward = PWM(Pin(17))
 right_motor_forward.freq(1000)
 right_motor_backward.freq(1000)
 
-
-
-def forwardFull():
-    print("in foward full")
-    left_motor_forward.duty_u16(0)
-    left_motor_backward.duty_u16(65000)
-    
+  
 def accelerate():
     print("Accelerating")
     for speed in range(MIN_SPEED,MAX_SPEED,10):
