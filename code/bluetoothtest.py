@@ -4,7 +4,11 @@ import asyncio
 import struct
 from sys import exit
 
+# IAM = "Central" # Change to 'Peripheral' or 'Central'
 IAM = "Peripheral"
+IAM_SENDING_TO = "Central"
+
+MESSAGE = f"Hello from {IAM}!"
 
 # Bluetooth parameters
 BLE_NAME = f"{IAM}"  # You can dynamically change this if you want unique names
@@ -29,13 +33,37 @@ def decode_message(message):
     """ Decode a message from bytes """
     return message.decode('utf-8')
 
-async def control_car(command):
+def encode_message(message):
+    """ Encode a message to bytes """
+    return message.encode('utf-8')
+
+async def control_car(command, characteristic):
     """ Control the remote control car based on the command received """
     if command in COMMANDS:
-        print(COMMANDS[command])
+        action_message = COMMANDS[command]
+        print(action_message)
+        response_message ="gotit"
+        print(f"response message = {response_message}")
+        
+        # # Send response back to the Central
+        # try:
+        #     encodedMesage = encode_message(response_message)
+        #     print("Encoded message:")
+        #     print(encodedMesage)
+        #     print(f"Characteristic: {characteristic}")  # Debugging line
+        #     await characteristic.write(encodedMesage)
+        #     print("sent response")
+        # except Exception as e:
+        #     print(f"Error writing response:{e}")
+            
+        
         # Here you would add code to control the actual car hardware
     else:
         print("Unknown command")
+        response_message = "Unknown command received."
+        
+        # Send response back to the Central
+        # await characteristic.write([encode_message(response_message)])
 
 async def receive_data_task(characteristic):
     """ Receive data from the connected device """
@@ -48,7 +76,8 @@ async def receive_data_task(characteristic):
             if data:
                 command = decode_message(data)
                 print(f"{IAM} received command: {command}, count: {message_count}")
-                await control_car(command)
+                print(f"Characteristic1: {characteristic}")  # Debugging line
+                await control_car(command, characteristic)
 
             message_count += 1
 

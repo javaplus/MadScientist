@@ -2,14 +2,22 @@ const controlButton = document.getElementById("controlButton");
 const deviceNameInput = document.getElementById("deviceNameInput");
 const connectionStatus = document.getElementById("connectionStatus");
 
+// Button elements for each command
+const forwardButton = document.getElementById("forwardButton");
+const backwardButton = document.getElementById("backwardButton");
+const leftButton = document.getElementById("leftButton");
+const rightButton = document.getElementById("rightButton");
 
 controlButton.addEventListener("click", BLEManager);
 
 deviceNameInput.value = "Peripheral";
 
+// Store connected device and service
+let connectedDevice;
+let envService;
+
 async function BLEManager() {
     connectionStatus.textContent = "SEARCHING";
-    connectedDevice = undefined;
     try {
         const device = await navigator.bluetooth.requestDevice(
             {filters: [{
@@ -29,10 +37,12 @@ async function BLEManager() {
         }
         
     }
-    envService = undefined;
     try {
         envService = await connectedDevice.getPrimaryService("environmental_sensing");
         console.log("Services Obtained");
+
+         // Enable button interactions after connection
+         enableControlButtons();
             
     } catch (error) {
         console.log("ERROR getting service");
@@ -41,31 +51,31 @@ async function BLEManager() {
         
     }
 
-    try {
-        const temperatureCharacteristic = await envService.getCharacteristic("temperature");    
- 
-
-        // await new Promise(r => setTimeout(r, 2000));
-        let encoder = new TextEncoder('utf-8');
-        let value = encoder.encode("forward");
-        //let value = Uint8Array.of(0x01)
-        console.log("Sending message:" + value);
-
-        for (let index = 0; index < 20; index++) {
-            //await temperatureCharacteristic.writeValueWithoutResponse(value);
-            response = await temperatureCharacteristic.writeValueWithResponse(value);
-            console.log("wrote data:" + response);    
-            // sleep for 2 sec
-            await new Promise(r => setTimeout(r, 2000));
-        }
-        
-
-    } catch (error) {
-        console.log("Error getting characteristic.");
-        console.log(error);
-        connectionStatus.textContent = "No Characteristics to use";
-    }
-    
-    
- 
 }
+    
+
+    // Function to enable control buttons
+function enableControlButtons() {
+    forwardButton.addEventListener("click", () => sendCommand("forward"));
+    backwardButton.addEventListener("click", () => sendCommand("backward"));
+    leftButton.addEventListener("click", () => sendCommand("left"));
+    rightButton.addEventListener("click", () => sendCommand("right"));
+}
+
+// Function to send command to the peripheral
+async function sendCommand(direction) {
+    try {
+        const temperatureCharacteristic = await envService.getCharacteristic("temperature");
+        const encoder = new TextEncoder('utf-8');
+        const value = encoder.encode(direction);
+        console.log("Sending message: " + direction);
+        await temperatureCharacteristic.writeValueWithResponse(value);
+        console.log("Command sent: " + direction);
+    } catch (error) {
+        console.log("Error sending command.");
+        console.log(error);
+        connectionStatus.textContent = "Error sending command";
+    }
+}
+    
+ 
