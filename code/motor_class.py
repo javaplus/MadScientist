@@ -3,9 +3,9 @@ import utime
 
 class MotorController:
     MAX_SPEED = 45000
-    MIN_SPEED = 5000
+    MIN_SPEED = 8000
     SLEEP_TIME_MS = 1
-    SPEED_CHANGE_STEP = 1000  # Change speed by this amount
+    SPEED_CHANGE_STEP = 3000  # Change speed by this amount
 
     def __init__(self):
         # Define motor pins
@@ -24,6 +24,8 @@ class MotorController:
         # Initialize current speed and direction
         self.current_speed = 0
         self.current_direction = None
+        # initialize to stop all motors:
+        self.stop()
 
     def set_motor_direction(self, direction):
         """Set the motors' direction based on the given command."""
@@ -88,6 +90,12 @@ class MotorController:
                     self.current_speed = max(self.current_speed - self.SPEED_CHANGE_STEP, 0)
                     if self.current_speed == 0:
                         self.current_direction = 'backward'
+                        self.current_speed = self.MIN_SPEED
+            elif new_direction == 'forward':
+                if self.current_direction == 'backward':
+                    self.current_speed = max(self.current_speed - self.SPEED_CHANGE_STEP, 0)
+                    if self.current_speed == 0:
+                        self.current_direction = 'forward'
                         self.current_speed = self.MIN_SPEED
             else:
                 # For left or right turns, we can just stop the opposing motor
