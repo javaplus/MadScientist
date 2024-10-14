@@ -8,8 +8,8 @@ MIN_SPEED = 5000
 GO_FORWARD_MS = 1000
 SLEEP_TIME_MS = 1
 
-left_motor_forward = PWM(Pin(27))
-left_motor_backward = PWM(Pin(26))
+left_motor_forward = PWM(Pin(19))
+left_motor_backward = PWM(Pin(18))
 
 left_motor_forward.freq(1000)
 left_motor_backward.freq(1000)

@@ -9,8 +9,9 @@ class MotorController:
 
     def __init__(self):
         # Define motor pins
-        self.left_motor_forward = PWM(Pin(27))
-        self.left_motor_backward = PWM(Pin(26))
+        print("init MotorController")
+        self.left_motor_forward = PWM(Pin(19))
+        self.left_motor_backward = PWM(Pin(18))
         self.right_motor_forward = PWM(Pin(16))
         self.right_motor_backward = PWM(Pin(17))
 
@@ -27,6 +28,7 @@ class MotorController:
     def set_motor_direction(self, direction):
         """Set the motors' direction based on the given command."""
         if direction == 'forward':
+            print(f"setting power to forward at speed:{self.current_speed}")
             self.left_motor_forward.duty_u16(self.current_speed)
             self.left_motor_backward.duty_u16(0)
             self.right_motor_forward.duty_u16(self.current_speed)
@@ -60,6 +62,9 @@ class MotorController:
         self.current_direction = None
 
     def change_speed_and_direction(self, new_direction):
+        
+        print(f"change speed and direction with:{new_direction}")
+        
         """Adjust the current speed and direction based on input."""
         if new_direction not in ['forward', 'backward', 'left', 'right']:
             print("Invalid direction. Stopping motors.")
@@ -91,14 +96,3 @@ class MotorController:
 
         self.set_motor_direction(self.current_direction)
 
-# Example usage
-motor_controller = MotorController()
-
-# Main loop to demonstrate functionality
-while True:
-    motor_controller.change_speed_and_direction('forward')
-    utime.sleep_ms(3000)
-    motor_controller.change_speed_and_direction('backward')
-    utime.sleep_ms(3000)
-    motor_controller.stop()
-    utime.sleep_ms(3000)

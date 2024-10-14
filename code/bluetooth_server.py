@@ -49,8 +49,11 @@ async def control_car(command, characteristic):
         action_message = COMMANDS[command]
         print(action_message)
 
+        print(f"command is:{command}")
+        print(command == "forward")
         # Control the motors based on the command
         if command == "forward":
+            print("calling motor controller for forward")
             motor_controller.change_speed_and_direction("forward")
         elif command == "backward":
             motor_controller.change_speed_and_direction("backward")
@@ -67,8 +70,8 @@ async def control_car(command, characteristic):
         # Send response back to the Central
         try:
             encoded_message = encode_message(response_message)
-            await characteristic.write(encoded_message)
-            print("Sent response")
+            # await characteristic.write(encoded_message)
+            print("NOT sending response")
         except Exception as e:
             print(f"Error writing response: {e}")
     else:
@@ -140,4 +143,5 @@ async def main():
         ]
         await asyncio.gather(*tasks)
 
+print("About to execute main")
 asyncio.run(main())
