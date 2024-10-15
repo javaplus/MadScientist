@@ -59,8 +59,8 @@ async function BLEManager() {
 function enableControlButtons() {
     forwardButton.addEventListener("click", () => sendCommand("forward"));
     backwardButton.addEventListener("click", () => sendCommand("backward"));
-    leftButton.addEventListener("click", () => sendCommand("left"));
-    rightButton.addEventListener("click", () => sendCommand("right"));
+    leftButton.addEventListener("click", () => sendCommand("right"));
+    rightButton.addEventListener("click", () => sendCommand("left"));
     stopButton.addEventListener("click", () => sendCommand("stop"));
 }
 

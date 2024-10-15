@@ -4,6 +4,9 @@ import asyncio
 import struct
 from sys import exit
 
+# TODO... add status lights for indicating advertising, connected, and commands recieved.
+
+
 # IAM = "Central" # Change to 'Peripheral' or 'Central'
 IAM = "Peripheral"
 IAM_SENDING_TO = "Central"
