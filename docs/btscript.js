@@ -60,6 +60,7 @@ function enableControlButtons() {
     backwardButton.addEventListener("click", () => sendCommand("backward"));
     leftButton.addEventListener("click", () => sendCommand("left"));
     rightButton.addEventListener("click", () => sendCommand("right"));
+    stopButton.addEventListener("click", () => sendCommand("stop"));
 }
 
 // Function to send command to the peripheral
