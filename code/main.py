@@ -3,10 +3,13 @@ import bluetooth
 import asyncio
 import struct
 from sys import exit
+from picozero import RGBLED
+
+# RGB  status lights for indicating advertising, connected, and commands recieved.
+rgb = RGBLED(red = 22, green = 21, blue = 20)
 
 # IAM = "Central" # Change to 'Peripheral' or 'Central'
 IAM = "Peripheral"
-IAM_SENDING_TO = "Central"
 
 MESSAGE = f"Hello from {IAM}!"
 
@@ -103,7 +106,7 @@ async def receive_data_task(characteristic):
             print(f"Error receiving data: {e}")
             break
 
-async def run_peripheral_mode():
+async def advertise_n_wait_for_connect():
     """ Run the peripheral mode """
     # Set up the Bluetooth service and characteristic
     ble_service = aioble.Service(BLE_SVC_UUID)
@@ -118,14 +121,19 @@ async def run_peripheral_mode():
     aioble.register_services(ble_service)
 
     print(f"{BLE_NAME} starting to advertise")
-
+    global rgb
     while True:
+        # advertising on, turn blue
+        rgb.color = (0, 0, 255)
         async with await aioble.advertise(
             BLE_ADVERTISING_INTERVAL,
             name=BLE_NAME,
             services=[BLE_SVC_UUID],
             appearance=BLE_APPEARANCE) as connection:
             print(f"{BLE_NAME} connected to another device: {connection.device}")
+            
+            # connected turn green
+            rgb.color = (0, 255, 0)
 
             tasks = [
                 asyncio.create_task(receive_data_task(characteristic)),
@@ -135,11 +143,15 @@ async def run_peripheral_mode():
             break
 
 async def main():
+    global rgb
+    # Power on, turn red
+    rgb.color = (255, 0, 0)
     """ Main function """
     while True:
         print("I'm peripheral")
+        
         tasks = [
-            asyncio.create_task(run_peripheral_mode()),
+            asyncio.create_task(advertise_n_wait_for_connect()),
         ]
         await asyncio.gather(*tasks)
 
