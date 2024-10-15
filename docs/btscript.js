@@ -7,6 +7,7 @@ const forwardButton = document.getElementById("forwardButton");
 const backwardButton = document.getElementById("backwardButton");
 const leftButton = document.getElementById("leftButton");
 const rightButton = document.getElementById("rightButton");
+const stopButton = document.getElementById("stopButton");
 
 controlButton.addEventListener("click", BLEManager);
 
