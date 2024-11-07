@@ -7,11 +7,7 @@ So, for this lab, we will simply hook LED to the Pico to see it light up.
 
 ## What to do:
 
-For this lab, we are going to use the Pico only as a power source.  
-
-We will now connect the LED to the Raspberry Pi Pico.  
-
-NOTE: Technically the color of wires you use don't matter (internally they are the same), but the color does make it easier to know the purpose.  Usually, red wires indicate positive(+) and black or white wires indicate ground/negative(-). 
+For this lab, we are going to start by just using the Pico as a power source to light up our LED.  
 
 ## Orientation
 
@@ -21,10 +17,12 @@ The USB connection should be at the top, but touching the table and the pins sti
 ## Wiring Diagram
 
 Plug a red wire from the longer leg on the LED to the 3.3V pin on the Pico. And a black wire from the other leg to a GND(Ground) pin on the pico.  
+
+NOTE: Technically the color of wires you use don't matter (internally they are the same), but the color does make it easier to know the purpose.  Usually, red wires indicate positive(+) and black or white wires indicate ground/negative(-). 
+
 See Diagram:
 
 ![LED Wiring Diagram](/lessons/images/simple_led_bb.png)
-
 
 When you plug the wires into the LED you should see it light up.  If you accidentally plug the wires in backwards (long leg to ground), then it shouldn't hurt anything, but it won't light up because a Diode only allows electricity to flow in one direction.
 
@@ -42,7 +40,11 @@ Since we are barely over spec with our Blue LED we most likely won't have an iss
 
 ## Resistors
 
- One simple way to lower the voltage in a circuit is to use a resistor.  A resistor simply resists(or restricts) the flow of electricity. You could use a resistor to lower the voltage to safer levels, but we are going to be lazy and try a different approach when we use the 2volt LEDs.  For now we will continue using the blue LED which can handle the 3volts from the Pico.
+ One simple way to lower the voltage in a circuit is to use a resistor.  A resistor simply resists(or restricts) the flow of electricity. You could use a resistor to lower the voltage to safer levels, but we are going to be lazy and try a different approach when we use the 2volt LEDs.  
+
+ ![Resistor](/lessons/images/resistor.png)
+
+For now we will continue using the blue LED which can handle the 3volts from the Pico and NOT use a resistor.
 
 # Controlling LED with PICO
 
