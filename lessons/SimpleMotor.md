@@ -20,8 +20,6 @@ As soon as you connect the wires of the motor to the Pico, you should see the mo
 
 ## Resources
 
-Not sure which exact N20 motor we are using.
-
 [Data sheet for N20 motor](https://abra-electronics.com/electromechanical/motors/gear-motors/mini-metal-gearmotors/ga12-n20-3v100.html)
 
 [Another Data sheet for N20 motor](https://temperosystems.com.au/wp-content/uploads/2021/03/N20-Micro-Speed-Gear-Motor.pdf)
