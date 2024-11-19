@@ -10,10 +10,10 @@ class MotorController:
     def __init__(self):
         # Define motor pins
         print("init MotorController")
-        self.left_motor_forward = PWM(Pin(19))
-        self.left_motor_backward = PWM(Pin(18))
-        self.right_motor_forward = PWM(Pin(16))
-        self.right_motor_backward = PWM(Pin(17))
+        self.left_motor_forward = PWM(Pin(10))
+        self.left_motor_backward = PWM(Pin(11))
+        self.right_motor_forward = PWM(Pin(12))
+        self.right_motor_backward = PWM(Pin(13))
 
         # Set PWM frequency
         self.left_motor_forward.freq(1000)

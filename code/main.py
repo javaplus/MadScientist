@@ -9,10 +9,10 @@ from machine import Pin, PWM
 
 # These control the eyes for the shark. 
 # TODO: use one pin to control both
-eye1 = PWM(Pin(26))
+eye1 = PWM(Pin(2))
 eye1.freq(1000)
 
-eye2 = PWM(Pin(27))
+eye2 = PWM(Pin(3))
 eye2.freq(1000)
 
 
