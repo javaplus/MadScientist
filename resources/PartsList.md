@@ -9,8 +9,9 @@
 - 1 x 9 Volt Battery
 - 1 x Photoresistor 5528 - [ORDER](https://www.aliexpress.us/item/3256805782399608.html?spm=a2g0o.order_list.order_list_main.53.66241802U9bvYN&gatewayAdapt=glo2usa)
 - 1 x Mini Laser Pointer 3V - [ORDER](https://www.aliexpress.us/item/2251800404204813.html?spm=a2g0o.order_list.order_list_main.58.66241802U9bvYN&gatewayAdapt=glo2usa)
-- 1 x 5mm full-color LED RGB (Transparents Cathode) - [ORDER](https://www.aliexpress.us/item/3256805804520441.html?spm=a2g0o.order_list.order_list_main.74.66241802U9bvYN&gatewayAdapt=glo2usa)
+- 2 x 5mm full-color LED RGB (Transparents Cathode) - [ORDER](https://www.aliexpress.us/item/3256805804520441.html?spm=a2g0o.order_list.order_list_main.74.66241802U9bvYN&gatewayAdapt=glo2usa)
 - 10K Ohm Resistors
+- Many - 10cm super flexible wires [ORDER](https://www.aliexpress.us/item/3256806939512527.html)
 - 1 x Box : [ORDER](https://www.amazon.com/gp/product/B0C1MW7RXZ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
 
 ## 3D Printed Parts
@@ -22,3 +23,22 @@
 - 1 x rear shark tail
 - 1 x Pico and Motor Controller plate
 - 
+## Parts per kit:
+
+#### Chassis:
+- 1 Pico
+- 2 Motors
+- 1 Motor Controller
+- 5 10cm Wires(fom Pico to Motor controller)
+- 1 10cm Red from switch to 
+- 1 Battery connector
+- 1 switch voltage regulator
+- 1 Voltage regulator
+- 1 Red y female to female (from voltage reg to pico and motor controller)
+  
+
+#### Lighting:
+- 2 RGB LEDs
+- 4 20cm or 10cm super flexible wires
+ 
+  
