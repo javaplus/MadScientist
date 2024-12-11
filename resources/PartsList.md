@@ -30,8 +30,8 @@
 - 2 Motors
 - 1 Motor Controller
 - 5 10cm Wires(fom Pico to Motor controller)
-- 1 10cm Red from switch to 
-- 1 Battery connector
+- 1 10cm Red from switch to voltage regulator
+- 1 Battery connector with y connector on ground
 - 1 switch voltage regulator
 - 1 Voltage regulator
 - 1 Red y female to female (from voltage reg to pico and motor controller)
@@ -39,6 +39,6 @@
 
 #### Lighting:
 - 2 RGB LEDs
-- 4 20cm or 10cm super flexible wires
+- 4 20cm or 10cm male to female
  
   
