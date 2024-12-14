@@ -22,7 +22,7 @@ TODO: Pico plate with pico on it and pegs partially installed
 ### Motor Controller
 
 #### Mount the Motor Controller
-Now take the motor controller and put it into the bottom left square on the pico plate  so that the 4 lone pins that stick downward can fit through the bottom slot on the far bottom left of the recessed square. It's easiest to put the downward 4 pins through the hole and then snap the side towards the middle of the board in last.  The motor controller should snap in securely into the recessed square and the top of the red part of the motor controller should be under slightly lower than the top surface of the plate.
+Now take the motor controller and put it into the bottom left square on the pico plate  so that the 4 lone pins that stick downward can fit through the bottom slot on the far bottom left of the recessed square. It's easiest to align the downward 4 pins through the hole and then angle the motor controller so the side closest to bottom goes in last. So, the sidee with the pin marked INT4 should go in first and then the part of the motor controller at the bottom should snap in last.  The motor controller should snap in securely into the recessed square and the top of the red part of the motor controller should be slightly lower than the top surface of the plate.
 
 **NOTE**: Ignore the wires in the picture below as you shouldn't have any wires at this point.
 ![Pico Bottom](/lessons/images/assembly/pico_plate_bottom.jpg)
