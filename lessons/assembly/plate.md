@@ -30,6 +30,10 @@ Now take the motor controller and put it into the bottom left square on the pico
 
 #### Wire the Motor Controller
 
-Take 4 5cm female to female wires (any combination of blue,yellow, green is fine) and connect them to the In1, In2, In3, and In4 pins that stick up from the motor controller.  The color of the wires don't matter, but it would be beneficial to have different colors for every other pin.
+Take 4 5cm female to female wires (any combination of blue,yellow, green is fine) and fish them under the pico so that the female ends are on opposite sides of the Pico. Now connoect on end of the wires the Int1, Int2, Int3, and Int4 pins that stick up from the motor controller.  The color of the wires don't matter, but it would be beneficial to have different colors for every other pin. Now you will connect the other end of the wires to the GPIO pins on the Pico.  You will be connecting them to GP10 throuh GP13.  The important part is that you connect INT1 and INT2 to GP12 and GP13 and INT3 and INT4 to GP10 and GP11.  When it comes time to test the motor function, you may need to switch wires around to get the RVR to move in the intended function.
 
 TODO: 4 colored wires
+
+Now take a black or white 5cm female to female jumper wire and route it under the Pico like the 4 colored wires.  This wire will connect the (-) on the motor controller to a ground on the Pico.  We find the ground wire that is 3 down from the top right is best for this due to wire management. 
+
+At this point the motor controller is just missing a cable to it's (+) positive terminal and the 4 Motor pins on the bottom are unconnected.  We will connect those when we put the plate on the chassis.
