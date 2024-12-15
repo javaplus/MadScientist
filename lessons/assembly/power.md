@@ -84,5 +84,7 @@ Now connect the 5cm red wire that comes from the power switch to the far left pi
 ![Voltage Reg Input](/lessons/images/assembly/power_regulator_power_switch_2.jpg)
 
 
+Now carefully move the voltage regulator on top of the battery without disconnecting any of the wires.  The hole on top of the voltage regulator should go on one of the posts beside the battery.
 
+![Voltage Reg In Chassis](/lessons/images/assembly/power_regulator_in_chassis.jpg)
 
