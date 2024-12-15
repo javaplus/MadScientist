@@ -24,7 +24,9 @@ TODO: Pico plate with pico on it and pegs partially installed
 #### Mount the Motor Controller
 Now take the motor controller and put it into the bottom left square on the pico plate  so that the 4 lone pins that stick downward can fit through the bottom slot on the far bottom left of the recessed square. It's easiest to align the downward 4 pins through the hole and then angle the motor controller so the side closest to bottom goes in last. So, the sidee with the pin marked INT4 should go in first and then the part of the motor controller at the bottom should snap in last.  The motor controller should snap in securely into the recessed square and the top of the red part of the motor controller should be slightly lower than the top surface of the plate.
 
-**NOTE**: Ignore the wires in the picture below as you shouldn't have any wires at this point.
+![Motor Controller install](/lessons/images/assembly/motor_controller_install.jpg)
+
+**NOTE**: Ignore the wires and pico in the picture below, it's just to show you the way the motor controller should fit in.
 ![Pico Bottom](/lessons/images/assembly/pico_plate_bottom.jpg)
 
 
@@ -40,10 +42,9 @@ TODO: 4 colored wires
 ![Pico Motor Controller Wires Ran Close up](/lessons/images/assembly/pico_plate_motor_controller_closeup.jpg)
 
 
-![Pico Motor Controller Wires Ran](/lessons/images/assembly/pico_plate_motor_controller_closeup_usb.jpg)
-
-
 Now take a black or white 5cm female to female jumper wire and route it under the Pico like the 4 colored wires.  This wire will connect the (-) on the motor controller to a ground on the Pico.  We find the ground wire that is 3 down from the top right is best for this due to wire management. 
+
+![Pico Motor Controller Wires Ran](/lessons/images/assembly/pico_plate_motor_controller_closeup_usb.jpg)
 
 At this point, the motor controller is just missing a cable to it's (+) positive terminal and the 4 Motor pins on the bottom are unconnected.  We will connect those when we put the plate on the chassis.
 Now, you can press the 4 pegs that hold the Pico down fully down into place to more securely hold the Pico.  Don't use a ton of force and don't worry if they don't go all the way in.  They just need to keep the Pico from moving around or coming off the plate.
