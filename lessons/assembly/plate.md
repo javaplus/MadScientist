@@ -1,22 +1,31 @@
 # Pico Plate & Motor Controller
 
 
+### Parts You'll Need
+
+Pico WH  
+Pico Plate  
+4 x Plastic pegs  
+
+![Pico Plate Parts](/lessons/images/assembly/pico_plate_parts.jpg)
+
+
 ### Pico Installation
 
 Take your pico plate (the flattish square piece) and your Pico W. On the pico plate, you should see a small square in the corner to hold the motor controller.  Orient the plate so that square is in the bottom left.  
 
-TODO: PICO Plate with motor controller square bottom left
+![Pico Plate](/lessons/images/assembly/pico_plate_alone.jpg)
+
 
 
 Turn the Pico so your pins are sticking up in the air and the usb jack is pointing away from you.  Now, place the Pico W on the for raised pedestals on the plate that should align with the four holes in the Pico.  
 
-TODO: Pico plate with pico on it no pegs
+![Pico On Plate](/lessons/images/assembly/pico_on_plate_no_pegs.jpg)
 
 
 You should have 4 small plastic pegs about .25 inches long. Take your pegs and push them partially through the holes of the Pico and into the holes in the pedestals. Push the pegs about half way down into the plate leaving a little gap so you can still raise the Pico a bit to route wires underneath it.  
 
-TODO: Pico plate with pico on it and pegs partially installed
-
+![Pico On Plate With Pegs](/lessons/images/assembly/pico_plate_with_pegs.jpg)
 
 
 ### Motor Controller
@@ -24,10 +33,10 @@ TODO: Pico plate with pico on it and pegs partially installed
 #### Mount the Motor Controller
 Now take the motor controller and put it into the bottom left square on the pico plate  so that the 4 lone pins that stick downward can fit through the bottom slot on the far bottom left of the recessed square. It's easiest to align the downward 4 pins through the hole and then angle the motor controller so the side closest to bottom goes in last. So, the sidee with the pin marked INT4 should go in first and then the part of the motor controller at the bottom should snap in last.  The motor controller should snap in securely into the recessed square and the top of the red part of the motor controller should be slightly lower than the top surface of the plate.
 
-![Motor Controller install](/lessons/images/assembly/motor_controller_install.jpg)
+![Motor Controller install](/lessons/images/assembly/motor_controller_on_plate.jpg)
 
-**NOTE**: Ignore the wires and pico in the picture below, it's just to show you the way the motor controller should fit in.
-![Pico Bottom](/lessons/images/assembly/pico_plate_bottom.jpg)
+
+![Pico Bottom](/lessons/images/assembly/motor_controler_pins_bottom.jpg)
 
 
 #### Wire the Motor Controller
