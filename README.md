@@ -41,7 +41,7 @@ The links in this section are to labs that walk you through working with the var
 # Assembly
 [Pico Plate](/lessons/assembly/plate.md)  
 [Chassis Motors](/lessons/assembly/chassis.md)  
-[Power Components](/lessons/assembly/power.md.md)  
+[Power Components](/lessons/assembly/power.md)  
 [Pico and Chassis Together](/lessons/assembly/plate_chassis.md)  
 
 # BlueTooth Remote
