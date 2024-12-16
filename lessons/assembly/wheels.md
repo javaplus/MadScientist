@@ -55,3 +55,6 @@ Once both tracks are complete, simply put the tracks on the wheels. Just slip th
 
 ![Tracks on Chassis](/lessons/images/assembly/tracks_on.jpg)  
 ![Tracks on Chassis 2](/lessons/images/assembly/tracks_on_usb_side.jpg)
+
+
+Jump around and celebrate! You have an assembled rover!  We aren't completely done, but you have enough assembled to add the code and test it out!
