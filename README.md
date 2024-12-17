@@ -30,6 +30,11 @@ We will use Python as the programming for the Pico microcontroller, but all code
 - Connect laser to pico
 - Connect Photo resistor to Pico
 
+# Prepare Pico
+
+To prepare the Pico, you need to flash it to support MicroPython.
+Here are the instructions to [Flash the Pico for MicroPython](/lessons/firmware.md).
+
 # Lessons
 
 The links in this section are to labs that walk you through working with the various components that will ultimately make up your rover. These labs will give you a better understanding of the individual parts and code that go into making the rover work.  However, these lessons do not actually get into building the rover, but are just for learning how the components work.  They are hands-on labs that actually have you working with the electronics and code, but do not include assembly of the rover.  The assembly is in it's own section.  So, if you don't care to learn how the individual components work and want to skip straight to building the rover, then skip this section.
