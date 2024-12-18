@@ -6,11 +6,7 @@ from sys import exit
 from picozero import RGBLED
 from machine import Pin, PWM
 
-eye1 = PWM(Pin(26))
-eye1.freq(1000)
 
-eye2 = PWM(Pin(27))
-eye2.freq(1000)
 
 # RGB  status lights for indicating advertising, connected, and commands recieved.
 rgb = RGBLED(red = 22, green = 21, blue = 20)
@@ -44,20 +40,6 @@ from motor_class import MotorController  # Adjust import as necessary
 
 # Instantiate the motor controller
 motor_controller = MotorController()
-
-async def blink_eyes():
-    print("Blinking Eyes")
-    while True:
-        for i in range(100,10000,20):
-            eye1.duty_u16(i)
-            eye2.duty_u16(i)
-            await asyncio.sleep(0.01)  # Yield control to other tasks
-        
-        for y in range(10000,100,-20):
-            eye1.duty_u16(y)
-            eye2.duty_u16(y)
-            await asyncio.sleep(0.01)  # Yield control to other tasks
-        
 
 def decode_message(message):
     """ Decode a message from bytes """
@@ -158,7 +140,6 @@ async def advertise_n_wait_for_connect():
 
             tasks = [
                 asyncio.create_task(receive_data_task(characteristic)),
-                asyncio.create_task(blink_eyes())
             ]
             await asyncio.gather(*tasks)
             print(f"{IAM} disconnected")

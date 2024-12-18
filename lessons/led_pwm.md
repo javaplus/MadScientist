@@ -19,6 +19,11 @@ The first change we will make are to slightly alter the way we are interacting w
 
 With PWM, we will be able to change the frequency and the duty cycle.  That is how many pulses per second(frequency) we send and how long the power will be high during each pulse(duty cycle).  However, initially we will just make a few tiny changes to keep the functionality of LED toggling off and on, but it will use PWM to light up the LED.
 
+The wiring diagram is the same as the previous LED lab:
+![Wiring Diagram](/lessons/images/simple_led2_bb.png)
+
+## The Code
+
 So, to start we need import [PWM](https://docs.micropython.org/en/latest/library/machine.PWM.html?highlight=pwm) from the machine library.  So, alter the first import by adding "PWM" alongside the existing "Pin".  The altered import line should look like this:  
 
 ```Python
