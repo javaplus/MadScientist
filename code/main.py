@@ -3,18 +3,16 @@ import bluetooth
 import asyncio
 import struct
 from sys import exit
+import utime
 from picozero import RGBLED
-from machine import Pin, PWM
+from machine import Pin, PWM, ADC
 
 
-# These control the eyes for the shark. 
-# TODO: use one pin to control both
-eye1 = PWM(Pin(2))
-eye1.freq(1000)
+laser = Pin(16, Pin.OUT)
 
-eye2 = PWM(Pin(3))
-eye2.freq(1000)
-
+photoresistor = machine.ADC(28)
+photoresistor_value = 0
+photoresistor_hit_value = 28000
 
 # RGB  status lights for indicating advertising, connected, and commands recieved.
 rgb = RGBLED(red = 22, green = 21, blue = 20)
@@ -49,20 +47,6 @@ from motor_class import MotorController  # Adjust import as necessary
 # Instantiate the motor controller
 motor_controller = MotorController()
 
-async def blink_eyes():
-    print("Blinking Eyes")
-    while True:
-        for i in range(100,10000,20):
-            eye1.duty_u16(i)
-            eye2.duty_u16(i)
-            await asyncio.sleep(0.01)  # Yield control to other tasks
-        
-        for y in range(10000,100,-20):
-            eye1.duty_u16(y)
-            eye2.duty_u16(y)
-            await asyncio.sleep(0.01)  # Yield control to other tasks
-        
-
 def decode_message(message):
     """ Decode a message from bytes """
     return message.decode('utf-8')
@@ -71,6 +55,30 @@ def encode_message(message):
     """ Encode a message to bytes """
     return message.encode('utf-8')
 
+async def read_photo_resistor():
+    global photoresistor_value 
+    print("reading photo res")
+    while True:
+        photoresistor_value = photoresistor.read_u16()
+        if(photoresistor_value > photoresistor_hit_value):
+              await been_hit()
+        await asyncio.sleep(0.01)  # Yield control to other tasks
+    
+async def been_hit():
+    global rgb
+    print("I've been hit!!")
+    # Let's flash our eyes
+    # go red
+    rgb.color = (255, 0, 0)
+    # sleep for a second
+    utime.sleep_ms(1000)
+    # go green
+    rgb.color = (0, 255, 0)
+        
+        
+     
+    
+    
 async def control_car(command, characteristic):
     """ Control the remote control car based on the command received """
     if command in COMMANDS:
@@ -115,14 +123,14 @@ async def receive_data_task(characteristic):
     print("Waiting for commands...")
     while True:
         try:
+            
             connection, data = await characteristic.written()
 
             if data:
                 command = decode_message(data)
                 print(f"{IAM} received command: {command}, count: {message_count}")
                 await control_car(command, characteristic)
-
-            message_count += 1
+            
 
         except asyncio.TimeoutError:
             print("Timeout waiting for data.")
@@ -162,7 +170,6 @@ async def advertise_n_wait_for_connect():
 
             tasks = [
                 asyncio.create_task(receive_data_task(characteristic)),
-                asyncio.create_task(blink_eyes())
             ]
             await asyncio.gather(*tasks)
             print(f"{IAM} disconnected")
@@ -170,14 +177,19 @@ async def advertise_n_wait_for_connect():
 
 async def main():
     global rgb
+    global laser
     # Power on, turn red
     rgb.color = (255, 0, 0)
+    # turn on laser
+    laser.value(1)
+    
     """ Main function """
     while True:
         print("I'm peripheral")
         
         tasks = [
             asyncio.create_task(advertise_n_wait_for_connect()),
+            asyncio.create_task(read_photo_resistor())
         ]
         await asyncio.gather(*tasks)
 

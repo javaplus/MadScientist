@@ -60,8 +60,9 @@ async def read_photo_resistor():
     print("reading photo res")
     while True:
         photoresistor_value = photoresistor.read_u16()
+        if(photoresistor_value > photoresistor_hit_value):
+              await been_hit()
         await asyncio.sleep(0.01)  # Yield control to other tasks
-    
     
 async def been_hit():
     global rgb
@@ -119,13 +120,9 @@ async def control_car(command, characteristic):
 async def receive_data_task(characteristic):
     """ Receive data from the connected device """
     global message_count
-    global photoresistor_value
     print("Waiting for commands...")
     while True:
         try:
-            
-            if(photoresistor_value > photoresistor_hit_value):
-               await been_hit()
             
             connection, data = await characteristic.written()
 
