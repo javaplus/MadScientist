@@ -17,8 +17,8 @@
 ## 3D Printed Parts
 - 1 x Chasis
 - 1 x treads (need better wording and maybe individual tracks)
-- 4 x wheels/Drive Sprockets
-- 2 or 4 x wheel inserts
+- 4 x wheels
+- 2 or 4 x wheel/tranny inserts
 - 1 x front shark head
 - 1 x rear shark tail
 - 1 x Pico and Motor Controller plate
@@ -32,7 +32,7 @@
 - 5 10cm Wires(fom Pico to Motor controller)
 - 1 10cm Red from switch to voltage regulator
 - 1 Battery connector with y connector on ground
-- 1 switch voltage regulator
+- 1 switch
 - 1 Voltage regulator
 - 1 Red y female to female (from voltage reg to pico and motor controller)
   
@@ -40,5 +40,9 @@
 #### Lighting:
 - 2 RGB LEDs
 - 4 20cm or 10cm male to female
+- 1 Photo Res with 10Kohm resistor
+- 1 laser
+
+
  
   
