@@ -14,8 +14,9 @@ In Thonny, go to the `Tools` menu and choose `Options`:
 
 ![Thonny Options](/lessons/images/ThonnyOptions.PNG)
 
+In the Thonny Options screen, select `MicroPython (Raspberry Pi Pico)` as the interpreter in the dropdown at the top. 
 
-In the options menu, click the `Install or update MicroPython` link at the bottom right:
+Next, click the `Install or update MicroPython` link at the bottom right:
 
 ![Thonny Options Popup](/lessons/images/ThonnyOptionsPopup.PNG)
 
