@@ -40,3 +40,11 @@ Note: Your COM port number may be different.
 Once you've selected your device, you should see the Shell change to show the version of MicroPython installed on your Pico.
 
 ![Thonny done](/lessons/images/ThonnyFinal.PNG)
+
+
+### Install picozero library
+
+Go to this link and follow just the few steps to [install the pico zero library.](https://picozero.readthedocs.io/en/latest/gettingstarted.html#install-picozero-from-pypi-in-thonny)
+
+
+Now you should be good to go!!!
