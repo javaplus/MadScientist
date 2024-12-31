@@ -38,7 +38,7 @@ class MotorController:
         self.stop()
         self.left_motor_forward.duty_u16(self.MAX_SPEED)
         ## Sleep the bad way to keep this thread from doing anything else
-        utime.sleep(SPIN_LOCK_TIME)
+        utime.sleep(self.SPIN_LOCK_TIME)
         
 
     def stop(self):
