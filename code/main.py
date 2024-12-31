@@ -7,10 +7,9 @@ import utime
 from picozero import RGBLED
 from machine import Pin, PWM, ADC
 
-
 laser = Pin(16, Pin.OUT)
 
-photoresistor = machine.ADC(28)
+photoresistor = ADC(28)
 photoresistor_value = 0
 photoresistor_hit_value = 28000
 
@@ -29,15 +28,6 @@ BLE_CHARACTERISTIC_UUID = bluetooth.UUID(0x2A6E)  # Temperature
 BLE_APPEARANCE = 0x0300  # Thermometer
 BLE_ADVERTISING_INTERVAL = 2000
 
-# Define commands for the remote control car
-COMMANDS = {
-    "forward": "Moving forward",
-    "backward": "Moving backward",
-    "left": "Turning left",
-    "right": "Turning right",
-    "stop": "Stopping"
-}
-
 # state variables
 message_count = 0
 
@@ -46,14 +36,6 @@ from motor_class import MotorController  # Adjust import as necessary
 
 # Instantiate the motor controller
 motor_controller = MotorController()
-
-def decode_message(message):
-    """ Decode a message from bytes """
-    return message.decode('utf-8')
-
-def encode_message(message):
-    """ Encode a message to bytes """
-    return message.encode('utf-8')
 
 async def read_photo_resistor():
     global photoresistor_value 
@@ -75,62 +57,41 @@ async def been_hit():
     # go green
     rgb.color = (0, 255, 0)
         
-        
-     
     
-    
-async def control_car(command, characteristic):
+async def control_car(command_with_data, characteristic):
     """ Control the remote control car based on the command received """
-    if command in COMMANDS:
-        action_message = COMMANDS[command]
-        print(action_message)
 
-        print(f"command is:{command}")
-        print(command == "forward")
-        # Control the motors based on the command
-        if command == "forward":
-            print("calling motor controller for forward")
-            motor_controller.change_speed_and_direction("forward")
-        elif command == "backward":
-            motor_controller.change_speed_and_direction("backward")
-        elif command == "left":
-            motor_controller.change_speed_and_direction("left")
-        elif command == "right":
-            motor_controller.change_speed_and_direction("right")
-        elif command == "stop":
-            motor_controller.stop()
+    command, command_data = command_with_data.split(':', 1)
+    print(f"Received command:{command}, data:{command_data}")
 
-        response_message = "Got it"
-        print(f"response message = {response_message}")
-
-        # Send response back to the Central
-        try:
-            encoded_message = encode_message(response_message)
-            # await characteristic.write(encoded_message)
-            print("NOT sending response")
-        except Exception as e:
-            print(f"Error writing response: {e}")
+    if command == "move":
+        move_directions = command_data.split(',')
+        if len(move_directions) >= 2:
+            motor_controller.move(float(move_directions[0]), float(move_directions[1]))
+        else:            
+            print(f"Invalid move command {move_directions}")
+    elif command == "rgb":
+        print(f"Setting RGB to {command_data}")
+        rgb.color = tuple(map(int, command_data.split(',')))
+    elif command == "stop":
+        motor_controller.stop()
     else:
         print("Unknown command")
         response_message = "Unknown command received."
-        
-        # Send response back to the Central
-        await characteristic.write(encode_message(response_message))
-
+        await characteristic.write(response_message.encode('utf-8'))
 async def receive_data_task(characteristic):
     """ Receive data from the connected device """
     global message_count
     print("Waiting for commands...")
     while True:
         try:
-            
             connection, data = await characteristic.written()
 
             if data:
-                command = decode_message(data)
-                print(f"{IAM} received command: {command}, count: {message_count}")
+                command = data.decode('utf-8')
                 await control_car(command, characteristic)
-            
+
+            message_count += 1
 
         except asyncio.TimeoutError:
             print("Timeout waiting for data.")
@@ -156,13 +117,13 @@ async def advertise_n_wait_for_connect():
     print(f"{BLE_NAME} starting to advertise")
     global rgb
     while True:
-        # advertising on, turn blue
-        rgb.color = (0, 0, 255)
+        # advertising on, blink blue
+        rgb.blink(colors=[(0, 0, 255),(0, 0, 0)])
         async with await aioble.advertise(
             BLE_ADVERTISING_INTERVAL,
             name=BLE_NAME,
             services=[BLE_SVC_UUID],
-            appearance=BLE_APPEARANCE) as connection:
+            appearance=BLE_APPEARANCE) as connection: # type: ignore
             print(f"{BLE_NAME} connected to another device: {connection.device}")
             
             # connected turn green
@@ -180,9 +141,10 @@ async def main():
     global laser
     # Power on, turn red
     rgb.color = (255, 0, 0)
+    # stop all motor activity
+    motor_controller.stop()
     # turn on laser
     laser.value(1)
-    
     """ Main function """
     while True:
         print("I'm peripheral")
