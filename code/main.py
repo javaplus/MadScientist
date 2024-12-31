@@ -16,12 +16,12 @@ photoresistor_hit_value = 28000
 # RGB  status lights for indicating advertising, connected, and commands recieved.
 rgb = RGBLED(red = 22, green = 21, blue = 20)
 
-# IAM = "Central" # Change to 'Peripheral' or 'Central'
-IAM = "Peripheral"
-MESSAGE = f"Hello from {IAM}!"
+# ROVER_NAME needs to be a unique name for your rover.  It will be the advertised bluetooth device name
+ROVER_NAME = "sharkbot1"
+MESSAGE = f"Hello from {ROVER_NAME}!"
 
 # Bluetooth parameters
-BLE_NAME = f"{IAM}"  # You can dynamically change this if you want unique names
+BLE_NAME = f"{ROVER_NAME}"  # You can dynamically change this if you want unique names
 BLE_SVC_UUID = bluetooth.UUID(0x181A)  # Environmental Sensing Service
 BLE_CHARACTERISTIC_UUID = bluetooth.UUID(0x2A6E)  # Temperature
 BLE_APPEARANCE = 0x0300  # Thermometer
@@ -33,6 +33,11 @@ from motor_class import MotorController  # Adjust import as necessary
 # Instantiate the motor controller
 motor_controller = MotorController()
 
+### Gets photo resistor value over and over again
+### in an infinite loop sleeping a bit to yield
+### control to other tasks.
+### Calls "been_hit()" when photo_resistor_value exceeds the 
+### photoresistor_hit_value
 async def read_photo_resistor():
     global photoresistor_value 
     print("reading photo res")
@@ -48,10 +53,7 @@ async def been_hit():
     # Let's flash our eyes
     # go red
     rgb.color = (255, 0, 0)
-    # sleep for a second
-    utime.sleep_ms(1000)
-    # go green
-    rgb.color = (0, 255, 0)
+    motor_controller.spin_lock()
         
     
 async def control_car(command_with_data, characteristic):
@@ -124,7 +126,7 @@ async def advertise_n_wait_for_connect():
                 asyncio.create_task(receive_data_task(characteristic)),
             ]
             await asyncio.gather(*tasks)
-            print(f"{IAM} disconnected")
+            print(f"{ROVER_NAME} disconnected")
             break
 
 async def main():
@@ -146,3 +148,4 @@ async def main():
 
 print("About to execute main")
 asyncio.run(main())
+

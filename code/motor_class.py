@@ -1,9 +1,11 @@
 from machine import Pin, PWM
+import utime
 
 class MotorController:
     MAX_SPEED = 45000
     MIN_SPEED = 10000
     SLEEP_TIME_MS = 1
+    SPIN_LOCK_TIME = 2.5
 
     def __init__(self):
         # Define motor pins
@@ -29,6 +31,15 @@ class MotorController:
         self.left_motor_backward.duty_u16(speed if (x < 0 or y < 0) else 0)
         self.right_motor_forward.duty_u16(speed if (x < 0 or y > 0) else 0)
         self.right_motor_backward.duty_u16(speed if (x > 0 or y < 0) else 0)
+        
+    ### Execute a spinning manuever and stop anything else from happening.
+    def spin_lock(self):
+        print("in Spin lock")
+        self.stop()
+        self.left_motor_forward.duty_u16(self.MAX_SPEED)
+        ## Sleep the bad way to keep this thread from doing anything else
+        utime.sleep(SPIN_LOCK_TIME)
+        
 
     def stop(self):
         """Stop all motors."""
@@ -36,3 +47,4 @@ class MotorController:
         self.left_motor_backward.duty_u16(0)
         self.right_motor_forward.duty_u16(0)
         self.right_motor_backward.duty_u16(0)
+
