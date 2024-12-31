@@ -18,7 +18,6 @@ rgb = RGBLED(red = 22, green = 21, blue = 20)
 
 # IAM = "Central" # Change to 'Peripheral' or 'Central'
 IAM = "Peripheral"
-
 MESSAGE = f"Hello from {IAM}!"
 
 # Bluetooth parameters
@@ -27,9 +26,6 @@ BLE_SVC_UUID = bluetooth.UUID(0x181A)  # Environmental Sensing Service
 BLE_CHARACTERISTIC_UUID = bluetooth.UUID(0x2A6E)  # Temperature
 BLE_APPEARANCE = 0x0300  # Thermometer
 BLE_ADVERTISING_INTERVAL = 2000
-
-# state variables
-message_count = 0
 
 # Import the MotorController class
 from motor_class import MotorController  # Adjust import as necessary
@@ -62,7 +58,7 @@ async def control_car(command_with_data, characteristic):
     """ Control the remote control car based on the command received """
 
     command, command_data = command_with_data.split(':', 1)
-    print(f"Received command:{command}, data:{command_data}")
+    print(f"Received command:{command}     data:{command_data}")
 
     if command == "move":
         move_directions = command_data.split(',')
@@ -81,24 +77,19 @@ async def control_car(command_with_data, characteristic):
         await characteristic.write(response_message.encode('utf-8'))
 async def receive_data_task(characteristic):
     """ Receive data from the connected device """
-    global message_count
     print("Waiting for commands...")
     while True:
         try:
             connection, data = await characteristic.written()
-
             if data:
                 command = data.decode('utf-8')
                 await control_car(command, characteristic)
-
-            message_count += 1
-
         except asyncio.TimeoutError:
             print("Timeout waiting for data.")
             break
         except Exception as e:
             print(f"Error receiving data: {e}")
-            break
+            
 
 async def advertise_n_wait_for_connect():
     """ Run the peripheral mode """
@@ -146,9 +137,7 @@ async def main():
     # turn on laser
     laser.value(1)
     """ Main function """
-    while True:
-        print("I'm peripheral")
-        
+    while True:        
         tasks = [
             asyncio.create_task(advertise_n_wait_for_connect()),
             asyncio.create_task(read_photo_resistor())
