@@ -20,20 +20,15 @@ If this is your first time playing with Python you may find this cheatsheet help
 
 Connect your Raspberry Pi Pico to your computer via  USB cable and open Thonny.  If you don't have Thonny installed or haven't flashed the Pico to use Python follow this guide: [Thonny Setup](https://github.com/javaplus/MadScientist/blob/main/lessons/firmware.md)
 
-![Blink Diagram](/images/6_blink_bb.png)
+In Thonny, go to the bottom right hand corner and choose the interpreter for Thonny to use.  If your computer recognized the Pico, you can choose the item that says "**MicroPython(Raspberry Pi Pico)** in the list. (see image below)
 
-With the breadboard cleared, and the Pico still connected to your USB port, open Thonny and in the bottom right hand corner choose the interpreter for Thonny to use.  If your computer recognized the Pico, you can choose the item that says "**MicroPython(Raspberry Pi Pico)** in the list. (see image below)
+
+![Thonny Select Pico](./images/thonnyInterpreter.png)
 
 Note: if this is your first time launching Thonny you may have to click past the Welcome/language selection splash page.
 
-![Thonny Select Pico](/images/thonny_pico.PNG)
-
-If having issues connecting see if this detailed guide helps: 
-[Detailed guide for connecting Pico to Thonny](https://microcontrollerslab.com/getting-started-raspberry-pi-pico-thonny-ide/)
-
-
 If it's able to connect, you should see the print out in the shell like in the picture above that tells you the version of MicroPython running on the Pico.
-The shell below is a [REPL](https://pythonprogramminglanguage.com/repl/) where you could type Python statements have them executed immeditately.  We are not going to use the shell.  Instead, we will type our code into the text editor area above the shell.
+The shell below is a [REPL](https://pythonprogramminglanguage.com/repl/) where you could type Python statements have them executed immediately.  We are not going to use the shell.  Instead, we will type our code into the text editor area above the shell.
 
 Here is the obligatory blink demo for the Pico  W (Note it's different for the standard Pico):
 
