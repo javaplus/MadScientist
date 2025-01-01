@@ -31,6 +31,11 @@ Now it's time to connect the power cables coming from the voltage regulator and 
 
 Take the two red wires and connect one to the Pico's VSYS pin which is the second in from the top right of the pictures.  The other red wire goes to the (+) pin on the motor controller.  
 
+Here's a pinout diagram if you want to use it instead of the pictures.:  
+<details><summary> Click here to hide/show Pico Pin Out.</summary> 
+ <img src="../images/picoPinOut.PNG"/>
+</details>
+
 The ground/black wire goes to a ground pin on the pico.  We recommend the ground pin right next to the VSYS.  That is 3 pins in from the top right in the picture.
 
 ![Pico Plate on Chassis Power Connnected](/lessons/images/assembly/pico_plate_power_wire_routing_top.jpg)     
