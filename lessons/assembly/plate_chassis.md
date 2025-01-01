@@ -4,7 +4,7 @@ Now we are going to take the Pico plate with the Pico and motor controller and a
 
 Before we can put the plate down on the chassis, we need to connect the motors to the motor controllers pins that stick below the plate.  So, hold the plate close to the chassis with the bottom of the plate accessible.  The motor controller should be at the front of the chassis opposite of the power switch.  
 See picture below for proper orientation.   
-Connect the front motor to the `motor A` pins.  The motor A pins are the furthest from the front motor.  Connect the rear motor to the `motor B` pins.  Run the wires for the rear motor over the batter to connect to the motor controller.
+Connect the front motor to the `motor A` pins.  The motor A pins are the first two pins on the left in the picture below.  Connect the rear motor to the `motor B` pins.  Run the wires for the rear motor over the batter to connect to the motor controller.
 
 ![Pico Plate bottom view](/lessons/images/assembly/pico_plate_on_chassis_bottom.jpg)
 
@@ -22,7 +22,7 @@ Now run the ground(black) wire from the battery connector up through the same ve
 ![Ground Cable Through Pico Plate](/lessons/images/assembly/pico_plate_bottom_power_cable_2.jpg)  
 
 
-Now carefully push the plate down onto the chassis.  Be careful not to disconnect wires from the motor wires from the motor controller or disconnect the power wires from the voltagle regulator.  Gently  push the plate down making sure no wires get pinched on the edges of the plate and the chassis.  The plate should fit down flush with the lowest top edge of the front and rear of the chassis.
+Now carefully push the plate down onto the chassis.  Be careful not to disconnect wires from the motor wires from the motor controller or disconnect the power wires from the voltage regulator.  Gently  push the plate down making sure no wires get pinched on the edges of the plate and the chassis.  The plate should fit down flush with the lowest top edge of the front and rear of the chassis.
 
 ![Pico Plate on Chassis](/lessons/images/assembly/pico_plate_on_chassis_power_cables.jpg)    
 
