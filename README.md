@@ -55,6 +55,11 @@ The links in this section are to labs that walk you through working with the var
 [Wheels and Tracks](/lessons/assembly/wheels.md)  
 [RGB Leds](/lessons/assembly/rgb.md)
 
+
+# Install the Code:
+
+[Install Code](/lessons/assembly/code_install.md)
+
 # BlueTooth Remote
 
 https://javaplus.github.io/MadScientist/
