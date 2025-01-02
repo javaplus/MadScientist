@@ -35,7 +35,15 @@
 - 1 switch
 - 1 Voltage regulator
 - 1 Red y female to female (from voltage reg to pico and motor controller)
-  
+
+#### Small Parts
+
+- 2 RGB LEDs 
+- 4 Plate plugs 3D printed parts
+- 1 Power switch
+- 1 Voltage regulator
+
+
 
 #### Lighting:
 - 2 RGB LEDs
@@ -44,5 +52,35 @@
 - 1 laser
 
 
- 
+ ## Packing list:
+
+#### Chassis:
+- 1 Pico
+- 2 Motors
+- 1 Motor Controller
+- 5 10cm Wires(fom Pico to Motor controller)
+- 1 10cm Red from switch to voltage regulator
+- 1 Battery connector with y connector on ground
+- 1 Red y female to female (from voltage reg to pico and motor controller)
+
+#### Small Parts Cup
+
+- 2 RGB LEDs 
+- 4 Plate plugs 3D printed parts
+- 1 Power switch
+- 1 Printed Power Switch
+- 1 Voltage regulator
+
+#### Treads
+
+- 2 Cups of 16 treads each
+- 20 inch piece of filament
+
+
+
+#### Lighting:
+- 2 RGB LEDs
+- 4 20cm or 10cm male to female
+- 1 Photo Res with 10Kohm resistor
+- 1 laser
   
