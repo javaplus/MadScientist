@@ -15,7 +15,7 @@
 - 1 x Box : [ORDER](https://www.amazon.com/gp/product/B0C1MW7RXZ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
 
 ## 3D Printed Parts
-- 1 x Chasis
+- 1 x Chassis
 - 1 x treads (need better wording and maybe individual tracks)
 - 4 x wheels
 - 2 or 4 x wheel/tranny inserts
@@ -47,7 +47,7 @@
 
 #### Lighting:
 - 2 RGB LEDs
-- 4 20cm or 10cm male to female
+- 4 20cm or 10cm female to female
 - 1 Photo Res with 10Kohm resistor
 - 1 laser
 
@@ -71,12 +71,9 @@
 - 1 Printed Power Switch
 - 1 Voltage regulator
 
-#### Treads
-
+#### Treads  
 - 2 Cups of 16 treads each
-- 20 inch piece of filament
-
-
+- 20 inch piece of filament  
 
 #### Lighting:
 - 2 RGB LEDs
