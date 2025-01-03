@@ -5,6 +5,12 @@ class BasicGame:
         self.motor_controller = motor_controller
         self.rgb = rgb
 
+
+    ## Implement Setup
+    def setup(self):
+        # set color to green
+        self.rgb.color = (0, 255, 0)
+
     ## implement on Hit.
     def onHit(self):
         print("Basic Game been hit!!")

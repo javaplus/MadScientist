@@ -35,14 +35,43 @@ BLE_ADVERTISING_INTERVAL = 2000
 # Instantiate the motor controller
 motor_controller = MotorController()
 
-# Instantiate Basic Game
-basic_game = BasicGame(motor_controller, rgb)
-
 # Instantiate the HitEvent so it can be fired when hit:
 hitevent = HitEvent()
 
-## Set the method to be called when hitevent fires!
-hitevent.subscribe(basic_game.onHit)
+## to select the game mode
+def setGameMode(gamemode, motor_controller, rgb):
+        if gamemode == "Virus":
+            print("Virus mode")
+            # Return VirusGame impl
+        elif gamemode == "Disco":
+            print("Disco mode")
+            # Return Disco Game impl
+        elif gamemode == "Hungry":
+            print("Disco mode")
+            # Return Hungry game impl
+        elif gamemode == "WTF":
+            print("WTF mode")
+            # Return whatever WTF mode is
+        else:
+            print("Default mode")
+            return BasicGame(motor_controller, rgb)
+    
+def initializeGame(gamemode):
+    global hitevent
+    
+    # reset HitEvent to remove previous subscribers
+    hitevent.reset()
+    
+    # get the game
+    game = setGameMode(gamemode, motor_controller, rgb)
+
+    # setup game
+    game.setup()
+
+    ## Set the method to be called when hitevent fires!
+    hitevent.subscribe(game.onHit)
+
+
 
 
 ### Gets photo resistor value over and over again
@@ -61,7 +90,7 @@ async def read_photo_resistor():
         await asyncio.sleep(0.01)  # Yield control to other tasks
     
     
-async def control_car(command_with_data, characteristic):
+async def execute_command(command_with_data, characteristic):
     """ Control the remote control car based on the command received """
 
     command, command_data = command_with_data.split(':', 1)
@@ -78,10 +107,15 @@ async def control_car(command_with_data, characteristic):
         rgb.color = tuple(map(int, command_data.split(',')))
     elif command == "stop":
         motor_controller.stop()
+    elif command == "gamemode": ## TODO: change to whatever the game mode command is
+        gamemode = command_data
+        print("game mode = " + str(gamemode))
+        initializeGame(gamemode)
     else:
         print("Unknown command")
         response_message = "Unknown command received."
         await characteristic.write(response_message.encode('utf-8'))
+        
 async def receive_data_task(characteristic):
     """ Receive data from the connected device """
     print("Waiting for commands...")
@@ -90,7 +124,7 @@ async def receive_data_task(characteristic):
             connection, data = await characteristic.written()
             if data:
                 command = data.decode('utf-8')
-                await control_car(command, characteristic)
+                await execute_command(command, characteristic)
         except asyncio.TimeoutError:
             print("Timeout waiting for data.")
             break
@@ -143,6 +177,9 @@ async def main():
     motor_controller.stop()
     # turn on laser
     laser.value(1)
+    
+    # Initialize game to default game
+    initializeGame("default")
     """ Main function """
     while True:        
         tasks = [

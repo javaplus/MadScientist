@@ -8,6 +8,9 @@ class HitEvent:
 
     def unsubscribe(self, handler):
         self.handlers.remove(handler)
+        
+    def reset(self):
+        self.handlers = []
 
     def fire(self, *args, **kwargs):
         for handler in self.handlers:
