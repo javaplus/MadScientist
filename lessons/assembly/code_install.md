@@ -13,6 +13,11 @@ Save this file onto the Pico as `motor_class.py`.
 Now create a new Thonny tab(File->New) and copy the contents of [hitevent.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/hitevent.py) into the new Thonny tab.  
 Save this file onto the Pico as `hitevent.py`.
 
+#### Base Game  
+Now create a new Thonny tab and copy the contents of [basegame.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/basegame.py) into the new Thonny tab.  
+Save this file onto the Pico as `basegame.py`.
+
+
 #### Basic Game  
 Now create a new Thonny tab and copy the contents of [basicgame.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/basicgame.py) into the new Thonny tab.  
 Save this file onto the Pico as `basicgame.py`.
