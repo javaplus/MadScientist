@@ -49,5 +49,7 @@ In the mad scientist app, type in the value you put for the `ROVER_NAME` variabl
 
 When the app is connected to the Rover, the eyes should turn green.  Now try to move the joystick in the app to test the motor control is working.  If any of the movement is reversed, you can simply go to the settings menu of the app and reverse the controls.
 
+#### FREEDOM!!!
 
+If everything tests out ok while connected via the USB cable, it's time to  unplug the USB cable and set it free.  Place the Rover on the ground and turn the power switch on.  The eyes should flash blue again showing that it's advertising and ready to connect.  Use the app again to connect and try it out!!!
 
