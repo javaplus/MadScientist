@@ -50,9 +50,9 @@ The links in this section are to labs that walk you through working with the var
 # Assembly
 [Pico Plate](/lessons/assembly/plate.md)  
 [Chassis Motors](/lessons/assembly/chassis.md)  
+[Wheels and Tracks](/lessons/assembly/wheels.md)  
 [Power Components](/lessons/assembly/power.md)  
 [Pico and Chassis Together](/lessons/assembly/plate_chassis.md)  
-[Wheels and Tracks](/lessons/assembly/wheels.md)  
 [RGB Leds](/lessons/assembly/rgb.md)  
 [Tail Tip/Photoresistor](/lessons/assembly/tail.md)
 

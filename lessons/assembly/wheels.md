@@ -10,11 +10,13 @@ Now let's install the wheels.
 
 Take your 4 wheels and snap them on the chassis making sure the flat side is against the chassis.  Once they snap on, give them a spin with your hand to make sure they can spin freely without much resistance. 
 
+**NOTE:** The pictures below show the Pico and other components already installed.  Your Rover may only have the motors installed at this point.  Some have found it easier to get the wheels and tranny on before putting the rest of the electronics in place.
+
 ![Wheels installed](/lessons/images/assembly/wheels_no_tranny.jpg)
 ![Wheels installed 2](/lessons/images/assembly/wheels_installed.jpg)
 
 
-Now install the transmission pieces.  The key with installing the tranny parts are to line up the D shaped slot in the center of the tranny piece with the D shaped axle of the motor.  It's actually pretty easy to start inserting the tranny piece into the wheel until it hits the axle and then just rotate the wheel and the tranny till the D shaped hole and the axle line up and you can push the tranny in flush with the outside of the wheel.
+Now install the transmission pieces.  The key with installing the tranny parts are to line up the D shaped slot in the center of the tranny piece with the D shaped axle of the motor.  If you have access to the motors, hold the motor down in place as you try to put the tranny in the wheel and line it up with the axle.  It's actually easiest to to start inserting the tranny piece into the wheel until it hits the axle(while holding the motor from sliding back) and then just rotate the wheel and the tranny till the D shaped hole and the axle line up and you can push the tranny in flush with the outside of the wheel.  
 
 ![Tranny installed](/lessons/images/assembly/wheel_tranny.jpg)
 
@@ -57,4 +59,4 @@ Once both tracks are complete, simply put the tracks on the wheels. Just slip th
 ![Tracks on Chassis 2](/lessons/images/assembly/tracks_on_usb_side.jpg)
 
 
-Jump around and celebrate! You have an assembled rover!  We aren't completely done, but you have enough assembled to add the code and test it out!
+Jump around and celebrate!
