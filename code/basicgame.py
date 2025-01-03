@@ -1,10 +1,7 @@
+from basegame import BaseGame
 from motor_class import MotorController
 
-class BasicGame:
-    def __init__(self, motor_controller, rgb):
-        self.motor_controller = motor_controller
-        self.rgb = rgb
-
+class BasicGame(BaseGame):
 
     ## Implement Setup
     def setup(self):
