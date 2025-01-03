@@ -6,9 +6,13 @@ from sys import exit
 import utime
 from picozero import RGBLED
 from machine import Pin, PWM, ADC
+from hitevent import HitEvent
+# Import the MotorController class
+from motor_class import MotorController
+from basicgame import BasicGame
+
 
 laser = Pin(16, Pin.OUT)
-
 photoresistor = ADC(28)
 photoresistor_value = 0
 photoresistor_hit_value = 28000
@@ -27,11 +31,19 @@ BLE_CHARACTERISTIC_UUID = bluetooth.UUID(0x2A6E)  # Temperature
 BLE_APPEARANCE = 0x0300  # Thermometer
 BLE_ADVERTISING_INTERVAL = 2000
 
-# Import the MotorController class
-from motor_class import MotorController  # Adjust import as necessary
 
 # Instantiate the motor controller
 motor_controller = MotorController()
+
+# Instantiate Basic Game
+basic_game = BasicGame(motor_controller, rgb)
+
+# Instantiate the HitEvent so it can be fired when hit:
+hitevent = HitEvent()
+
+## Set the method to be called when hitevent fires!
+hitevent.subscribe(basic_game.onHit)
+
 
 ### Gets photo resistor value over and over again
 ### in an infinite loop sleeping a bit to yield
@@ -40,21 +52,14 @@ motor_controller = MotorController()
 ### photoresistor_hit_value
 async def read_photo_resistor():
     global photoresistor_value 
+    global hitevent
     print("reading photo res")
     while True:
         photoresistor_value = photoresistor.read_u16()
         if(photoresistor_value > photoresistor_hit_value):
-              await been_hit()
+              hitevent.fire()
         await asyncio.sleep(0.01)  # Yield control to other tasks
     
-async def been_hit():
-    global rgb
-    print("I've been hit!!")
-    # Let's flash our eyes
-    # go red
-    rgb.color = (255, 0, 0)
-    motor_controller.spin_lock()
-        
     
 async def control_car(command_with_data, characteristic):
     """ Control the remote control car based on the command received """
