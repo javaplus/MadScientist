@@ -41,17 +41,24 @@ Now take the motor controller and put it into the bottom left square on the pico
 
 #### Wire the Motor Controller
 
-Take 4 5cm female to female wires (recommend a combination of blue,yellow, green is fine) and fish them under the pico so that the female ends are on opposite sides of the Pico. Go ahead and grab a black or white 5cm female to female wire as well. Now connect on end of the wires the Int1, Int2, Int3, and Int4 pins that stick up from the motor controller.  The color of the wires don't matter, but it would be beneficial to have different colors for every other pin. Now you will connect the other end of the wires to the GPIO pins on the Pico.  You will be connecting them to GP10 through GP13.  The important part is that you connect INT1 and INT2 to GP12 and GP13 and INT3 and INT4 to GP10 and GP11.  When it comes time to test the motor function, you may need to switch wires around to get the RVR to move in the intended function.
+Take 4 5cm female to female wires (recommend a combination of blue,yellow, green is fine) and fish them under the pico so that the female ends are on opposite sides of the Pico. Go ahead and grab a black or white 5cm female to female wire as well and run it under the pico. 
 
-![Colored wires](/lessons/images/assembly/motor_controller_wires.jpg)
+![Colored wires](/lessons/images/assembly/motor_controller_wires.jpg)  
 
-**NOTE:** These pics show the black ground wire as well, you'll run that in the next step. For now just run the four colored wires.
+![Pico Motor Controller Wires Under 1](/lessons/images/assembly/motor_controller_wires_under1.jpg)
+
+![Pico Motor Controller Wires Under 2](/lessons/images/assembly/motor_controller_wires_under2.jpg)
+
+
+Now connect one end of the colored wires to the Int1, Int2, Int3, and Int4 pins that stick up from the motor controller.  The color of the wires don't matter, but it would be beneficial to have different colors for every other pin. Now you will connect the other end of the wires to the GPIO pins on the Pico. Save the black or white wire for the ground in a later step. You will be connecting the colored wires to GP10 through GP13.  The important part is that you connect INT1 and INT2 to GP12 and GP13 and INT3 and INT4 to GP10 and GP11.  
+
+**NOTE:** These pictures show the black wire connected at this point,  you'll do that in the next step.  
 ![Pico Motor Controller Wires topdown](/lessons/images/assembly/pico_plate_motor_controller_topdown.jpg)
 
 ![Pico Motor Controller Wires Ran Close up](/lessons/images/assembly/pico_plate_motor_controller_closeup.jpg)
 
 
-Now take the black or white 5cm female to female jumper wire and route it under the Pico like the 4 colored wires.  This wire will connect the (-) on the motor controller to a ground on the Pico.  We find the ground wire that is 3 down from the top right is best for this due to wire management. 
+Now take the black or white 5cm female to female jumper wire and connect it to the (-) on the motor controller to a ground on the Pico.  We find the ground wire that is 3 down from the top right is best for this due to wire management. 
 
 ![Pico Motor Controller Wires Ran](/lessons/images/assembly/pico_plate_motor_controller_closeup_usb.jpg)
 
