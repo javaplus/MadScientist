@@ -4,7 +4,7 @@
 
 Grab the tail, opaque tail tip, and photoresistor.
 
-<img src="/lessons/images/assembly/tail_parts.jpg" alt="Parts for Tail" width=100>
+<img src="/lessons/images/assembly/tail_parts.jpg" alt="Parts for Tail" width=500>
 
 ### Insert Photoresistor
 
