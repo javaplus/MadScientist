@@ -61,6 +61,11 @@ The links in this section are to labs that walk you through working with the var
 
 [Install Code](/lessons/assembly/code_install.md)
 
+# Customize Code
+
+[Custom Game Modes](/lessons/game_mode_coding.md)
+
+
 # BlueTooth Remote
 
 https://javaplus.github.io/MadScientist/
