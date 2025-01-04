@@ -4,7 +4,7 @@ An LED is a Light Emitting Diode.  A diode only allows electricity to flow in on
 
 So, for this lab, we will simply hook our LED to the Pico to see it light up. 
 
-## What to do:
+## What to do
 
 For this lab, we are going to start by just using the Pico as a power source to light up our LED.  
 
