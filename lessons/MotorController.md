@@ -16,8 +16,6 @@ You can put power to one of the first pairs and one of the second pairs at the s
 
 Wire the Pico to the motor controller and wire one motor to the `MOTOR-A` connector.  How you connect the motor wires to the `MOTOR-A` pins doesn't matter.  That is, there isn't a right or wrong way to connect the motor wires.  If you reverse the wires it will just cause the motor to spin in the opposite direction.
 
-#TODO: Maybe need lab just connecting motor directly to power.
-
 Note that the Pico is upside down, with the pins sticking straight up.  The diagram has the Pico in this orientation as well.  That is, the Pico in the diagram is showing you the correct pins if it is upside down with the pins up and the USB connection at the top.
 
 ![L298N Motor Controller](/lessons/images/motor_controller_bb.png) 

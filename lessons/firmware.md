@@ -8,6 +8,8 @@ I've found the easiest way to do this is to use Thonny.
 
 Open Thonny and then get ready to connect the Pico via a micro USB cable.  Hold the "BOOTSEL" button on top of the Pico as you plug the Pico in.
 
+<img alt="Pico WH Bootsel button" src="/lessons/images/pico_wh_bootsel.png" width="500"/>
+
 You may hear your computer detect a new device and maybe even open a file explorer like View.  If so, close this and just go back to Thonny.
 
 In Thonny, go to the `Tools` menu and choose `Options`:

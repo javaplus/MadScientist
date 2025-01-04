@@ -55,5 +55,7 @@ If everything works, you should see the onboard LED flash green about once a sec
 
 **NOTE**: You can save this code to your Pico, by clicking the blue Save button in Thonny and then choosing to save it on the Pico.  Give it a file name and a ".py" extension.  If Thonny complains about the Pico or device being busy OR you think it's stuck processing somewhere, click the red STOP button to exit running the current program and then click Save. The STOP button resets the connection with the Pico. Once you have saved a file in Thonny, usually clicking the "Play" button will automatically save the latest version again as well as run it.  This may change with different releases of Thonny. So, if you need to save your code, click the Save button before closing Thonny to ensure a proper save.
 
+<img alt="Thonny Save and STOP Buttons" src="/lessons/images/ThonnyButtons.png" width="500"/>
+
 If it works, eat a snack or better yet, give your instructor one!
 
