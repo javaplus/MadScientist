@@ -46,7 +46,7 @@ If you there are no errors, it's time to test it out!
 
 Since testing it out means using the mad scientist app to control the motors, you may want to lift the Rover off the ground while connected to the USB cable.  You can use one of the included clear dixie cups upside down under the Rover to keep the tracks off the ground.
 
-![Rover Lift](/lessons/images/assembly/lift.jpg)
+<img alt="Rover Lift" src="/lessons/images/assembly/lift.jpg" width="500"/>
  Now open the mad scientist app and connect to the Rover.  Be sure to keep the power switch off on the Rover.  
 
 When the RGB eyes are flashing blue, that means the rover is advertising and waiting for a bluetooth connection.  

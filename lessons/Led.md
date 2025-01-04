@@ -22,14 +22,13 @@ NOTE: Technically the color of wires you use don't matter (internally they are t
 
 See Diagram:
 
-![LED Wiring Diagram](/lessons/images/simple_led_bb.png)
+<img alt="LED Wiring Diagram" src="/lessons/images/simple_led_bb.png" width="500"/>
 
 When you plug the wires into the LED you should see it light up.  If you accidentally plug the wires in backwards (long leg to ground), then it shouldn't hurt anything, but it won't light up because a Diode only allows electricity to flow in one direction.
 
-## Voltage Considerations 
+## Voltage Considerations
 
-
-![LED Specification](/lessons/images/led_specs.png)
+<img alt="LED Specification" src="/lessons/images/led_specs.png" width="500"/>
 
 LED's (like most electronics) have voltage ranges in which they are designed to run. As mentioned above, we are currently running off 3.3Volts, but if we look at the specifications for the LEDs, we will see we are actually running a little over the specified voltage range of 3.0 to 3.2V for our Blue LED. This is why it's so bright. It's running slightly above max power! 
 
@@ -42,7 +41,7 @@ Since we are barely over spec with our Blue LED we most likely won't have an iss
 
  One simple way to lower the voltage in a circuit is to use a resistor.  A resistor simply resists(or restricts) the flow of electricity. You could use a resistor to lower the voltage to safer levels, but we are going to be lazy and try a different approach when we use the 2volt LEDs.  
 
- ![Resistor](/lessons/images/resistor.png)
+<img alt="Resistor" src="/lessons/images/resistor.png" width="500"/>
 
 For now we will continue using the blue LED which can handle the 3volts from the Pico and NOT use a resistor.
 
@@ -52,7 +51,7 @@ Now we will look at how to use code on the Pico to control an LED.
 
 Grab your BLUE LED or any LED rated for 3volts.  Take a red wire and connect the long leg of the LED into the GP16 pin on the Pico.  "GP " stands for General Purpose Input Output.  Connect the short leg of the LED to a GND pin on the Pico.
 
-![Blink Diagram](/lessons/images/simple_led2_bb.png)
+<img alt="Blink Diagram" src="/lessons/images/simple_led2_bb.png" width="500"/>
 
 
 When the LED in place and connected to the Pico and to ground, then we just need to write the code. 
