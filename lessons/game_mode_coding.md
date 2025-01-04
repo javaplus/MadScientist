@@ -50,7 +50,6 @@ class BasicGame(BaseGame):
     ## implement on Hit.
     def onHit(self):
         print("Basic Game been hit!!")
-        # Let's flash our eyes
         # go red
         self.rgb.color = (255, 0, 0)
         self.motor_controller.spin_lock()
@@ -67,8 +66,8 @@ The `onHit()` function simply changes the color to red and then causes the motor
 ## How the Game Class is used
 
 The `setup()` function gets called as soon as the game mode is changed or initiated.
-Currently the game mode can change based on the command from the bluetooth remote app.
-In the [main.py](/code/main.py) file, the `execute_command()` function has a an if block to set the game mode. The `initializeGame()` function takes in the game mode string to determine what game mode to use by calling the `setGameMode()` function also in `main.py` that will  instantiate the appropriate game class and return it.
+Currently, the game mode can change based on the command from the bluetooth remote app.
+In the [main.py](/code/main.py), the `execute_command()` function has an if block to set the game mode. The `initializeGame()` function takes in the game mode string to determine what game mode to use by calling the `setGameMode()` function (also in `main.py`) that will instantiate the appropriate game class and return it.
 
 Here is the `initializeGame()` function:
 
@@ -120,6 +119,16 @@ def setGameMode(gamemode, motor_controller, rgb, laser):
 This function is a simple if/else block that instantiates the correct game class to return based on the `gamemode` parameter.  This is where you would instantiate your custom game mode.
 
 If this `setGameMode()` returns your custom game class instance, then it will then have it's `setup()` function called almost immediately and then it's `onHit()` function will be called whenever it gets hit.
+
+### What all do you have to change
+
+So, to implement your own game mode, you need to :
+1) Create your own class that extends the BaseGame class
+2) Update the `setGameMode()` to instantiate your class and return it.
+
+For instantiating your game mode, you will most likely have to replace an existing game mode in the `setGameMode()` function.  Or make it the new default and return it in the final else block.
+
+### Enhancements
 
 To make things more interesting you may want to implement new methods on the `MotorController` class in the [motor_class.py](/code/motor_class.py) that you can call in your `onHit()` function.
 
