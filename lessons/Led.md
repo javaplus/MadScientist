@@ -15,7 +15,7 @@ The USB connection should be at the top, but touching the table and the pins sho
 
 ## Wiring Diagram
 
-Plug a red wire from the longer leg on the LED to the 3.3V pin on the Pico. And a black wire from the other leg to a GND (Ground) pin on the pico.  
+Plug a red wire from the longer leg on the LED to the 3.3V pin on the Pico. And a black wire from the other leg to a GND (ground) pin on the pico.  
 
 NOTE: Technically the color of the wires you use doesn't matter (internally they are the same), but the color does make it easier to know their purpose.  Usually, red wires indicate positive(+) and black or white wires indicate ground/negative(-). 
 
@@ -29,7 +29,7 @@ When you plug the wires into the LED you should see it light up.  If you acciden
 
 ![LED Specification](/lessons/images/led_specs.png)
 
-LEDs (like most electronics) have voltage ranges in which they are designed to run. As mentioned above, we are currently running off 3.3V (Volts), but if we look at the specifications for the LEDs, we will see we are actually running a little over the specified voltage range of 3.0 to 3.2V for our blue LED. This is why it's so bright. It's running slightly above max power! 
+LEDs (like most electronics) have voltage ranges in which they are designed to run. As mentioned above, we are currently running off 3.3V (volts), but if we look at the specifications for the LEDs, we will see we are actually running a little over the specified voltage range of 3.0 to 3.2V for our blue LED. This is why it's so bright. It's running slightly above max power! 
 
 Notice that the white, blue, and green LEDs support up to 3.2V. The other LEDs (red and yellow) only support up to 2.2V.  So, if we tried to use a red or yellow LED with our current circuit we could burn them out.
 
@@ -38,17 +38,17 @@ Since we are barely over spec with our blue LED we most likely won't have an iss
 
 ## Resistors
 
- One simple way to lower the voltage in a circuit is to use a resistor.  A resistor simply resists (or restricts) the flow of electricity. You could use a resistor to lower the voltage to safer levels, but we are going to be lazy and try a different approach when we use the 2 Volt LEDs.
+ One simple way to lower the voltage in a circuit is to use a resistor.  A resistor simply resists (or restricts) the flow of electricity. You could use a resistor to lower the voltage to safer levels, but we are going to be lazy and try a different approach when we use the 2 volt LEDs.
 
  ![Resistor](/lessons/images/resistor.png)
 
-For now we will continue using the blue LED which can handle the 3 Volts from the Pico and NOT use a resistor.
+For now we will continue using the blue LED which can handle the 3 volts from the Pico and NOT use a resistor.
 
 # Controlling LED with PICO
 
 Now we will look at how to use code on the Pico to control an LED.
 
-Grab your blue LED or any LED rated for 3 Volts.  Take a red wire and connect the long leg of the LED into the GP16 pin on the Pico.  "GP " stands for General Purpose Input Output.  Connect the short leg of the LED to a GND pin on the Pico.
+Grab your blue LED or any LED rated for 3 volts.  Take a red wire and connect the long leg of the LED into the GP16 pin on the Pico.  "GP " stands for General Purpose Input Output.  Connect the short leg of the LED to a GND pin on the Pico.
 
 ![Blink Diagram](/lessons/images/simple_led2_bb.png)
 
