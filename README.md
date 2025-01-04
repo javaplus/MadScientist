@@ -63,7 +63,7 @@ The links in this section are to labs which walk you through working with the va
 
 [Install Code](/lessons/assembly/code_install.md)
 
-# Customize Code
+# Customize the Code
 
 [Custom Game Modes](/lessons/game_mode_coding.md)
 
