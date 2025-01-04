@@ -39,7 +39,7 @@ motor_controller = MotorController()
 hitevent = HitEvent()
 
 ## to select the game mode
-def setGameMode(gamemode, motor_controller, rgb):
+def setGameMode(gamemode, motor_controller, rgb, laser):
         if gamemode == "Virus":
             print("Virus mode")
             # Return VirusGame impl
@@ -54,16 +54,17 @@ def setGameMode(gamemode, motor_controller, rgb):
             # Return whatever WTF mode is
         else:
             print("Default mode")
-            return BasicGame(motor_controller, rgb)
+            return BasicGame(motor_controller, rgb, laser)
     
 def initializeGame(gamemode):
     global hitevent
+    global laser
     
     # reset HitEvent to remove previous subscribers
     hitevent.reset()
     
     # get the game
-    game = setGameMode(gamemode, motor_controller, rgb)
+    game = setGameMode(gamemode, motor_controller, rgb, laser)
 
     # setup game
     game.setup()
