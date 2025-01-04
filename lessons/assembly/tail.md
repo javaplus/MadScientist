@@ -2,7 +2,9 @@
 
 ### Parts
 
-Grab the tail, opaque tail tip, and photoresistor.
+- Tail
+- Opaque tail tip
+- Photoresistor
 
 <img src="/lessons/images/assembly/tail_parts.jpg" alt="Parts for Tail" width=500>
 
