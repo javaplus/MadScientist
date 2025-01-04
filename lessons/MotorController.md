@@ -35,7 +35,7 @@ in1 = Pin(16, Pin.OUT)
 in2 = Pin(17, Pin.OUT)
 
 def forwardFull():
-    print("in foward full")
+    print("in forward full")
     in1.low()
     in2.high()
     
