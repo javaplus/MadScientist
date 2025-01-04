@@ -45,7 +45,7 @@ A note about the code above:
 
 You'll notice that there is a `while True` statement at the end.
 
-`while True` means loop forever. The while statement takes an expression and executes the loop body while the expression evaluates to boolean "true". True always evaluates to boolean "true" and thus executes the loop body indefinitely.
+`while True` means loop forever. The `while` statement takes an expression and executes the loop body while the expression evaluates to boolean "true". `True` always evaluates to boolean "true" and thus executes the loop body indefinitely.
 
 This is the section of the code that our Pico will run forever and ever, over and over again.  
 (Unless we define a way for it to break out)
@@ -53,7 +53,7 @@ This is the section of the code that our Pico will run forever and ever, over an
 Enter the code above into the Thonny editor and then click the Play button.
 If everything works, you should see the onboard LED flash green about once a second.
 
-**NOTE** You can save this code to your Pico, by clicking the blue Save button in Thonny and then choosing to save it on the Pico.  Give it a file name and a ".py" extension.  If Thonny complains about the Pico or device being busy OR you think it's stuck processing somewhere, click the red STOP button to exit running the current program and then click Save. The STOP button resets the connection with the Pico. Once you have saved a file in Thonny, usually clicking the "Play" button will automatically save the latest version again as well as running it.  This may change with different releases of Thonny. So, if you need to save your code, click the Save button before closing Thonny to ensure a proper save.
+**NOTE** You can save this code to your Pico, by clicking the blue Save button in Thonny and then choosing to save it on the Pico.  Give it a file name and a ".py" extension.  If Thonny complains about the Pico or device being busy OR you think it's stuck processing somewhere, click the red STOP button to exit running the current program and then click Save. The STOP button resets the connection with the Pico. Once you have saved a file in Thonny, usually clicking the "Play" button will automatically save the latest version again as well as run it.  This may change with different releases of Thonny. So, if you need to save your code, click the Save button before closing Thonny to ensure a proper save.
 
 If it works, eat a snack or better yet, give your instructor one!
 
