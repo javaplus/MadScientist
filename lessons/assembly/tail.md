@@ -8,7 +8,7 @@ Grab the tail, opaque tail tip, and photoresistor.
 
 ### Insert Photoresistor
 
-Position the tail tip upside down, i.e. with the flat side facing up.
+Position the tail tip upside down (flat side facing up).
 Take your photoresistor and carefully slide it into the slot in the tail tip.  Then take the photoresistor tip and put it **under** the uppermost bar.  Turn the photoresistor so the two metal pins are vertical and align the bottom pin with the slot in the tail tip.  See image below:
 
 
