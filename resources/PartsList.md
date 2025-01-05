@@ -58,6 +58,8 @@
 - 1 Pico
 - 2 Motors
 - 1 Motor Controller
+- 4 x wheels
+- 2 or 4 x wheel/tranny inserts
 - 5 10cm Wires(fom Pico to Motor controller)
 - 1 10cm Red from switch to voltage regulator
 - 1 Battery connector with y connector on ground
