@@ -15,7 +15,7 @@ The USB connection should be at the top, but touching the table and the pins sho
 
 ## Wiring Diagram
 
-Plug a red wire from the longer leg on the LED to the 3.3V pin on the Pico. And a black wire from the other leg to a GND (ground) pin on the pico.  
+Plug a red wire from the longer leg on the LED to the 3.3V pin on the Pico. And a black wire from the other leg to a GND (ground) pin on the Pico.  
 
 NOTE: Technically the color of the wires you use doesn't matter (internally they are the same), but the color does make it easier to know their purpose.  Usually, red wires indicate positive(+) and black or white wires indicate ground/negative(-). 
 
