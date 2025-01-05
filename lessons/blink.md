@@ -22,7 +22,7 @@ Connect your Raspberry Pi Pico to your computer via  USB cable and open Thonny. 
 
 In Thonny, go to the bottom right hand corner and choose the interpreter for Thonny to use.  If your computer recognized the Pico, you can choose the item that says "**MicroPython(Raspberry Pi Pico)** in the list. (see image below)
 
-![Thonny Select Pico](./images/thonnyInterpreter.png)
+<img alt="Thonny Select Pico" src="./images/thonnyInterpreter.png" width="500"/>
 
 Note: if this is your first time launching Thonny you may have to click past the Welcome/language selection splash page.
 

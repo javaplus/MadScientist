@@ -10,6 +10,7 @@ from hitevent import HitEvent
 # Import the MotorController class
 from motor_class import MotorController
 from basicgame import BasicGame
+from virusgame import VirusGame
 
 
 laser = Pin(16, Pin.OUT)
@@ -22,7 +23,6 @@ rgb = RGBLED(red = 22, green = 21, blue = 20)
 
 # ROVER_NAME needs to be a unique name for your rover.  It will be the advertised bluetooth device name
 ROVER_NAME = "sharkbot1"
-MESSAGE = f"Hello from {ROVER_NAME}!"
 
 # Bluetooth parameters
 BLE_NAME = f"{ROVER_NAME}"  # You can dynamically change this if you want unique names
@@ -42,7 +42,7 @@ hitevent = HitEvent()
 def setGameMode(gamemode, motor_controller, rgb, laser):
         if gamemode == "Virus":
             print("Virus mode")
-            # Return VirusGame impl
+            return VirusGame(motor_controller, rgb, laser)
         elif gamemode == "Disco":
             print("Disco mode")
             # Return Disco Game impl
@@ -54,7 +54,8 @@ def setGameMode(gamemode, motor_controller, rgb, laser):
             # Return whatever WTF mode is
         else:
             print("Default mode")
-            return BasicGame(motor_controller, rgb, laser)
+            #return BasicGame(motor_controller, rgb, laser)
+            return VirusGame(motor_controller, rgb, laser)
     
 def initializeGame(gamemode):
     global hitevent
@@ -159,9 +160,8 @@ async def advertise_n_wait_for_connect():
             appearance=BLE_APPEARANCE) as connection: # type: ignore
             print(f"{BLE_NAME} connected to another device: {connection.device}")
             
-            # connected turn green
-            rgb.color = (0, 255, 0)
-
+            # Initialize game after connected
+            initializeGame("default")
             tasks = [
                 asyncio.create_task(receive_data_task(characteristic)),
             ]
@@ -179,8 +179,6 @@ async def main():
     # turn on laser
     laser.value(1)
     
-    # Initialize game to default game
-    initializeGame("default")
     """ Main function """
     while True:        
         tasks = [

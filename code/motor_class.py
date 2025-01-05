@@ -2,12 +2,16 @@ from machine import Pin, PWM
 import utime
 
 class MotorController:
-    MAX_SPEED = 45000
+    MAX_SPEED = 55000 # Hard limit
     MIN_SPEED = 10000
     SLEEP_TIME_MS = 1
     SPIN_LOCK_TIME = 2.5
 
     def __init__(self):
+        
+        # A max speed that can be changed based on game mode or other factors
+        self.max_speed = self.MAX_SPEED
+        
         # Define motor pins
         self.left_motor_forward = PWM(Pin(10))
         self.left_motor_backward = PWM(Pin(11))
@@ -20,11 +24,16 @@ class MotorController:
         self.right_motor_forward.freq(1000)
         self.right_motor_backward.freq(1000)
 
+    def setMaxSpeed(self, speed):
+        self.max_speed = speed
+
     def move(self, x: float, y: float):
         """ Move the car based on x and y values """
 
         # Calculate speed based on y value
-        speed = int(self.MIN_SPEED + ((abs(x) + abs(y)) * (self.MAX_SPEED - self.MIN_SPEED)))
+        speed = int(self.MIN_SPEED + ((abs(x) + abs(y)) * (self.max_speed - self.MIN_SPEED)))
+        if speed > self.MAX_SPEED:
+            speed = self.MAX_SPEED
         # print(f"Speed: {speed}")
 
         self.left_motor_forward.duty_u16(speed if (x > 0 or y > 0) else 0)

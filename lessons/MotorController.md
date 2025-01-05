@@ -1,7 +1,7 @@
 
 # Motor Controller (mini L298N)
 
-![L298N Motor Controller](/lessons/images/motor_controller.PNG)  
+<img alt="L298N Motor Controller" src="/lessons/images/motor_controller.PNG" width="500"/>
 
 The mini L298N is a small DC motor controller that allows you to use a microcontroller to control the speed and direction of up to 2 attached motors.
 
@@ -18,8 +18,7 @@ Wire the Pico to the motor controller and wire one motor to the `MOTOR-A` connec
 
 Note that the Pico is upside down, with the pins sticking straight up.  The diagram has the Pico in this orientation as well.  That is, the Pico in the diagram is showing you the correct pins if it is upside down with the pins up and the USB connection at the top. Also note that the two wires connecting the motor to the motor controller need to be connected from the **bottom** of the controller, instead of from the top (the diagramming program we use does not allow us to show this).
 
-![L298N Motor Controller](/lessons/images/motor_controller_bb.png) 
-
+<img alt="L298N Motor Controller" src="/lessons/images/motor_controller_bb.png" width="500"/>
 
 # Code
 
