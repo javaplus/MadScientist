@@ -8,11 +8,17 @@
 
 <img src="/lessons/images/assembly/tail_parts.jpg" alt="Parts for Tail" width=500>
 
-### Insert Photoresistor
+The instructions for this part were hard to put into words... Actually, my reviewers told me I sucked at it, so here's a video of this assembly since the written instructions may not be clear:
 
-#TODO: Add video to the Insert Photoresistor section and remove or simplify paragraphs.
-#It is possible that all images aside from Tail Tip Photoresister 4 or 5 are unneeded
-#after a video is added to this section.
+
+### Video
+[Tail Assembly Video](https://youtu.be/BuBBeq6uPUs)
+
+
+
+Written instructions below:
+
+### Insert Photoresistor
 
 Position the tail tip upside down (flat side facing up).
 Take your photoresistor and carefully slide it into the slot in the tail tip.  Then take the photoresistor tip and put it **under** the uppermost bar.  Turn the photoresistor so the two metal pins are vertical and align the bottom pin with the slot in the tail tip.  See image below:
