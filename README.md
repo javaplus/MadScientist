@@ -56,8 +56,8 @@ The links in this section are to labs which walk you through working with the va
 [Power Components](/lessons/assembly/power.md)  
 [Pico and Chassis Together](/lessons/assembly/plate_chassis.md)  
 [RGB Leds](/lessons/assembly/rgb.md)  
-[Tail Tip/Photoresistor](/lessons/assembly/tail.md)
-[Tail Connection](/lessons/assembly/tail_chassis.md)
+[Tail Tip/Photoresistor](/lessons/assembly/tail.md)  
+[Tail Connection](/lessons/assembly/tail_chassis.md)  
 
 
 # Install the Code
