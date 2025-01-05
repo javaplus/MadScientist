@@ -72,6 +72,8 @@
 - 1 Power switch
 - 1 Printed Power Switch
 - 1 Voltage regulator
+- 1 Left eye
+- 1 Right eye
 
 #### Treads  
 - 2 Cups of 16 treads each
