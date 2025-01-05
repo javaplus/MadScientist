@@ -7,22 +7,20 @@
 
 ![Tail and Power Switch Parts](/lessons/images/assembly/tail_power_parts.jpg)
 
-
 ### Add Power Switch
 
-Take the 3D Printed power switch and notice there are 3 small notches or slots in the bottom of it as seen in the picture below.
+Take the 3D printed power switch and notice there are 3 small notches or slots in the bottom of it as seen in the picture below.
 
 ![Power Switch Notches](/lessons/images/assembly/power_switch.jpg)  
 
-Make sure the physical power switch which you wired earlier is in the fully down position before adding the 3D printed power switch ontop of it.
+Make sure the physical power switch which you wired earlier is in the fully down position before adding the 3D printed power switch on top of it.
 Hold your power switch in the orientation as seen in the picture above so you can see the slots and then place it over the physical power switch on the back of the chassis.
-Make sure to put the power switch into the top most slot/notch of the 3D printed power switch.  It's easier to do this if you tip the back of the Rover up.
+Make sure to put the power switch into the top most slot/notch of the 3D printed power switch.  It's easier to do this if you tip the back of the rover up.
 
 ![Power Switch on Chassis](/lessons/images/assembly/power_switch_1.jpg)  
 
 Zoomed View of Switch:
 ![Power Switch on Chassis](/lessons/images/assembly/power_switch_on_chassis.jpg)
-
 
 ### Tail Connector
 
@@ -34,9 +32,7 @@ Now take the tail connector piece and slide the square frame over the power box 
 
 ![Tail Connector 3](/lessons/images/assembly/tail_connector_3.jpg)
 
-
 Hold the tail connector you just installed in place and see if you can actuate the power switch up and down.  It should slide relatively easily with just a little resistance.  Be careful not to use too much force.
-
 
 ### Connect the tail
 
@@ -49,7 +45,6 @@ Now the tail can be slid into the slots of the tail connector.  The leading slot
 ![Tail Connected](/lessons/images/assembly/tail_attached2.jpg)
 
 Once tail is slid correctly into the tail connector slots, the tail should lock the tail connector to the chassis and hold the extended power switch in place.
-
 
 ### Wire the Tail
 
@@ -67,6 +62,5 @@ NOTE: The 3 photoresistor wires are marked with yellow lines in the pictures bel
 ![Tail Wires connected](/lessons/images/assembly/tail_wires_attached.jpg)
 
 ![Tail Wires connected](/lessons/images/assembly/tail_wires_attached_close.jpg)
-
 
 Your tail is now attached and ready for some swimming!

@@ -17,7 +17,7 @@ Close up:
 <img alt="Pico Plate bottom view closeup" src="/lessons/images/assembly/pico_plate_on_chassis_bottom_closeup.jpg" width="500"/>
 
 
-Run the two ends of the red y power cable from the voltage regulator up through the Pico plate and through the vertical slot to the right of the motor controller:
+Run the two ends of the red Y power cable from the voltage regulator up through the Pico plate and through the vertical slot to the right of the motor controller:
 
 <img alt="Positive Power Cable Through Pico Plate" src="/lessons/images/assembly/pico_plate_bottom_power_cable.jpg" width="500"/>
 

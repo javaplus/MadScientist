@@ -1,4 +1,4 @@
-# Tail Assembly with Photo Resistor
+# Tail Assembly with Photoresistor
 
 ### Parts
 
@@ -10,9 +10,12 @@
 
 ### Insert Photoresistor
 
+#TODO: Add video to the Insert Photoresistor section and remove or simplify paragraphs.
+#It is possible that all images aside from Tail Tip Photoresister 4 or 5 are unneeded
+#after a video is added to this section.
+
 Position the tail tip upside down (flat side facing up).
 Take your photoresistor and carefully slide it into the slot in the tail tip.  Then take the photoresistor tip and put it **under** the uppermost bar.  Turn the photoresistor so the two metal pins are vertical and align the bottom pin with the slot in the tail tip.  See image below:
-
 
 <img alt="Tail Tip Photoresistor 1" src="/lessons/images/assembly/tail_first_photo_res_position.jpg" width="500"/>
 
@@ -26,33 +29,28 @@ Slide the photoresistor pins all the way down the T-shaped slot to the horizonta
 
 <img alt="Tail Tip Photoresistor 4" src="/lessons/images/assembly/tail_photo_res_position4.jpg" width="500"/>
 
-<img alt="Tail Tip Photoresistor 4" src="/lessons/images/assembly/tail_photo_res_position5.jpg" width="500"/>
+<img alt="Tail Tip Photoresistor 5" src="/lessons/images/assembly/tail_photo_res_position5.jpg" width="500"/>
 
 ### Route the Wires
 
-Now, route the end of photoresistor wires through the tail.  From the picture below, you can see the correct hole to put the wires through is the middle hole when the tail is upside down.  Try to keep the blue and black wires together on one side of the shaft inside the tail and the red wire on the other side of the shaft.  It doesn't matter which wires go on which side, the goal is not to twist the photoresistor pins and to keep them separated.  If the photoresistor pins are allowed to touch, it will not work properly.  It won't hurt anything, but just will not function as expected.
+Now, route the end of photoresistor wires through the tail.  From the picture below, you can see the correct hole to put the wires through is the middle hole when the tail is upside down.  Try to keep the blue and black wires together on one side of the shaft and the red wire on the other side of the shaft inside the tail.  It doesn't matter which wires go on which side, the goal is not to twist the photoresistor pins and to keep them separated.  If the photoresistor pins are allowed to touch, it will not work properly.  It won't hurt anything, but just will not function as expected.
 
- 
 <img alt="Tail Wires" src="/lessons/images/assembly/tail_photo_res_wires1.jpg" width="500"/>
 
 <img alt="Tail Wires 2" src="/lessons/images/assembly/tail_photo_res_wires2.jpg" width="500"/>
 
 <img alt="Tail Wires 3" src="/lessons/images/assembly/tail_front_done.jpg" width="500"/>
 
-
 ### Add the Tail Tip
 
-
-Now carefully snap the tail tip onto the tail. To do this, hold the tail upside down and the tip up away from you so you can see the hole the wires .  Hold the tail tip up with the tip being up and the flat piece towards you as in the picture below.  Slide the tail tip down into the hole you previously routed the wires through.  At this point before you fully snap the tail tip in place, adjust the metal pins of the photoresistor into the two cutouts beside the vertical T-shaped slot.  When you snap the tail tip into place the photoresistor tip should be pushed slightly in and just beyond the crossbar in the tail.  This bar will also lock the photoresistor in place. Snap the tail tip in place now.
-
+Now carefully snap the tail tip onto the tail. To do this, hold the tail upside down and the tip up away from you so you can see the hole with the wires.  Hold the tail tip up with the tip pointing upward and the flat piece towards you as in the picture below.  Slide the tail tip down into the hole you previously routed the wires through.  At this point before you fully snap the tail tip in place, adjust the metal pins of the photoresistor into the two cutouts beside the vertical T-shaped slot.  When you snap the tail tip into place the photoresistor tip should be pushed slightly in and just beyond the crossbar in the tail.  This bar will also lock the photoresistor in place. Snap the tail tip in place now.
 
 <img alt="Tail Tip Add" src="/lessons/images/assembly/tail_tip_installed1.jpg" width="500"/>
 <img alt="Tail Tip Add 2" src="/lessons/images/assembly/tail_tip_installed2.jpg" width="500"/>
 
-Once the tail is snapped in, pull the photoresistor back in a little til it is just behind the bar in the tail. We find this position gives the best detection of laser hits on the tail.
+Once the tail is snapped in, pull the photoresistor back in a little until it is just behind the bar in the tail. We find this position gives the best detection of laser hits on the tail.
 
 <img alt="Tail Tip Add 3" src="/lessons/images/assembly/tail_tip_installed3.jpg" width="500"/>
-
 
 Once the tail tip is snapped in you are done with the tail assembly!  Rejoice!!!!
 
