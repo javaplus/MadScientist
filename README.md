@@ -71,4 +71,4 @@ The links in this section are to labs which walk you through working with the va
 
 # BlueTooth Remote
 
-https://javaplus.github.io/MadScientist/
+[Mad Scientist App](https://github.com/javaplus/mad_scientist_app)
