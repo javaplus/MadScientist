@@ -56,11 +56,11 @@ import utime
 led = PWM(Pin(16))
 led.freq(1000)
 
-led.duty_u16(0) # init led to off
+led.duty_u16(0) # init LED to off
 
 
 while True:
-    # Turn LED on full
+    # turn LED on full
     led.duty_u16(65535) 
     utime.sleep_ms(500)
     
@@ -116,16 +116,16 @@ from machine import Pin, PWM
 led = PWM(Pin(16))
 led.freq(1000)
 
-led.duty_u16(0) # init led to off
+led.duty_u16(0) # init LED to off
 
 
 while True:
-    # Slowly brighten
+    # slowly brighten
     for duty in range(0,65535,1):
         led.duty_u16(duty) # 65535 is max
         
 
-    # Slowly dim
+    # slowly dim
     for duty in range(65535,0,-1):
         led.duty_u16(duty) # 65535 is max
 
