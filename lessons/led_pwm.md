@@ -4,7 +4,7 @@
 
 Now we will look at how to use PWM (Pulse Width Modulation) with the RaspberryPi Pico.  If you aren't familiar with PWM just think of it as a way to send a pulse of power at regular intervals.  PWM is a more efficient way of powering electronics like motors or even LEDs.  Instead of having constant power to a device you can send pulses of electricity to keep a motor running or light up an LED. That is you can specify a frequency at which to send pulses of electricity and then fluctuate the amount of time that signal or power is on during each pulse.  The amount of time the power is on during each signal/pulse is called the **Duty Cycle**.  The image below from [circuitdigest.com](https://circuitdigest.com/tutorial/what-is-pwm-pulse-width-modulation) illustrates PWM signals using various Duty Cycles. **NOTE** The frequency rate isn't shown below, but it doesn't matter, the duty cycle is independent of the frequency.
 
-![PWM](/lessons/images/Pulse-Width-Modulation.jpg)
+<img alt="PWM" src="/lessons/images/Pulse-Width-Modulation.jpg" width="500"/>
 
 
 If powering a motor with PWM, the higher the duty cycle the faster the motor would spin.  
@@ -20,7 +20,7 @@ The first change we will make are to slightly alter the way we are interacting w
 With PWM, we will be able to change the frequency and the duty cycle.  That is how many pulses per second(frequency) we send and how long the power will be high during each pulse(duty cycle).  However, initially we will just make a few tiny changes to keep the functionality of LED toggling off and on, but it will use PWM to light up the LED.
 
 The wiring diagram is the same as the previous LED lab:
-![Wiring Diagram](/lessons/images/simple_led2_bb.png)
+<img alt="Wiring Diagram" src="/lessons/images/simple_led2_bb.png" width="500"/>
 
 ## The Code
 

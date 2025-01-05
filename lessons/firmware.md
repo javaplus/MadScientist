@@ -6,7 +6,9 @@ I've found the easiest way to do this is to use Thonny.
 
 [Download Thonny](https://thonny.org/)
 
-Open Thonny and then get ready to connect the Pico via a USB cable.  As you connect the Pico via a USB cable hold the "BOOTSEL" button on top of the Pico as you plug the Pico in.  
+Open Thonny and then get ready to connect the Pico via a USB cable.  As you connect the Pico via a USB cable hold the "BOOTSEL" button on top of the Pico as you plug the Pico in.
+
+#TODO: add picture of the BOOTSEL button
 
 You may hear your computer detect a new device and maybe even open a file explorer like view.  If so, close this and just go back to Thonny.  
 
