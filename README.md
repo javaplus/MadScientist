@@ -62,7 +62,7 @@ The links in this section are to labs which walk you through working with the va
 
 # Install the Code
 
-[Install Code](/lessons/assembly/code_install.md)
+[Install the Code](/lessons/assembly/code_install.md)
 
 # Customize the Code
 
