@@ -1,4 +1,4 @@
-# Tail Assembly with Photo Resistor
+# Tail Assembly with Photoresistor
 
 ### Parts
 

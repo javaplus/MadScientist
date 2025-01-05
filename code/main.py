@@ -76,7 +76,7 @@ def initializeGame(gamemode):
 
 
 
-### Gets photo resistor value over and over again
+### Gets photoresistor value over and over again
 ### in an infinite loop sleeping a bit to yield
 ### control to other tasks.
 ### Calls "been_hit()" when photo_resistor_value exceeds the 
