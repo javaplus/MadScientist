@@ -54,7 +54,7 @@ Connect the following pins using your blue, green, and yellow 4 x 5cm female to 
 
 | Motor controller pin | Pico pin |
 |----------------------|----------|
-| INT1                 | GP12     |
+| INT1                 | GP13     |
 | INT2                 | GP12     |
 | INT3                 | GP10     |
 | INT4                 | GP11     |
