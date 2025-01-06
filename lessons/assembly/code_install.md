@@ -4,23 +4,6 @@ Open up Thonny and make sure the **rover is turned off**.  Always be sure to hav
 
 Once the rover is switched off, plug in the USB cable.  If Thonny doesn't recognize the Pico, try hitting the STOP button.  If that doesn't work try clicking the bottom right to choose the correct device : MicroPython(Raspberry Pi Pico).
 
-#### Motor Class
-
-When Thonny detects the Pico, copy the contents from [motor_class.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/motor_class.py) into a new/blank Thonny window (File->New).
-Save this file onto the Pico as `motor_class.py`.
-
-#### Hit Event  
-Create a new Thonny tab (File->New) and copy the contents of [hitevent.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/hitevent.py) into it.  
-Save this file onto the Pico as `hitevent.py`.
-
-#### Base Game  
-Create a new Thonny tab and copy the contents of [basegame.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/basegame.py) into it.  
-Save this file onto the Pico as `basegame.py`.
-
-
-#### Basic Game  
-Create a new Thonny tab and copy the contents of [basicgame.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/basicgame.py) into it.  
-Save this file onto the Pico as `basicgame.py`.
 
 #### Main
 
@@ -37,9 +20,46 @@ After changing the ROVER_NAME value, save the code to the Pico as `main.py`.
 
 **Fun Fact**: any code you save into `main.py` at the root of the Pico will run automatically when it's powered up.
 
+#### Base Game  
+Create a new Thonny tab and copy the contents of [basegame.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/basegame.py) into it.  
+Save this file onto the Pico as `basegame.py`.
+
+
+#### Basic Game  
+Create a new Thonny tab and copy the contents of [basicgame.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/basicgame.py) into it.  
+Save this file onto the Pico as `basicgame.py`.
+
+#### Buzzer  
+Create a new Thonny tab and copy the contents of [buzzer.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/buzzer.py) into it.  
+Save this file onto the Pico as `buzzer.py`.
+
+#### Event  
+Create a new Thonny tab and copy the contents of [event.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/event.py) into it.  
+Save this file onto the Pico as `event.py`.
+
+#### FireEvent  
+Create a new Thonny tab and copy the contents of [fireevent.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/fireevent.py) into it.  
+Save this file onto the Pico as `fireevent.py`.
+
+#### Hit Event  
+Create a new Thonny tab (File->New) and copy the contents of [hitevent.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/hitevent.py) into it.  
+Save this file onto the Pico as `hitevent.py`.
+
+#### Laser  
+Create a new Thonny tab (File->New) and copy the contents of [laser.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/laser.py) into it.  
+Save this file onto the Pico as `laser.py`.
+
+#### Motor Class
+When Thonny detects the Pico, copy the contents from [motor_class.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/motor_class.py) into a new/blank Thonny window (File->New).
+Save this file onto the Pico as `motor_class.py`.  
+
+#### Virus Game  
+Create a new Thonny tab and copy the contents of [virusgame.py](https://raw.githubusercontent.com/javaplus/MadScientist/refs/heads/main/code/virusgame.py) into it.  
+Save this file onto the Pico as `virusgame.py`.
+
 ####  Try It Out!
 
-After saving `motor_class.py`, `hitevent.py`, `basicgame.py`, and `main.py` to the Pico, make sure to have the `main.py` window up in Thonny and click the "Run" button.  See if there are any errors in the shell.
+After saving all these files to the Pico, make sure to have the `main.py` window up in Thonny and click the "Run" button.  See if there are any errors in the shell.
 If you see an error about a **picozero** library or module, be sure to follow these steps to [install picozero onto the Pico](https://picozero.readthedocs.io/en/latest/gettingstarted.html#install-picozero-from-pypi-in-thonny).
 
 If there are no errors, it's time to test it out!
