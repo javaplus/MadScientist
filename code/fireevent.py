@@ -1,4 +1,4 @@
 from event import Event
 
-class HitEvent(Event):
+class FireEvent(Event):
     pass

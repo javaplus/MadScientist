@@ -24,6 +24,8 @@ class VirusGame(BaseGame):
         self.infected = False   # Could be used to react different if infected and hit.
         # Non infected can move at max speed.
         self.motor_controller.setMaxSpeed(MotorController.MAX_SPEED)
+        # Make sure lazer is off
+        self.laser.turnOff()
 
     ## implement on Hit.
     def onHit(self):
@@ -38,4 +40,7 @@ class VirusGame(BaseGame):
         # You slow zombie now bro!
         self.motor_controller.setMaxSpeed(30000)
 
-    
+    ## Implement on Fire
+    def onFire(self):
+        ## Turn on laser for 5 seconds
+        self.laser.fire(5)

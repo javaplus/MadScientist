@@ -12,9 +12,11 @@ from motor_class import MotorController
 from basicgame import BasicGame
 from virusgame import VirusGame
 from buzzer import Buzzer
+from fireevent import FireEvent
+from laser import Laser
 
 
-laser = Pin(16, Pin.OUT)
+laser = Laser(16)
 photoresistor = ADC(28)
 photoresistor_value = 0
 photoresistor_hit_value = 28000
@@ -41,6 +43,10 @@ motor_controller = MotorController()
 # Instantiate the HitEvent so it can be fired when hit:
 hitevent = HitEvent()
 
+# Instantiate the FireEvent so it can be emmitted when fire button is pressed:
+fireevent = FireEvent()
+
+
 ## to select the game mode
 def setGameMode(gamemode, motor_controller, rgb, laser, buzzer):
         if gamemode == "virus":
@@ -63,9 +69,11 @@ def initializeGame(gamemode):
     global hitevent
     global laser
     global buzzer
+    global fireevent
     
     # reset HitEvent to remove previous subscribers
     hitevent.reset()
+    fireevent.reset()
     
     # get the game
     game = setGameMode(gamemode, motor_controller, rgb, laser, buzzer)
@@ -75,7 +83,7 @@ def initializeGame(gamemode):
 
     ## Set the method to be called when hitevent fires!
     hitevent.subscribe(game.onHit)
-
+    fireevent.subscribe(game.onFire)
 
 
 
@@ -123,7 +131,7 @@ async def execute_command(command_with_data, characteristic):
         initializeGame(gamemode)
     elif command == "fire":
         print("Fire dee lazzers!!")
-        ### TODO: Create fire event
+        fireevent.fire()
     else:
         print("Unknown command")
         response_message = "Unknown command received."
@@ -187,8 +195,6 @@ async def main():
     rgb.color = (255, 0, 0)
     # stop all motor activity
     motor_controller.stop()
-    # turn on laser
-    laser.value(1)
     
     """ Main function """
     while True:        

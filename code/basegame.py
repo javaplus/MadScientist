@@ -16,6 +16,10 @@ class BaseGame:
     ## implement on Hit.
     def onHit(self):
        pass
+   
+    ## implement on Fire.
+    def onFire(self):
+       pass
     
 
     
