@@ -11,6 +11,7 @@ from hitevent import HitEvent
 from motor_class import MotorController
 from basicgame import BasicGame
 from virusgame import VirusGame
+from buzzer import Buzzer
 
 
 laser = Pin(16, Pin.OUT)
@@ -31,6 +32,8 @@ BLE_CHARACTERISTIC_UUID = bluetooth.UUID(0x2A6E)  # Temperature
 BLE_APPEARANCE = 0x0300  # Thermometer
 BLE_ADVERTISING_INTERVAL = 2000
 
+# Buzzer on pin 1
+buzzer = Buzzer(1)
 
 # Instantiate the motor controller
 motor_controller = MotorController()
@@ -39,10 +42,10 @@ motor_controller = MotorController()
 hitevent = HitEvent()
 
 ## to select the game mode
-def setGameMode(gamemode, motor_controller, rgb, laser):
+def setGameMode(gamemode, motor_controller, rgb, laser, buzzer):
         if gamemode == "Virus":
             print("Virus mode")
-            return VirusGame(motor_controller, rgb, laser)
+            return VirusGame(motor_controller, rgb, laser, buzzer)
         elif gamemode == "Disco":
             print("Disco mode")
             # Return Disco Game impl
@@ -55,17 +58,18 @@ def setGameMode(gamemode, motor_controller, rgb, laser):
         else:
             print("Default mode")
             #return BasicGame(motor_controller, rgb, laser)
-            return VirusGame(motor_controller, rgb, laser)
+            return VirusGame(motor_controller, rgb, laser, buzzer)
     
 def initializeGame(gamemode):
     global hitevent
     global laser
+    global buzzer
     
     # reset HitEvent to remove previous subscribers
     hitevent.reset()
     
     # get the game
-    game = setGameMode(gamemode, motor_controller, rgb, laser)
+    game = setGameMode(gamemode, motor_controller, rgb, laser, buzzer)
 
     # setup game
     game.setup()

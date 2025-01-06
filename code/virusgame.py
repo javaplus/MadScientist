@@ -1,5 +1,6 @@
 from basegame import BaseGame
 from motor_class import MotorController
+from buzzer import Buzzer
 
 ## Sharkbyte or Virus game mode
 # A contagious frenzy takes over the arena! 
@@ -30,8 +31,10 @@ class VirusGame(BaseGame):
         self.infected = True # not used now, but could be used to behave differently if already infected.
         # turn green... yous infected now!
         self.rgb.color = (0, 255, 0)
+        self.buzzer.buzzLow()
         # turn yourself about
         self.motor_controller.spin_lock()    
+        self.buzzer.stop()
         # You slow zombie now bro!
         self.motor_controller.setMaxSpeed(30000)
 
