@@ -43,22 +43,21 @@ hitevent = HitEvent()
 
 ## to select the game mode
 def setGameMode(gamemode, motor_controller, rgb, laser, buzzer):
-        if gamemode == "Virus":
+        if gamemode == "virus":
             print("Virus mode")
             return VirusGame(motor_controller, rgb, laser, buzzer)
-        elif gamemode == "Disco":
+        elif gamemode == "disco":
             print("Disco mode")
             # Return Disco Game impl
-        elif gamemode == "Hungry":
+        elif gamemode == "hungry":
             print("Disco mode")
             # Return Hungry game impl
-        elif gamemode == "WTF":
+        elif gamemode == "wtf":
             print("WTF mode")
             # Return whatever WTF mode is
         else:
             print("Default mode")
-            #return BasicGame(motor_controller, rgb, laser)
-            return VirusGame(motor_controller, rgb, laser, buzzer)
+            return BasicGame(motor_controller, rgb, laser, buzzer)
     
 def initializeGame(gamemode):
     global hitevent
@@ -98,8 +97,13 @@ async def read_photo_resistor():
     
 async def execute_command(command_with_data, characteristic):
     """ Control the remote control car based on the command received """
-
-    command, command_data = command_with_data.split(':', 1)
+    
+    if ':' in command_with_data:
+        command, command_data = command_with_data.split(':', 1)
+    else:
+        command = command_with_data
+        command_data = ""
+    
     print(f"Received command:{command}     data:{command_data}")
 
     if command == "move":
@@ -113,10 +117,13 @@ async def execute_command(command_with_data, characteristic):
         rgb.color = tuple(map(int, command_data.split(',')))
     elif command == "stop":
         motor_controller.stop()
-    elif command == "gamemode": ## TODO: change to whatever the game mode command is
+    elif command == "game": ## TODO: change to whatever the game mode command is
         gamemode = command_data
         print("game mode = " + str(gamemode))
         initializeGame(gamemode)
+    elif command == "fire":
+        print("Fire dee lazzers!!")
+        ### TODO: Create fire event
     else:
         print("Unknown command")
         response_message = "Unknown command received."
