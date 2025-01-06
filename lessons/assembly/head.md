@@ -14,20 +14,6 @@
 
 <img src="/lessons/images/assembly/head_parts.jpg" alt="Parts for Head" width=500>
 
-## Print Instructions
-
-Orientation of print can match that of how the items are on the photo above.  The head should be printed with added organic supports to support the low points of the top gumline.  See image for example:
-
-<img src="/lessons/images/assembly/head_organic_supports.jpg" alt="organic supports for the head" width=500>
-
-The head should be printed in 10% infil.
-
-The rest of the parts relating the head can be printed at 100% infil.  No brim.  No supports.
-
-The teeth can have the pre-added supports removed like in the image below.
-
-<img src="/lessons/images/assembly/removing_teeth_supports.jpg" alt="removing teeth supports" width=500>
-
 ## I've got my eyes on you
 
 To install your eyes, please refer to the image below for which eye lines with which eye socket.  
