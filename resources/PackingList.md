@@ -35,6 +35,8 @@
 - [ ] 1 Left eye
 - [ ] 1 Right eye
 - [ ] 1 Buzzer(optional)
+- [ ] 2 Blue LEDS(optional)
+- [ ] 2 LEDs other color(optional)
 
 ## Main 3D Printed Parts    
 - [ ] 1 Chassis
