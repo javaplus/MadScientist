@@ -37,6 +37,7 @@
 - [ ] 1 Buzzer(optional)
 - [ ] 2 Blue LEDS(optional)
 - [ ] 2 LEDs other color(optional)
+- [ ] 2 Hex Plugs
 
 ## Main 3D Printed Parts    
 - [ ] 1 Chassis
