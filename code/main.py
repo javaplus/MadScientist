@@ -11,6 +11,8 @@ from hitevent import HitEvent
 from motor_class import MotorController
 from basicgame import BasicGame
 from virusgame import VirusGame
+from discogame import DiscoGame
+from wtfgame import WTFGame
 from buzzer import Buzzer
 from fireevent import FireEvent
 from laser import Laser
@@ -54,13 +56,13 @@ def setGameMode(gamemode, motor_controller, rgb, laser, buzzer):
             return VirusGame(motor_controller, rgb, laser, buzzer)
         elif gamemode == "disco":
             print("Disco mode")
-            # Return Disco Game impl
+            return DiscoGame(motor_controller, rgb, laser, buzzer)
         elif gamemode == "hungry":
             print("Disco mode")
             # Return Hungry game impl
         elif gamemode == "wtf":
             print("WTF mode")
-            # Return whatever WTF mode is
+            return WTFGame(motor_controller, rgb, laser, buzzer)
         else:
             print("Default mode")
             return BasicGame(motor_controller, rgb, laser, buzzer)
@@ -179,7 +181,7 @@ async def advertise_n_wait_for_connect():
             appearance=BLE_APPEARANCE) as connection: # type: ignore
             print(f"{BLE_NAME} connected to another device: {connection.device}")
             
-            # Initialize game after connected
+            # Initialize game after connected - MODIFY THIS TO THE GAME MODE YOU WANT TO LAUNCH default
             initializeGame("default")
             tasks = [
                 asyncio.create_task(receive_data_task(characteristic)),
