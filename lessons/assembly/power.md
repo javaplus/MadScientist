@@ -7,7 +7,7 @@
 - 9 volt battery
 - Power switch
 - Power switch holder
-- 5cm red female to female wire
+- 10cm red female to female wire
 
 <img alt="Power components" src="/lessons/images/assembly/power_connector_switch.jpg" width="500"/>
 
@@ -15,7 +15,7 @@ Feed the red wire from the battery connector through the slot in the front of th
 
 <img alt="Front Chassis Power Wire" src="/lessons/images/assembly/chassis_power_wire1.jpg" width="500"/>
 
-Grab the 5cm female to female red wire.
+Grab the 10cm female to female red wire.
 
 <img alt="Front Chassis Power Wire2" src="/lessons/images/assembly/chassis_power_wires2.jpg" width="500"/>
 
@@ -29,7 +29,7 @@ Now push the power switch into the rectangular slot, pushing the red wires again
 
 <img alt="Switch in switch holder" src="/lessons/images/assembly/power_switch_closeup_2.jpg" width="500"/>
 
-Feed the short 5cm red wire's unconnected end into the chassis through the same slot the battery connector's red wire is coming out of. Make sure that the switch holder is now flush with this slot. The easiest way to do this is to gently pull on the battery connector's red wire and the short 5cm red wire until you see the part of the switch holder they're coming out of fit through the slot.
+Feed the short 10cm red wire's unconnected end into the chassis through the same slot the battery connector's red wire is coming out of. Make sure that the switch holder is now flush with this slot. The easiest way to do this is to gently pull on the battery connector's red wire and the short 10cm red wire until you see the part of the switch holder they're coming out of fit through the slot.
 
 <img alt="Switch in chassis" src="/lessons/images/assembly/chassis_power_switch_installed.jpg" width="500"/>
 
@@ -84,7 +84,7 @@ Connect one of the black ground wires from the battery connector to the middle p
 
 <img alt="Voltage Reg Ground" src="/lessons/images/assembly/power_regulator_negative_wire.jpg" width="500"/>
 
-Connect the 5cm red wire that comes from the power switch to the far left pin on the regulator.
+Connect the 10cm red wire that comes from the power switch to the far left pin on the regulator.
 
 <img alt="Voltage Reg Input" src="/lessons/images/assembly/power_regulator_power_switch.jpg" width="500"/>
 
