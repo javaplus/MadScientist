@@ -6,8 +6,8 @@
 - Pico WH  
 - Pico plate  
 - 4 x plastic pegs
-- 4 x 5cm female to female wires (recommend a combination of blue, yellow, and green)
-- 1 x 5cm black or white female to female wire 
+- 4 x 10cm female to female wires (recommend a combination of blue, yellow, and green)
+- 1 x 10cm black or white female to female wire 
 
 <img alt="Pico Plate Parts" src="/lessons/images/assembly/pico_plate_parts.jpg" width="500"/>
 
@@ -42,7 +42,7 @@ Take the motor controller and put it into the bottom left square on the Pico pla
 
 #### Wire the Motor Controller
 
-Take your 5 5cm female to female wires and fish them under the Pico so that the female ends are on opposite sides of the Pico.
+Take your 5 10cm female to female wires and fish them under the Pico so that the female ends are on opposite sides of the Pico.
 
 <img alt="Colored wires" src="/lessons/images/assembly/motor_controller_wires.jpg" width="500"/>
 
@@ -50,7 +50,7 @@ Take your 5 5cm female to female wires and fish them under the Pico so that the 
 
 <img alt="Pico Motor Controller Wires Under 2" src="/lessons/images/assembly/motor_controller_wires_under2.jpg" width="500"/>
 
-Connect the following pins using your blue, green, and yellow 4 x 5cm female to female wires 
+Connect the following pins using your blue, green, and yellow 4 x 10cm female to female wires 
 
 | Motor controller pin | Pico pin |
 |----------------------|----------|
@@ -66,7 +66,7 @@ Connect the following pins using your blue, green, and yellow 4 x 5cm female to 
 <img alt="Pico Motor Controller Wires Ran Close up" src="/lessons/images/assembly/pico_plate_motor_controller_closeup.jpg" width="500"/>
 
 
-Take the black or white 5cm female to female wire and connect it to the (-) negative terminal on the motor controller to a ground on the Pico.  We find the ground pin that is 3 down from the top right is best for this due to wire management.
+Take the black or white 10cm female to female wire and connect it to the (-) negative terminal on the motor controller to a ground on the Pico.  We find the ground pin that is 3 down from the top right is best for this due to wire management.
 
 <img alt="Pico Motor Controller Wires Ran" src="/lessons/images/assembly/pico_plate_motor_controller_closeup_usb.jpg" width="500"/>
 
