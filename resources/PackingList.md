@@ -22,7 +22,7 @@
 - [ ] 1 10cm Red from switch to voltage regulator
 - [ ] 1 Red y female to female (from voltage reg to pico and motor controller)
 
-#### Other
+#### RGB & Buzzer
 - [ ] 4 20cm or 10cm (Red, Blue, Green, Black or White)
 - [ ] 2 10cm wires (Red and Black, or any two colors)
 
