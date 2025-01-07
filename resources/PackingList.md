@@ -26,7 +26,7 @@
 - [ ] 4 20cm or 10cm (Red, Blue, Green, Black or White)
 - [ ] 2 10cm wires (Red and Black, or any two colors)
 
-### Small Parts Cup
+## Small Parts Cup
 - [ ] 2 RGB LEDs 
 - [ ] 4 Plate plugs 3D printed parts
 - [ ] 1 Power switch
