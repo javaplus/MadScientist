@@ -1,5 +1,6 @@
 from machine import Pin,PWM
 import utime
+import asyncio
 
 
 class Buzzer:
@@ -9,11 +10,22 @@ class Buzzer:
         self.buzzer = PWM(Pin(pin_number))
         self.stop()
         
-    ## Implement Setup
+    
     def buzzLow(self):
         self.buzzer.freq(100)
         self.buzzer.duty_u16(45000)
         
+    
+    def buzzTimeNFreq(self, time, freq):
+        asyncio.create_task(self.buzzTask(time,freq))
+    
+    async def buzzTask(self, time, freq):
+        self.buzzer.freq(freq)
+        self.buzzer.duty_u16(55555)
+        await asyncio.sleep(time)
+        self.stop()
+
+    
     def stop(self):
         self.buzzer.duty_u16(0)
         

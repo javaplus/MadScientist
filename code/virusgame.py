@@ -44,3 +44,5 @@ class VirusGame(BaseGame):
     def onFire(self):
         ## Turn on laser for 5 seconds
         self.laser.fire(5)
+        ## Play a beep sound
+        self.buzzer.buzzTimeNFreq(.25,50)
