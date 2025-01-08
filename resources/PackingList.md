@@ -41,6 +41,7 @@
 
 ## Main 3D Printed Parts    
 - [ ] 1 Chassis
+- [ ] 1 Pico Plate
 - [ ] 4 x wheels
 - [ ] 2 or 4 x wheel/tranny inserts
 - [ ] Shark Head
