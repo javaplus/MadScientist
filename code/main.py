@@ -21,8 +21,10 @@ from laser import Laser
 laser = Laser(16)
 photoresistor = ADC(28)
 photoresistor_value = 0
+## When calibrating what is the baseline
+photoresistor_baseline_value = 0
 photoresistor_hit_value = 28000
-
+PHOTORES_HIT_FACTOR = 1.18
 # RGB  status lights for indicating advertising, connected, and commands recieved.
 rgb = RGBLED(red = 22, green = 21, blue = 20)
 
@@ -101,8 +103,20 @@ async def read_photo_resistor():
     while True:
         photoresistor_value = photoresistor.read_u16()
         if(photoresistor_value > photoresistor_hit_value):
-              hitevent.fire()
+            print("Got hit, photores value:" + str(photoresistor_value))
+            hitevent.fire()
         await asyncio.sleep(0.01)  # Yield control to other tasks
+def calibratePhotoRes():
+    global photoresistor_baseline_value
+    global photoresistor_hit_value
+    # Get current value as a baseline
+    photoresistor_baseline_value = photoresistor.read_u16()
+    print("Baseline photores value:" + str(photoresistor_baseline_value))
+    
+    photoresistor_hit_value = photoresistor_baseline_value * PHOTORES_HIT_FACTOR  
+    
+    print("Baseline photores HIT value:" + str(photoresistor_hit_value))
+    
     
     
 async def execute_command(command_with_data, characteristic):
@@ -134,6 +148,9 @@ async def execute_command(command_with_data, characteristic):
     elif command == "fire":
         print("Fire dee lazzers!!")
         fireevent.fire()
+    elif command == "calibrate":
+        print("Calibrate Photores!!")
+        calibratePhotoRes()
     else:
         print("Unknown command")
         response_message = "Unknown command received."
@@ -193,6 +210,8 @@ async def advertise_n_wait_for_connect():
 async def main():
     global rgb
     global laser
+    calibratePhotoRes()
+    
     # Power on, turn red
     rgb.color = (255, 0, 0)
     # stop all motor activity
