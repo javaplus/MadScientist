@@ -6,6 +6,8 @@
 - [ ] 1 Pico
 - [ ] 2 Motors
 - [ ] 1 Motor Controller
+- [ ] 1 USB Cable
+- [ ] 1 9Volt Battery
 
 ### Lighting:
 - [ ] 1 laser
@@ -13,18 +15,13 @@
 
 ## Wires(All Female to Female):
 
-#### Motor Controller:
-- [ ] 4 10cm Colored Wires (Mix of Green, Yellow, Blue)
-- [ ] 1 10cm Black or White
-
-#### Power
-- [ ] 1 Battery connector with y connector on ground
-- [ ] 1 10cm Red from switch to voltage regulator
+- [ ] 3 x Red 10cm
+- [ ] 3 x Black or White 10cm
+- [ ] 3 x Blue 10cm
+- [ ] 2 x Green 10cm
+- [ ] 1 x Yellow 10cm
 - [ ] 1 Red y female to female (from voltage reg to pico and motor controller)
-
-#### RGB & Buzzer
-- [ ] 4 20cm or 10cm (Red, Blue, Green, Black or White)
-- [ ] 2 10cm wires (Red and Black, or any two colors)
+- [ ] 1 Battery connector with y connector on ground  
 
 ## Small Parts Cup
 - [ ] 2 RGB LEDs 
