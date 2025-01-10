@@ -75,7 +75,46 @@ while True:
 
 Here we make a function called alt_colors allowing us to easily call a color change command.  
 
+let's mix the colors now with some new code!  
+```python
+from machine import Pin, PWM
+from time import sleep
 
+red = PWM(Pin(22))
+
+green = PWM(Pin(21))
+
+blue = PWM(Pin(20))
+
+def off():
+    blue.duty_u16(0)
+    red.duty_u16(0)
+    green.duty_u16(0)
+
+blue.duty_u16(65534) # 65534 is the max color brightness
+
+red.duty_u16(35565)
+# this makes purple
+
+sleep(0.5)
+
+off()
+
+sleep(0.5)
+
+blue.duty_u16(25545)
+
+red.duty_u16(65534)
+# this makes pink
+
+sleep(0.5)
+
+off()
+```
+
+You can change the duty value which is the brightness of the color.  
+the max value is 65534 and 0 means off. get creative here mix all the colors  
+or just two colors by using or changing (color).duty_u16(color value)
 
 
 
