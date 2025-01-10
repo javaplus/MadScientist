@@ -24,7 +24,7 @@ Next, click the `Install or update MicroPython` link at the bottom right:
 
 In the `Install or update MicroPython` popup window, choose the "RPI-***" device in the `Target volume` drop down.
 
-The `variant` should be "Pico W / Pico WH".
+The `variant` should be `Pico W / Pico WH`. Be sure to pick `Pico W` and not the normal `Pico` the `W` is important!
 
 ![Thonny Firmware](/lessons/images/ThonnyFirmware.PNG)
 
