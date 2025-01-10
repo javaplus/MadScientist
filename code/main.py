@@ -24,12 +24,12 @@ photoresistor_value = 0
 ## When calibrating what is the baseline
 photoresistor_baseline_value = 0
 photoresistor_hit_value = 28000
-PHOTORES_HIT_FACTOR = 1.18
+PHOTORES_HIT_FACTOR = 1.20
 # RGB  status lights for indicating advertising, connected, and commands recieved.
 rgb = RGBLED(red = 22, green = 21, blue = 20)
 
 # ROVER_NAME needs to be a unique name for your rover.  It will be the advertised bluetooth device name
-ROVER_NAME = "sharkbot1"
+ROVER_NAME = "changeme to your awesome shark name"
 
 # Bluetooth parameters
 BLE_NAME = f"{ROVER_NAME}"  # You can dynamically change this if you want unique names

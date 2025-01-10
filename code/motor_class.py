@@ -2,7 +2,7 @@ from machine import Pin, PWM
 import utime
 
 class MotorController:
-    MAX_SPEED = 55000 # Hard limit
+    MAX_SPEED = 65000 # Hard limit
     MIN_SPEED = 10000
     SLEEP_TIME_MS = 1
     SPIN_LOCK_TIME = 2.5

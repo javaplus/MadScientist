@@ -38,7 +38,7 @@ class VirusGame(BaseGame):
         self.motor_controller.spin_lock()    
         self.buzzer.stop()
         # You slow zombie now bro!
-        self.motor_controller.setMaxSpeed(30000)
+        self.motor_controller.setMaxSpeed(45000)
 
     ## Implement on Fire
     def onFire(self):
