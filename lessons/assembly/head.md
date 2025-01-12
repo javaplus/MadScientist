@@ -150,8 +150,17 @@ The blue from the laser will go onto the GND seen two spots away from the far en
 
 <img src="/lessons/images/assembly/mounted_head.jpg" alt="the head is on the chassis" width=500>
 
-### CONGRATULATIONS!  You have finished giving the beast it's vision, personality, and ultimate defense mechanism.
 
 
-Next up is the buzzer page and Barry will add a link at some point maybe hopefully!
+## CAP it all off!
 
+Make sure that no wires are in the way of any pinch points and slot your middle cap piece into position.
+It will secure nicely to the head and tail pieces on the four corners as seen in the clip below.
+
+<img src="/lessons/images/assembly/capping.gif" alt="capping it all" width=500>
+
+
+
+### CONGRATULATIONS!  You have completed your shark ROVR assembly.
+
+Happy Hunting.
