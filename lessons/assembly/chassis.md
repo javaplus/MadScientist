@@ -32,3 +32,9 @@ With the motors installed, take your hex plugs and slide them into the hex hole 
 Depending on how the parts printed you may not have a great fit.  If the hex plugs do not fit snugly, it's ok.  The hex plugs just help keep the motors in position while you put on the wheels and tranny.  The hex plugs are optional and if they are not fitting well you can leave them out.
 
 <img alt="Chassis and Motors Installed" src="/lessons/images/assembly/chassis_motor_hexplugs.jpg" width="500"/>
+
+
+[back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/plate.md)
+
+
+[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/wheels.md)

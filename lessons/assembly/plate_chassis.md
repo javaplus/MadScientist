@@ -1,7 +1,7 @@
 # Add Plate on Chassis
 
 ### Parts
-- Pico plate (with Pico and motor contoller)
+- Pico plate (with Pico and motor controller)
 - Chassis
 
 In this step, we will take the Pico plate with the Pico and motor controller and attach it to the chassis.  
@@ -48,3 +48,7 @@ The ground/black wire goes to a ground pin on the Pico.  We recommend the ground
 
 Congratulations! You are super close to having a mobile rover!
 
+[back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/power.md)                
+
+
+[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/tail.md)

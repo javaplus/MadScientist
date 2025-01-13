@@ -61,3 +61,8 @@ Once the tail is snapped in, pull the photoresistor back in a little until it is
 Once the tail tip is snapped in you are done with the tail assembly!  Rejoice!!!!
 
 <img alt="Tail Complete" src="/lessons/images/assembly/tail_side_done.jpg" width="500"/>
+
+[back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/plate_chassis.md)
+
+
+[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/tail_chassis.md)

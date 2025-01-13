@@ -9,12 +9,12 @@
 
 ### Add Power Switch
 
-Take the 3D printed power switch and notice there are 3 small notches or slots in the bottom of it as seen in the picture below.
+Notice that there are 3 small notches in the bottom of the 3D printed power switch as seen in the picture below.
 
 ![Power Switch Notches](/lessons/images/assembly/power_switch.jpg)  
 
 Make sure the physical power switch which you wired earlier is in the fully down position before adding the 3D printed power switch on top of it.
-Hold your power switch in the orientation as seen in the picture above so you can see the slots and then place it over the physical power switch on the back of the chassis.
+Hold your power switch in the orientation as seen in the picture above so you can see the slots, then place it over the physical power switch on the back of the chassis.
 Make sure to put the power switch into the top most slot/notch of the 3D printed power switch.  It's easier to do this if you tip the back of the rover up.
 
 ![Power Switch on Chassis](/lessons/images/assembly/power_switch_1.jpg)  
@@ -64,3 +64,9 @@ NOTE: The 3 photoresistor wires are marked with yellow lines in the pictures bel
 ![Tail Wires connected](/lessons/images/assembly/tail_wires_attached_close.jpg)
 
 Your tail is now attached and ready for some swimming!
+
+
+[back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/tail.md)
+
+
+[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/head.md)
