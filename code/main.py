@@ -16,6 +16,7 @@ from wtfgame import WTFGame
 from buzzer import Buzzer
 from fireevent import FireEvent
 from laser import Laser
+from drivegame import DriveGame
 
 
 laser = Laser(16)
@@ -29,7 +30,7 @@ PHOTORES_HIT_FACTOR = 1.20
 rgb = RGBLED(red = 22, green = 21, blue = 20)
 
 # ROVER_NAME needs to be a unique name for your rover.  It will be the advertised bluetooth device name
-ROVER_NAME = "changeme to your awesome shark name"
+ROVER_NAME = "Put Your Unique Groovy Shark Name Here"
 
 # Bluetooth parameters
 BLE_NAME = f"{ROVER_NAME}"  # You can dynamically change this if you want unique names
@@ -67,7 +68,7 @@ def setGameMode(gamemode, motor_controller, rgb, laser, buzzer):
             return WTFGame(motor_controller, rgb, laser, buzzer)
         else:
             print("Default mode")
-            return BasicGame(motor_controller, rgb, laser, buzzer)
+            return DriveGame(motor_controller, rgb, laser, buzzer)
     
 def initializeGame(gamemode):
     global hitevent
