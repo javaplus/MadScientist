@@ -26,6 +26,9 @@ photoresistor_value = 0
 photoresistor_baseline_value = 0
 photoresistor_hit_value = 28000
 PHOTORES_HIT_FACTOR = 1.20
+# After being hit you are immune for 2 seconds
+HIT_DEBOUNCE_TIME = 2000
+
 # RGB  status lights for indicating advertising, connected, and commands recieved.
 rgb = RGBLED(red = 22, green = 21, blue = 20)
 
@@ -100,12 +103,23 @@ def initializeGame(gamemode):
 async def read_photo_resistor():
     global photoresistor_value 
     global hitevent
+    # Keep track of when last hit
+    hit_debounce_counter = utime.ticks_ms()
     print("reading photo res")
     while True:
         photoresistor_value = photoresistor.read_u16()
         if(photoresistor_value > photoresistor_hit_value):
             print("Got hit, photores value:" + str(photoresistor_value))
-            hitevent.fire()
+            current_time = utime.ticks_ms()
+            # Calculate time passed since last hit
+            time_passed = utime.ticks_diff(current_time,hit_debounce_counter)
+            if (time_passed > HIT_DEBOUNCE_TIME):
+                hitevent.fire()
+                # Save time we were last hit
+                hit_debounce_counter = utime.ticks_ms()
+            else:
+                print("no fire event because of debounce")
+        
         await asyncio.sleep(0.01)  # Yield control to other tasks
 def calibratePhotoRes():
     global photoresistor_baseline_value

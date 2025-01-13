@@ -20,11 +20,11 @@ class DriveGame(BaseGame):
         
     async def flashRGB(self):
         # go red, then blue back and forth
-        for x in range(10):
+        for x in range(5):
             self.rgb.color = (255, 0, 0)
-            await asyncio.sleep(.5)
+            await asyncio.sleep(.25)
             self.rgb.color = (0, 0, 255)
-            await asyncio.sleep(.5)
+            await asyncio.sleep(.25)
         
     ## Implement on Fire
     def onFire(self):
