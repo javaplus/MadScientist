@@ -25,11 +25,11 @@ Navigate to where you cloned the repo and select all of the '.py' files under th
 Open main.py on your Pico using Thonny via the File -> Open menu and selecting on your Pico on the prompt.
 
 Find and change the value of the `ROVER_NAME` variable to be something unique.  This will be the Bluetooth device name of your Rover.  Change this to something you can easily remember and unique if doing this with a large group of others.
-Below is the code you need to change... change the "sharkbot1" value to your special name:
+Below is the code you need to change... change the "Put Your Unique Groovy Shark Name Here" value to your special name:
 ```Python
 
 # ROVER_NAME needs to be a unique name for your rover.  It will be the Bluetooth device name
-ROVER_NAME = "sharkbot1"
+ROVER_NAME = "Put Your Unique Groovy Shark Name Here"
 
 ```
 After changing the ROVER_NAME value, save the code to the Pico. 

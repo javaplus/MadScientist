@@ -48,6 +48,13 @@ The ground/black wire goes to a ground pin on the Pico.  We recommend the ground
 
 Congratulations! You are super close to having a mobile rover!
 
+Actually, if you already have your wheels and tracks installed, you may want to go ahead and install the code and test out what you have built.
+
+You should be able to install the code and use the mobile app to test the basic drivability of your rover.
+
+[Install Code](/lessons/assembly/code_install.md)
+
+
 [back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/power.md)                
 
 
