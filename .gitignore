@@ -1,3 +1,6 @@
 .micropico
 .vscode
-lessons/images/
+*.jpg
+*.jpeg
+*.png
+*.gif
