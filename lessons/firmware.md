@@ -42,7 +42,9 @@ Note: Your COM port number may be different.
 
 Once you've selected your device, you should see the Shell change to show the version of MicroPython installed on your Pico.
 
-![Thonny done](/lessons/images/ThonnyFinal.PNG)
+![Thonny done](/lessons/images/ThonnyFinal.PNG)   
+
+NOTE: Your exact version of MicroPython may be slightly different than the screenshot above, but be sure you see `Raspberry Pi Pico W` in the output.  Again, the `W` is important!
 
 
 ### Install picozero library
