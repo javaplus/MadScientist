@@ -63,3 +63,9 @@ Once both tracks are complete, simply put the tracks on the wheels. Just slip th
 
 
 Jump around and celebrate!
+
+[back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/chassis.md)
+
+
+
+[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/power.md)

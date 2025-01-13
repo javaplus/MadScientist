@@ -93,3 +93,9 @@ Connect the 10cm red wire that comes from the power switch to the far left pin o
 Carefully move the voltage regulator on top of the battery without disconnecting any of the wires.  The hole on top of the voltage regulator should go on one of the posts beside the battery.
 
 <img alt="Voltage Reg In Chassis" src="/lessons/images/assembly/power_regulator_in_chassis.jpg" width="500"/>
+
+[back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/wheels.md)
+
+
+
+[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/plate_chassis.md)

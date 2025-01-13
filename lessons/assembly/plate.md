@@ -73,4 +73,4 @@ Take the black or white 10cm female to female wire and connect it to the (-) neg
 At this point, the motor controller is just missing a cable to its (+) positive terminal and the 4 Motor pins on the bottom are unconnected.  We will connect those when we put the plate on the chassis.
 Now, fully press down the 4 pegs that hold the Pico in place to secure it.  Don't use a ton of force and don't worry if they don't go all the way in.  They just need to keep the Pico from moving around or coming off the plate.
 
-
+[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/chassis.md)
