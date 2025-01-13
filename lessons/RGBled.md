@@ -8,12 +8,13 @@ The diagram below shows what each pin does when powered.
 ![LEDdia](https://microcontrollerslab.com/wp-content/uploads/2018/05/RGB-LED-pinout.png)
 
 
-Now let's write some code to give the LED some color!
-
+First plug in the RGB led into pico as shown in the picture below using four female to female wires. Note the orientation of the Pico in the picture is with the pins still up in the air.  
+The black wire in the picture below connects to the longest pin, which is the ground  pin.  The pin on the edge next to it is connected to the red wire.  Again wire color doesn't really matter, but it does help you keep straight what is connected to what.  
 
 ![LEDFritz](https://github.com/javaplus/MadScientist/blob/main/lessons/images/RGBled.png?raw=true)
   
-  First plug in the RGB led into pico as shown in the picture above.
+
+Now let's write some code to give the LED some color!
 
 ```python
 from machine import Pin
@@ -38,12 +39,14 @@ while True:
     
     alt_colors(blue, 1000)
 ```
-this code will give power to each pin one at a time, making the led flash different colors!
+this code will give power to each pin one at a time, making the led flash the 3 primay colors!
 
 Now lets have the led fade into different colors. In this code we will be using the library PMW(pulse width modulation)
   allowing us to change the values of the brightness/color.     
   
   [Learn more about PWM!](https://github.com/javaplus/MadScientist/blob/main/lessons/led_pwm.md)
+
+Here we will make a function called alt_colors() passing in the different pins to cycle through different duty cycle values to control the brightness of the LED.
 
 ```python
 from machine import Pin, PWM
@@ -73,9 +76,12 @@ while True:
 # you can change colors by alt_colors(red, green or blue)
 ```
 
-Here we make a function called alt_colors allowing us to easily call a color change command.  
+Up to this point, we've only ever had power going to a single pin at a time and therefore only producing one of 3 colors: Red, Green, or Blue.
 
-let's mix the colors now with some new code!  
+However, the power of the RGB LED is that it can produce any color you want by mixing Red, Green, and Blue.  You can control how much of each color based on the duty cycle of the appropriate pin.
+
+Let's mix the colors now with some new code!  
+
 ```python
 from machine import Pin, PWM
 from time import sleep
@@ -86,13 +92,15 @@ green = PWM(Pin(21))
 
 blue = PWM(Pin(20))
 
+# Function to turn completely off
 def off():
     blue.duty_u16(0)
     red.duty_u16(0)
     green.duty_u16(0)
 
+# Full blue
 blue.duty_u16(65534) # 65534 is the max color brightness
-
+# Mix in half red
 red.duty_u16(35565)
 # this makes purple
 
@@ -102,8 +110,9 @@ off()
 
 sleep(0.5)
 
+# a little blue
 blue.duty_u16(25545)
-
+# a lot of red
 red.duty_u16(65534)
 # this makes pink
 
