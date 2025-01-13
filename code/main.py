@@ -25,7 +25,7 @@ photoresistor_value = 0
 ## When calibrating what is the baseline
 photoresistor_baseline_value = 0
 photoresistor_hit_value = 28000
-PHOTORES_HIT_FACTOR = 1.20
+PHOTORES_HIT_FACTOR = 1.00
 # After being hit you are immune for 2 seconds
 HIT_DEBOUNCE_TIME = 2000
 
@@ -121,17 +121,33 @@ async def read_photo_resistor():
                 print("no fire event because of debounce")
         
         await asyncio.sleep(0.01)  # Yield control to other tasks
+
+### Set baseline for photores
 def calibratePhotoRes():
     global photoresistor_baseline_value
-    global photoresistor_hit_value
     # Get current value as a baseline
     photoresistor_baseline_value = photoresistor.read_u16()
-    print("Baseline photores value:" + str(photoresistor_baseline_value))
     
-    photoresistor_hit_value = photoresistor_baseline_value * PHOTORES_HIT_FACTOR  
+## Set hit factor based on sensitivity value
+def setPhotoResSensitivity(sensitivity_value):
+    # current calibrated baseline
+    global photoresistor_baseline_value
+    # current hit value
+    global photoresistor_hit_value
     
-    print("Baseline photores HIT value:" + str(photoresistor_hit_value))
+    print("Setting sensitivity: Baseline photores value:" + str(photoresistor_baseline_value))
+    # default hit factor to .20, 20%
+    sensitivity_factor = .20
+    # make sure sensitivity value is between 1 and 10
+    if 1 <= sensitivity_value <= 10:
+        sensitivity_factor = sensitivity_value * 0.08
     
+    hit_factor = PHOTORES_HIT_FACTOR + sensitivity_factor
+    print("hit factor:" + str(hit_factor))
+    photoresistor_hit_value = photoresistor_baseline_value * hit_factor
+    
+    print("Photores HIT value:" + str(photoresistor_hit_value))
+
     
     
 async def execute_command(command_with_data, characteristic):
@@ -166,6 +182,9 @@ async def execute_command(command_with_data, characteristic):
     elif command == "calibrate":
         print("Calibrate Photores!!")
         calibratePhotoRes()
+    elif command == "sensitivity":
+        print("Set hit sensitivity!!")
+        setPhotoResSensitivity(int(command_data))
     else:
         print("Unknown command")
         response_message = "Unknown command received."
@@ -226,6 +245,7 @@ async def main():
     global rgb
     global laser
     calibratePhotoRes()
+    setPhotoResSensitivity(5)
     
     # Power on, turn red
     rgb.color = (255, 0, 0)
