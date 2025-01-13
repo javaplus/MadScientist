@@ -29,6 +29,8 @@ PHOTORES_HIT_FACTOR = 1.00
 # After being hit you are immune for 2 seconds
 HIT_DEBOUNCE_TIME = 2000
 
+saved_sensitivity = 5
+
 # RGB  status lights for indicating advertising, connected, and commands recieved.
 rgb = RGBLED(red = 22, green = 21, blue = 20)
 
@@ -125,11 +127,15 @@ async def read_photo_resistor():
 ### Set baseline for photores
 def calibratePhotoRes():
     global photoresistor_baseline_value
+    global saved_sensitivity
     # Get current value as a baseline
     photoresistor_baseline_value = photoresistor.read_u16()
+    # set the sensitivity which sets the hit level
+    setPhotoResSensitivity(saved_sensitivity)
     
 ## Set hit factor based on sensitivity value
 def setPhotoResSensitivity(sensitivity_value):
+    global saved_sensitivity
     # current calibrated baseline
     global photoresistor_baseline_value
     # current hit value
@@ -142,6 +148,7 @@ def setPhotoResSensitivity(sensitivity_value):
     if 1 <= sensitivity_value <= 10:
         sensitivity_factor = sensitivity_value * 0.08
     
+    saved_sensitivity = sensitivity_value
     hit_factor = PHOTORES_HIT_FACTOR + sensitivity_factor
     print("hit factor:" + str(hit_factor))
     photoresistor_hit_value = photoresistor_baseline_value * hit_factor
@@ -245,7 +252,7 @@ async def main():
     global rgb
     global laser
     calibratePhotoRes()
-    setPhotoResSensitivity(5)
+
     
     # Power on, turn red
     rgb.color = (255, 0, 0)
