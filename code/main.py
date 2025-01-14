@@ -192,6 +192,9 @@ async def execute_command(command_with_data, characteristic):
     elif command == "sensitivity":
         print("Set hit sensitivity!!")
         setPhotoResSensitivity(int(command_data))
+    elif command == "trim":
+        print("Set Trim!!")
+        motor_controller.setTrim(int(command_data))
     else:
         print("Unknown command")
         response_message = "Unknown command received."
