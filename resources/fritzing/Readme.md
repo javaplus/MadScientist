@@ -1,1 +1,0 @@
-## Fritzing diagrams and parts
