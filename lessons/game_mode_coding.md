@@ -6,53 +6,60 @@ Game modes really come down to what color your RGB should be and what should hap
 ## Base Class
 To implement a new game mode, you need to create a new class that extends/implements the [`BaseGame` class](https://github.com/javaplus/MadScientist/blob/3be6801566cf3852717db674f972e4c576ec4078/code/basegame.py#L3).
 
-```Python
-from motor_class import MotorController
+```Pythonfrom motor_class import MotorController
 
 class BaseGame:
-    # constructor gets motor_controller and rgb
-    def __init__(self, motor_controller, rgb, laser):
+    # Constructor gets motor_controller and rgb
+    def __init__(self, motor_controller, rgb, laser, buzzer):
         self.motor_controller = motor_controller
         self.rgb = rgb
         self.laser = laser
+        self.buzzer = buzzer
 
 
-    ## implement setup (initialize rgbs and motor status)
+    ## Implement Setup (initialize rgbs and motor status)
     def setup(self):
         pass
 
-    ## implement onHit
+    ## implement on Hit.
     def onHit(self):
        pass
-    
+   
+    ## implement on Fire.
+    def onFire(self):
+       pass
 
 ```
 
 ## Custom Game Class
 
-When you extend this class you get the constructor by default which takes in the `motor_controller`, the `rgb`, and the `laser`.
+When you extend this class you get the constructor by default which takes in the `motor_controller`, the `rgb`, buzzer, and the `laser`.
 
-These are the three things with the current hardware you can control.
+These are the 4 things with the current hardware you can control.
 
 Here's an example of how to extend it with a simple implementation:
 
 ```Python
 from basegame import BaseGame
+from laser import Laser
 from motor_class import MotorController
 
 class BasicGame(BaseGame):
 
-    ## implement setup
+    ## Implement Setup
     def setup(self):
         # set color to green
         self.rgb.color = (0, 255, 0)
+        self.laser.turnOn()
 
-    ## implement onHit
+    ## implement on Hit.
     def onHit(self):
         print("Basic Game been hit!!")
+        # Let's flash our eyes
         # go red
         self.rgb.color = (255, 0, 0)
         self.motor_controller.spin_lock()
+        self.laser.turnOff()
     
 ```
 
@@ -66,58 +73,62 @@ The `onHit()` function simply changes the color to red and then causes the motor
 
 The `setup()` function gets called as soon as the game mode is changed or initiated.
 Currently, the game mode can change based on the command from the bluetooth remote app.
-In [main.py](/code/main.py), the `execute_command()` function has an `if` block to set the game mode. The `initializeGame()` function takes in the game mode string to determine what game mode to use by calling the `setGameMode()` function (also in `main.py`) that will instantiate the appropriate game class and return it.
+In [main.py](/code/main.py), the `execute_command()` function has an `if` block to set the game mode. The `initializeGame()` function takes in the game mode string to determine what game mode to use by calling the `setGameMode()` function (also in `main.py`) that will instantiate the appropriate game class and return it.  
 
-Here is the `initializeGame()` function:
+Here is the `initializeGame()` function(NOTE: This is for informational purposes, you should not have to change this function for your own game class):
 
 ```Python
 def initializeGame(gamemode):
     global hitevent
+    global laser
+    global buzzer
+    global fireevent
     
-    # reset hitevent to remove previous subscribers
+    # reset HitEvent to remove previous subscribers
     hitevent.reset()
+    fireevent.reset()
     
     # get the game
-    game = setGameMode(gamemode, motor_controller, rgb)
+    game = setGameMode(gamemode, motor_controller, rgb, laser, buzzer)
 
     # setup game
     game.setup()
 
-    ## set the method to be called when hitevent fires!
+    ## Set the method to be called when hitevent fires!
     hitevent.subscribe(game.onHit)
+    fireevent.subscribe(game.onFire)
 
 ```
 
-Notice the `initializeGame()` function resets the game events. Currently there's only `hitevent`.
-It also then subscribes the game class returned by `setGameMode()` to the `hitevent`.  This allows the game class's `onHit()` function to be called when there is a hit detected.
+Notice the `initializeGame()` function resets the game events. Currently there's only `hitevent` and `fireevent`.
+It also then subscribes the game class returned by `setGameMode()` to the `hitevent` and `fireevent`.  This allows the game class's `onHit()` function to be called when there is a hit detected. And the `fire()` function of your game class to be called with the fire button is pressed.
 
 Let's look at the `setGameMode()` function now:
 
 ```Python
 
 ## to select the game mode
-def setGameMode(gamemode, motor_controller, rgb, laser):
-        if gamemode == "Virus":
+def setGameMode(gamemode, motor_controller, rgb, laser, buzzer):
+        if gamemode == "virus":
             print("Virus mode")
-            # return Virus Game impl
-        elif gamemode == "Disco":
+            return VirusGame(motor_controller, rgb, laser, buzzer)
+        elif gamemode == "disco":
             print("Disco mode")
-            # return Disco Game impl
-        elif gamemode == "Hungry":
+            return DiscoGame(motor_controller, rgb, laser, buzzer)
+        elif gamemode == "hungry":
             print("Disco mode")
-            # return Hungry Game impl
-        elif gamemode == "WTF":
+            # Return Hungry game impl
+        elif gamemode == "wtf":
             print("WTF mode")
-            # return whatever WTF mode is
+            return WTFGame(motor_controller, rgb, laser, buzzer)
         else:
             print("Default mode")
-            return BasicGame(motor_controller, rgb, laser)
-
+            return DriveGame(motor_controller, rgb, laser, buzzer)
 ```
 
 This function is a simple `if`/`else` block that instantiates the correct game class to return based on the `gamemode` parameter.  This is where you would instantiate your custom game mode.
 
-If this `setGameMode()` returns your custom game class instance, then it will have its `setup()` function called almost immediately, and its `onHit()` function will be called whenever it gets hit.
+If this `setGameMode()` returns your custom game class instance, then it will have its `setup()` function called almost immediately, and its `onHit()` function will be called whenever it gets hit and `fire()` will be called when the fire button is pressed.
 
 ### What you have to change
 
