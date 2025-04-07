@@ -23,19 +23,6 @@
 - [ ] 1 Red y female to female (from voltage reg to pico and motor controller)
 - [ ] 1 Battery connector with y connector on ground  
 
-## Small Parts Cup
-- [ ] 2 RGB LEDs 
-- [ ] 4 Plate plugs 3D printed parts
-- [ ] 1 Power switch
-- [ ] 1 Printed Power Switch Extender
-- [ ] 1 Voltage regulator
-- [ ] 1 Left eye
-- [ ] 1 Right eye
-- [ ] 1 Buzzer(optional)
-- [ ] 2 Blue LEDS(optional)
-- [ ] 2 LEDs other color(optional)
-- [ ] 2 Hex Plugs
-
 ## Main 3D Printed Parts    
 - [ ] 1 Chassis
 - [ ] 1 Pico Plate
@@ -56,4 +43,15 @@
 - [ ] 2 Cups of 16 treads each
 - [ ] 20 inch piece of filament  
 
-
+## Small Parts Cup
+- [ ] 2 RGB LEDs 
+- [ ] 4 Plate plugs 3D printed parts
+- [ ] 1 Power switch
+- [ ] 1 Printed Power Switch Extender
+- [ ] 1 Voltage regulator
+- [ ] 1 Left eye
+- [ ] 1 Right eye
+- [ ] 1 Buzzer(optional)
+- [ ] 2 Blue LEDS(optional)
+- [ ] 2 LEDs other color(optional)
+- [ ] 2 Hex Plugs
