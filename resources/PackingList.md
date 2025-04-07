@@ -38,6 +38,7 @@
 - [ ] Battery door
 - [ ] Battery door key
 - [ ] Switch holder
+- [ ] Teeth
 
 #### Treads  
 - [ ] 2 Cups of 16 treads each
