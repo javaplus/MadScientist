@@ -69,7 +69,6 @@ Even if you connected the wires correctly for the motors, because you can't tell
     self.left_motor_backward = PWM(Pin(10))
     ```
 
-And if it's the right motor, flip the pins on 19 and 20 in the same way.
 
 #### FREEDOM!!!
 
