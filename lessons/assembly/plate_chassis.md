@@ -10,6 +10,8 @@ Before we can put the plate down on the chassis, we need to connect the motors t
 See below picture for proper orientation.   
 Connect the front motor to the `motor A` pins on the motor controller.  The ``motor A`` pins are the first two pins on the left in the picture below.  Connect the rear motor to the `motor B` pins.  Run the wires for the rear motor over the battery.
 
+Make sure to match your wires to the below image, as the direction of the motor here is used later in the code to control the direction of the whole rover.
+
 <img alt="Pico Plate bottom view" height="500" src="/lessons/images/assembly/pico_plate_on_chassis_bottom.jpg"/>
 
 Close up:
