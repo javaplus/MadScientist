@@ -4,7 +4,8 @@
 ### Parts
 
 - Pico WH  
-- Pico plate  
+- Pico plate
+- Motor Controller
 - 4 x plastic pegs
 - 4 x 10cm female to female wires (recommend a combination of blue, yellow, and green)
 - 1 x 10cm black or white female to female wire 
