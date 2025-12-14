@@ -10,7 +10,7 @@ Clone the repo [MadScientist](https://www.github.com/javaplus/MadScientist) loca
 
 ### Use Thonny to load files to pico
 
-Once you have the repo cloned, open Thonny and navigate to View -> Files.
+Once you have the repo cloned, open Thonny and if you don't have the files tab already opened, navigate to View -> Files.
 
 This will open a navigation pane where you can select files to transfer.
 
