@@ -90,43 +90,50 @@ from machine import Pin, PWM
 from time import sleep
 
 red = PWM(Pin(22))
+red.freq(1000)
 
 green = PWM(Pin(21))
+green.freq(1000)
 
 blue = PWM(Pin(20))
+blue.freq(1000)
 
 # Function to turn completely off
 def off():
     blue.duty_u16(0)
     red.duty_u16(0)
     green.duty_u16(0)
+    
+while True:
+    # Full blue
+    blue.duty_u16(65534) # 65534 is the max color brightness
+    # Mix in half red
+    red.duty_u16(35565)
+    # this makes purple
 
-# Full blue
-blue.duty_u16(65534) # 65534 is the max color brightness
-# Mix in half red
-red.duty_u16(35565)
-# this makes purple
+    sleep(0.5)
 
-sleep(0.5)
+    off()
 
-off()
+    sleep(0.5)
 
-sleep(0.5)
+    # a little blue
+    blue.duty_u16(25545)
+    # a lot of red
+    red.duty_u16(65534)
+    # this makes pink
 
-# a little blue
-blue.duty_u16(25545)
-# a lot of red
-red.duty_u16(65534)
-# this makes pink
+    sleep(0.5)
 
-sleep(0.5)
-
-off()
+    off()
+    
+    sleep(0.5)
 ```
 
 You can change the duty value which is the brightness of the color.  
 the max value is 65534 and 0 means off. get creative here mix all the colors  
 or just two colors by using or changing (color).duty_u16(color value)
+
 
 
 
