@@ -10,7 +10,7 @@
 - Left Eye
 - Not Left Eye (Right Eye)
 - 2 RGB LEDs
-- 4 Female/Female Dupont Jumper Connectors: selecting a combination of red, green, and blue (and any other color) wires will result in slightly easier wiring later.
+- 4 Female/Female wires: selecting a combination of red, green, and blue (and any other color) wires will result in slightly easier wiring later.
 
 <img src="/lessons/images/assembly/head_parts.jpg" alt="Parts for Head" width=500>
 
