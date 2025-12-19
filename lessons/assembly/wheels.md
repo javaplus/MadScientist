@@ -14,18 +14,12 @@ Now let's install the wheels.
 
 Take your 4 wheels and snap them on the chassis.  Make sure the flat side is against the chassis.  Once they snap on, give them a spin with your hand to make sure they can spin freely without much resistance. 
 
-**NOTE:** The pictures below show the Pico and other components already installed.  Your Rover may only have the motors installed at this point.  Some have found it easier to get the wheels and tranny on before putting the rest of the electronics in place.
+<img alt="Wheels installed 2" src="/lessons/images/assembly/wheels_installed1.jpg" width="500"/>
 
-<img alt="Wheels installed" src="/lessons/images/assembly/wheels_no_tranny.jpg" width="500"/>
-<img alt="Wheels installed 2" src="/lessons/images/assembly/wheels_installed.jpg" width="500"/>
-
-Now install the transmission pieces.  The axles have a D shape.  The tranny parts have a D shaped slot in the center.  Match the holes to put the tranny onto the axle.  
+Now install the 2 transmission pieces.  The axles have a D shape.  The tranny parts have a D shaped slot in the center.  Match the holes to put the tranny onto the axle.  
 The easiest way to do this is to start inserting the tranny piece into the wheel until it hits the axle while holding the motor from sliding back.  Then rotate the wheel and the tranny till the D shaped hole and the axle line up and you can push the tranny in flush with the outside of the wheel.
 
-<img alt="Tranny installed" src="/lessons/images/assembly/wheel_tranny.jpg" width="500"/>
-
-<img alt="Tranny installed Closeup" src="/lessons/images/assembly/wheel_tran_closeup.jpg" width="500"/>
-
+<img alt="Tranny installed" src="/lessons/images/assembly/wheels_tranny1.jpg" width="500"/>
 
 ### Tracks
 
