@@ -45,9 +45,6 @@ Once the ends are aligned, push the filament through till its flush with the inn
 
 Repeat these instructions to assemble the second track.
 
-<img alt="Tracks on Chassis" src="/lessons/images/assembly/tracks_on.jpg" width="500"/>  
-<img alt="Tracks on Chassis 2" src="/lessons/images/assembly/tracks_on_usb_side.jpg" width="500"/>
-
 
 Jump around and celebrate!
 
