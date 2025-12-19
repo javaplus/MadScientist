@@ -33,7 +33,7 @@ Take one track at a time and wrap it around the wheels BEFORE connecting with th
 
 <img alt="Track Pieces Wrapped" src="/lessons/images/assembly/wheels_treads1.jpg" width="500"/>
 
-Insert a piece of filament through the hold to connect them as seen in the picture below:
+No align the two ends of the track and insert a piece of filament through the hold to connect them as seen in the picture below:
 
 <img alt="Track Pieces Connected" src="/lessons/images/assembly/wheels_treads2.jpg" width="500"/>
 
