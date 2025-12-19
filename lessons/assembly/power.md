@@ -9,6 +9,8 @@
 - Power switch holder
 - 10cm red female to female wire
 
+NOTE: The images below do not show the wheels and tracks installed, but at this point you should have your wheels and tracks already on the chassis.
+
 <img alt="Power components" src="/lessons/images/assembly/power_connector_switch.jpg" width="500"/>
 
 Feed the red wire from the battery connector through the slot in the front of the chassis:
