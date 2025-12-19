@@ -16,13 +16,18 @@
 
 ## 3D Printed Parts
 - 1 x Chassis
-- 1 x treads (need better wording and maybe individual tracks)
+- 2 x tracks 
 - 4 x wheels
-- 2 or 4 x wheel/tranny inserts
-- 1 x front shark head
-- 1 x rear shark tail
+- 2 x tranny inserts
+- 1 x head/eyes
+- 1 xgum teeth
+- 1 x chin front connector
+- 1 x shark tail
+- 1 x tail tip
 - 1 x Pico and Motor Controller plate
-- 
+- 2 x Hex Plugs(hold motors)
+- 4 x pico pins
+  
 ## Parts per kit:
 
 #### Chassis:
