@@ -24,6 +24,7 @@
 - 1 x gum teeth
 - 1 x chin front connector
 - 1 x RBG holder
+- 1 x shark body(Cap)
 - 1 x shark tail
 - 1 x tail tip
 - 1 x Rear Connector
