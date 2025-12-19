@@ -24,26 +24,33 @@ The easiest way to do this is to start inserting the tranny piece into the wheel
 ### Tracks
 
 ### Parts
-- Track pieces (2 tracks)
-- 2 small pieces of 3D printer filament
+- Track pieces (2 packs of 16 track pieces per container)
+- 3D printer filament
 
-<img alt="Track Pieces" src="/lessons/images/assembly/wheels_treads_parts.jpg" width="500"/>
+<img alt="Track Pieces" src="/lessons/images/assembly/tracks_parts.jpg" width="500"/>
 
-Take one track at a time and wrap it around the wheels BEFORE connecting with the filament. It's recommended to have the end of one track rest on top of one wheel with the other end just below it as you see in the picture below:
+Take two pieces of track at a time and insert a piece of filament through the hold to connect them as seen in the picture below
 
-<img alt="Track Pieces Wrapped" src="/lessons/images/assembly/wheels_treads1.jpg" width="500"/>
+<img alt="Track Pieces Connect 1" src="/lessons/images/assembly/tracs1.jpg" width="500"/>
 
-Insert a piece of filament through the hold to connect them as seen in the picture below:
+<img alt="Track Pieces Connect 2" src="/lessons/images/assembly/track_connect_2.jpg" width="500"/>
 
-<img alt="Track Pieces Connected" src="/lessons/images/assembly/wheels_treads2.jpg" width="500"/>
+Cut the excess filament off to be as flush as possible. If you have a little filament sticking out on each side, it should still be fine, but flush is better.
 
-If you struggle getting enough slack in the tracks to get the ends to line up to insert the filament, try rotating the wheels a little back and forth until the tracks lay with their notched hole over the diamond tabs on the surface of the wheels. With a little sliding of the tracks and rotating of the wheels, you should be able to easily line up the ends of the tracks to connect them.  
+<img alt="Track Pieces Cut" src="/lessons/images/assembly/track_cut_filament.jpg" width="500"/>
 
-Once the ends are aligned, push the filament through till its flush with the inner most piece of the track closest to the chassis.  Once connected you can cut the filament off to be as flush as possible, but if it sticks out a little it should be fine as long as it's not protruding too much on the inside where it might rub on the chassis as the treads move around the wheels. 
+From this point just grab another track piece and add it to your existing connected track pieces and keep connecting until you get 16 of them connected in a line.
 
-<img alt="Track Pieces Connected" src="/lessons/images/assembly/wheels_treads3.jpg" width="500"/>
+<img alt="Track Pieces 16" src="/lessons/images/assembly/track_full_flat.jpg" width="500"/>
+
+Now circle the track around and connect the two ends to make a fully connected track:
+
+<img alt="Track connected" src="/lessons/images/assembly/track_done_off_chassis.jpg" width="500"/>
+
 
 Repeat these instructions to assemble the second track.
+
+Once both tracks are complete, simply put the tracks on the wheels. Just slip the track partially over one wheel and then stretch it back to wrap around the other wheel.  The track pieces are printed with TPU and should have a little flex, but you could deform the filament holding the track pieces together if you stretch it too much.
 
 <img alt="Tracks on Chassis" src="/lessons/images/assembly/tracks_on.jpg" width="500"/>  
 <img alt="Tracks on Chassis 2" src="/lessons/images/assembly/tracks_on_usb_side.jpg" width="500"/>
