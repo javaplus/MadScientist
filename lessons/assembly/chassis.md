@@ -11,7 +11,7 @@
 
 ### Remove tabs
 
-There may be two tabs attached to the inside bottom of your chassis.  If they are on your chassis, remove them.  They should easily bend and snap off with little effort.  
+There may be two tabs attached to the inside bottom of your chassis.  If they are on your chassis, remove them.  They should easily bend and snap off with little effort. They are not needed. 
 
 <img alt="Remove Tabs" src="/lessons/images/assembly/chassis_tabs.PNG" width="500"/>
 
