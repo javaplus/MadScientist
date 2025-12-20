@@ -22,6 +22,10 @@ We will use Python as the programming language for the Pico microcontroller, but
 To prepare the Pico, you need to flash it to support MicroPython.
 Here are the instructions to [flash the Pico for MicroPython](/lessons/firmware.md).
 
+# Getting Started
+
+If you want to jump straight into building the Shark Rover, jump to the [Assembly](#Assembly) section.  If you want to take a slower approach and learn about each component, check out our [Lessons](#Lessons).
+
 # Lessons
 
 The links in this section are to labs which walk you through working with the various components that will ultimately make up your rover. These labs will give you a better understanding of the individual parts and code that go into making the rover work.  However, these lessons do not actually get into building the rover, but are just for learning how the components work.  They are hands-on labs that actually have you working with the electronics and code, but do not include assembly of the rover.  The assembly is in its own section.  So, if you don't care to learn how the individual components work and want to skip straight to building the rover, then skip this section and go straight to [Assembly](#assembly) below.
@@ -44,7 +48,6 @@ The links in this section are to labs which walk you through working with the va
 [Tail Tip/Photoresistor](/lessons/assembly/tail.md)  
 [Tail Connection](/lessons/assembly/tail_chassis.md)  
 [Head, RGB Leds, and adding the cap!](/lessons/assembly/head.md)  
-
 
 # Install the Code
 
