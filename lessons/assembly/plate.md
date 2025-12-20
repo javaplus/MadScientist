@@ -26,7 +26,7 @@ Turn the Pico so the pins are sticking up in the air and the USB jack is pointin
 <img alt="Pico On Plate" src="/lessons/images/assembly/pico_on_plate_no_pegs.jpg" width="500"/>
 
 
-Take your 4 plastic pegs and push them halfway down into the plate, leaving a little gap so you can still raise the Pico a bit to route wires underneath it.
+Take your 4 plastic pegs and align them with the 4 holes on the Pico W. Do **NOT** push them all the way in yet.  Push the pins **halfway** down into the plate to secure it, but still leaving enough room raise the Pico a bit to route wires underneath it later.
 
 <img alt="Pico On Plate With Pegs" src="/lessons/images/assembly/pico_plate_with_pegs.jpg" width="500"/>
 
