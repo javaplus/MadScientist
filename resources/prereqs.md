@@ -5,7 +5,7 @@ For this lab, you will be assembling and coding a Raspberry Pi Pico powered Shar
 
 ## What you need
 
-You just need the simple Python editor like [Thonny](https://thonny.org/) which allows you write code on your laptop and execute it on the Pico via a USB cable. USB cables will be provided just make sure you have a laptop with Thonny installed and an available USB A jack on your laptop. We will have a few USB C to USB A adapters for those with only tiny ports. If you require a special dongle to connect a USB A cable into your laptop, be sure to bring it.
+You just need the simple Python editor [Thonny](https://thonny.org/) which allows you write code on your laptop and execute it on the Pico via a USB cable. USB cables will be provided just make sure you have a laptop with Thonny installed and an available USB A jack on your laptop. We will have a few USB C to USB A adapters for those with only tiny ports. If you require a special dongle to connect a USB A cable into your laptop, be sure to bring it.
 
 Please download and install the latest version(4.x or higher) of Thonny.
 [Download Thonny](https://thonny.org/)
