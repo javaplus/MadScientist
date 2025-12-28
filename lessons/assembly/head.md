@@ -10,7 +10,7 @@ Before beginning the assembly, ensure you have the following four printed parts 
 * **LED Harness:** Pre-loaded with LEDs and wiring.
 * **Laser Module**
 
-![Jaw Components](images/assembly/head/chin_jaws.jpg)
+![Jaw Components](../images/assembly/head/chin_jaws.jpg)
 
 ---
 
@@ -21,8 +21,8 @@ If you haven't already, prepare the sub-assemblies:
 * Insert the **Laser Module** into the center-front slot of the **Teeth & Gums** piece.
 * Ensure the LEDs are loaded correctly into the **LED Harness**.
 
-![Laser Insertion](images/assembly/head/teeth_lasers.jpg)
-![Laser Front View](images/assembly/head/teeth_laser_front.jpg)
+![Laser Insertion](../images/assembly/head/teeth_lasers.jpg)
+![Laser Front View](../images/assembly/head/teeth_laser_front.jpg)
 *Visual Check: Ensure the laser is seated flush in the front slot.*
 
 ### 2. Install the Chin
@@ -30,8 +30,8 @@ Take the **Chin Piece** and slide it up from underneath the **Teeth & Gums** pie
 * The chin should slide into the single long slot located at the far back of the gum piece.
 * Ensure the two tabs from the chin piece protrude upward through the slot.
 
-![Chin Installed](images/assembly/head/chin_with_teeth.jpg)
-![Chin Side View](images/assembly/head/chin_with_teeth_side.jpg)
+![Chin Installed](../images/assembly/head/chin_with_teeth.jpg)
+![Chin Side View](../images/assembly/head/chin_with_teeth_side.jpg)
 *Visual Check: Verify the chin fits snugly against the gums.*
 
 ### 3. Insert the LED Harness
@@ -41,7 +41,7 @@ Take the **Chin Piece** and slide it up from underneath the **Teeth & Gums** pie
 * **Insertion:** Slide the LED harness down into the long slot.
 * **Safety Check:** Verify that no wires are pinched during this process.
 
-![Harness Insertion](images/assembly/head/INSERT_HARNESS_IMAGE_HERE.jpg)
+![Harness Insertion](../images/assembly/head/INSERT_HARNESS_IMAGE_HERE.jpg)
 *Visual needed: Top-down view showing the LED harness sliding between the chin tabs.*
 
 ### 4. Attach the Head Top
@@ -52,7 +52,7 @@ To finalize the head assembly:
     * The head should line up with the two small slots on the gum piece.
 4.  **Snap Fit:** Press down until you hear a satisfying snap, ensuring the assembly is secure.
 
-![Head Attachment](images/assembly/head/INSERT_HEAD_ATTACH_IMAGE_HERE.jpg)
+![Head Attachment](../images/assembly/head/INSERT_HEAD_ATTACH_IMAGE_HERE.jpg)
 *Visual needed: Diagram showing the "Catch and Rotate" motion to attach the head.*
 
 ### 5. Final Wiring & Mounting
