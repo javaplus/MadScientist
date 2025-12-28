@@ -37,6 +37,7 @@ Take the **Chin Piece** and slide it up from underneath the **Teeth & Gums** pie
 ### 3. Insert the LED Harness
 * **Wire Management:** Move the laser wires to the side to ensure they do not obstruct the harness path.
 * **Alignment:** Locate the long slot in the middle of the **LED Harness**. This slot must slide *between* the two tabs from the Chin piece (which are now sticking up through the gums).
+* **Orientation:** Before inserting, confirm the wire order matches the harness assembly (red, black, green, blue) and orient the harness so the wires exit toward the rear of the head; the red wire should align with the left-most pin when viewing the head from the front (see `lessons/assembly/rgb.md` for detailed harness assembly and pin order).
 * **Insertion:** Slide the LED harness down into the long slot.
 * **Safety Check:** Verify that no wires are pinched during this process.
 
@@ -55,5 +56,28 @@ To finalize the head assembly:
 *Visual needed: Diagram showing the "Catch and Rotate" motion to attach the head.*
 
 ### 5. Final Wiring & Mounting
-* Connect the Laser and LED wires according to the **Wiring Diagram**.
+* **Connect the Laser and LED wires according to the Wiring Table below.** See `lessons/assembly/rgb.md` for harness assembly details.
+
+**Wiring (canonical)**
+
+- **LED Harness** (female ends to Pico):
+  - RED  -> **GP22**
+  - BLACK -> **GND**
+  - GREEN -> **GP21**
+  - BLUE -> **GP20**
+
+- **Laser Module** (signal/pwm):
+  - SIGNAL -> **GP16** (PWM)
+  - GND -> **GND**
+  - POWER -> **3.3V** or as specified by your laser module (check the module specs)
+  - **Software note:** the laser is instantiated on pin 16 in `code/main.py` (e.g., `Laser(16)`).
+
+> **Safety:** Do not point the laser at people, animals, or reflective surfaces. Use brief test pulses only.
+
+**Testing the harness (recommended before final mounting)**
+
+1. With the Pico powered and connected, run the simple LED blink example from `lessons/Led.md` (or `lessons/led_pwm.md` for PWM tests) to verify the LED harness colors/pins.
+2. Use the `Laser` class from `code/laser.py` (for example, `laser.fire(1)`) to test the laser briefly — verify it turns on and is seated correctly.
+3. Confirm no wires are pinched and that the harness sits flush in its slot.
+
 * Slide the fully assembled head onto the rover body.

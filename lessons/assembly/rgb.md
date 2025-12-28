@@ -48,7 +48,10 @@ Fully seat the top cover making sure it's bottom part snaps around the bottom of
 ## Wiring to Pico
 
 Now connect the female end of the wires to the Pico.
-The RED wire goes to GP22, the BLACK wire goes to GND, the GREEN wire goes to GP21, and the Blue wire goes to GP20.  See the image below which is a zoomed in view of the [overall wiring diagram](/lessons/images/overall_layout.PNG).
+
+**Wiring (canonical for the head harness):** RED -> **GP22**, BLACK -> **GND**, GREEN -> **GP21**, BLUE -> **GP20**.  See the image below which is a zoomed in view of the [overall wiring diagram](/lessons/images/overall_layout.PNG).
+
+> Note: These mappings are the canonical head wiring — see `lessons/assembly/head.md` for the head installation and final wiring table.
 
 <img alt="Wiring Diagram" src="/lessons/images/assembly/rgb_diagram.PNG" width="500"/>
 
