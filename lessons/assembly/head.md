@@ -10,7 +10,7 @@ Before beginning the assembly, ensure you have the following four printed parts 
 * **LED Harness:** Pre-loaded with LEDs and wiring.
 * **Laser Module**
 
-![Jaw Components](../images/assembly/head/chin_jaws.jpg)
+![Jaw Components](../images/assembly/head/head_parts.jpg)
 
 ---
 
