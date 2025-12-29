@@ -1,173 +1,88 @@
-# Head Assembly with Eyes, LEDS, and sharp teeth! - oh my!
+# Head Assembly Instructions
 
-## Parts
+## Parts List
 
-- Noggin (head)
-- Pearly White Teeth
-- Laser with attached female dupont ends
-- Front Cap Connector
-- LED Harness Assembly
-- Left Eye
-- Not Left Eye (Right Eye)
-- 2 RGB LEDs
-- 4 Female/Female wires: selecting a combination of red, green, and blue (and any other color) wires will result in slightly easier wiring later.
+Before beginning the assembly, ensure you have the following four printed parts and electronics ready:
 
-<img src="/lessons/images/assembly/head_parts.jpg" alt="Parts for Head" width=500>
+* **Head Top:** 3D printed part with the top of the head and eyes already pre-assembled.
+* **Chin Piece:** Includes two upward-facing tabs/slots.
+* **Teeth & Gums:** 3D printed part featuring a laser slot and alignment slots.
+* **LED Harness:** Pre-loaded with LEDs and wiring.
+* **Laser Module**
 
-## I've got my eyes on you
+![Jaw Components](../images/assembly/head/chin_jaws.jpg)
 
-The below image shows which eye corresponds to which socket.
+---
 
-The eyes are marked with an "L" for Left and an "N" for Not Left (right).
+## Assembly Steps
 
-<img src="/lessons/images/assembly/eyes.jpg" alt="picture of the eyes" width=500>
+### 1. Electronics Preparation & Jaw Sub-Assembly
+First, prepare the jaw unit before placing it on the rover:
+* **Laser:** Insert the **Laser Module** into the center-front slot of the **Teeth & Gums** piece.
+* **Chin:** Take the **Chin Piece** and slide it up from underneath the **Teeth & Gums** piece.
+    * The chin slides into the single long slot at the far back of the gum piece.
+    * Ensure the two tabs from the chin protrude upward through the slot.
 
-### Eye Installation
+![Laser Insertion](../images/assembly/head/teeth_lasers.jpg)
+![Chin Assembly](../images/assembly/head/chin_with_teeth.jpg)
+*Visual Check: The Laser is seated flush, and the Chin is firmly slotted into the Gums.*
 
-This gif shows how to align the eyes for installation:
+### 2. Mount Jaw to Rover Body
+Now that the Chin and Gums are assembled (with the laser inside), place this unit onto the rover body.
+* Position the sub-assembly onto the front of the chassis.
+* Ensure it is seated correctly before proceeding to the wiring steps.
 
-<img src="/lessons/images/assembly/left_eye_install.gif" alt="animated image of left eye installation" width=300>
+![Chin Side View](../images/assembly/head/chin_with_teeth_side.jpg)
+*Visual: The Jaw unit sitting in place on the rover chassis.*
 
-The following image shows the correct way to install the right eye. You might notice a small amount of extra material on the eye in the picture. This is from the 3D printing process and could prevent the eye from snapping into place. If you're having trouble getting the eye to fit (it's designed to be a tight fit), try carefully removing any excess material.
+### 3. Insert the LED Harness
+With the jaw unit now mounted on the rover:
+* **Wire Management:** Move the laser wires to the side to ensure they do not obstruct the harness path.
+* **Alignment:** Locate the long slot in the middle of the **LED Harness**. This slot must slide *between* the two tabs from the Chin piece (which are sticking up through the gums).
+* **Orientation:** Confirm the wire order matches the harness assembly (Red, Black, Green, Blue) and orient the harness so wires exit toward the rear.
+* **Insertion:** Slide the LED harness down into the long slot.
+* **Safety Check:** Verify that no wires are pinched during this process.
 
-<img src="/lessons/images/assembly/not_left_eye_install.jpg" alt="right eye details" width=500>
+![Placing Harness](../images/assembly/head/placing_harness.jpg)
+![Harness Set](../images/assembly/head/harness_set.jpg)
+*Visual: Top-down view showing the LED harness sliding between the chin tabs while on the rover.*
 
-## Illumination!
+### 4. Attach the Head Top
+To finalize the head assembly:
+1.  **Route Wires:** Position your wires out of the way to ensure a clean fit.
+2.  **Front Alignment:** Locate the small lip under the nose of the **Head Top** piece. Catch this lip on the overhang located directly above the laser slot (between the front two teeth of the gum piece).
+3.  **Rotate & Lock:** Once the nose is caught, rotate the bottom-back of the head down into the gums.
+    * The head should line up with the two small slots on the gum piece.
+4.  **Snap Fit:** Press down until you hear a satisfying snap, ensuring the assembly is secure.
 
-The LEDs we are using (found in the parts list) are in this order: RED, GROUND, GREEN, BLUE.
+![Head Alignment on Lip](../images/assembly/head/head_on_lip.jpg)
+![Head Lowering](../images/assembly/head/head_lowering.jpg)
+*Visual: The "Catch and Rotate" motion to attach the head.*
 
-The longer stem (second one down in the following picture) is the GROUND.
+### 5. Final Connection
+* **Connect the Laser and LED wires according to the Wiring Table below.** See `lessons/assembly/rgb.md` for harness assembly details.
 
-<img src="/lessons/images/assembly/LED_ground.jpg" alt="ground LED picture" width=500>
+> **Note:** The head assembly can be installed **prior** to attaching the middle cap.
 
-The following LED harness will allow you to wire two of these LEDs together.  It is crucial that your colors and grounds line up.  It is easiest to start with the ground wire and match 
+**Wiring (canonical)**
 
-<img src="/lessons/images/assembly/LED_slots.jpg" alt="LED wire slot picture" width=500>
+- **LED Harness** (female ends to Pico):
+  - RED   -> **GP22**
+  - BLACK -> **GND**
+  - GREEN -> **GP21**
+  - BLUE  -> **GP20**
 
-You may find it beneficial to use a pair of pliers to give all of your wires a slight curve so you can feed them through the harness appropriately.
+- **Laser Module** (signal/pwm):
+  - SIGNAL -> **GP16** (PWM)
+  - GND    -> **GND**
+  - POWER  -> **3.3V** or as specified by your laser module (check the module specs)
+  - **Software note:** the laser is instantiated on pin 16 in `code/main.py` (e.g., `Laser(16)`).
 
-<img src="/lessons/images/assembly/LED_bend.jpg" alt="" width=500>
+> **Safety:** Do not point the laser at people, animals, or reflective surfaces. Use brief test pulses only.
 
-<img src="/lessons/images/assembly/LED_bend_side.jpg" alt="" width=500>
+**Testing the harness**
+1. Run the simple LED blink example from `lessons/Led.md` to verify colors/pins.
+2. Use `laser.fire(1)` from `code/laser.py` to briefly test the laser.
 
-Line both sets of wires together.
-
-You can notice that we've used color coordination in our wiring.  You can also use the trick seen in the below photo to place your duponts in order so only the metal shows through the window of the harness on the ground wire.  
-
-It's important to have at least one way to remember which order your LEDs are in.
-
-You can see in the following photo how to pair up your wires before slipping them into the dupont jumper wires.
-
-<img src="/lessons/images/assembly/LED_wire_lineup.jpg" alt="LED wire lineup" width=500>
-
-Slip female ends of dupont jumpers over each of pairs of wires.
-
-<img src="/lessons/images/assembly/LED_dupont.jpg" alt="LED dupont example" width=500>
-
-Carefully bend the dupont connectors with wires inside down towards the harness and then close snap shut the harness.
-
-<img src="/lessons/images/assembly/LED_dupont_smash.jpg" alt="LED Dupont wire smashing technique" width=500>
-
-
-After you have snapped the harness closed you should adjust the LEDs to point in separate directions.  You will want them to be directed towards the eyes once the harness is mounted within the head.
-
-<img src="/lessons/images/assembly/LED_smashed_and_separated.jpg" alt="LED smashed and separated" width=500>
-
-Set your fully built LED harness aside for the time being, it's time to put in those shiny dentures.
-
-## What a lovely smile you have!
-
-Slide the teeth in from the front of the mouth opening towards the back.
-
-There is a small ramp to help assist the teeth into place.  Slide the teeth up that ramp and use something small to set the teeth in place.
-
-It may be helpful to lower the jaw slight (CAREFUL: don't snap it!) while you guide the teeth back into place.
-
-Once over the ramp and settled in, you should be able to pinch the cheeks  to center the teeth appropriately.
-
-
-<img src="/lessons/images/assembly/teeth_and_ramp.jpg" alt="teeth and ramp" width=500>
-
-## %$#@in LAZ3R BEAMS!!1
-
-It is time to grab that laser!  
-
-Guide the two wires (one at a time may be helpful) through the triangle guide in the bottom/rear of the teeth.  
-
-There should be enough room while the teeth are mounted but if not, find another place to guide them up towards the center opening of the rear portion of the head.
-
-<img src="/lessons/images/assembly/laser_wires.jpg" alt="wire placement for laser" width=500>
-
-<img src="/lessons/images/assembly/laser_wires_sitting.jpg" alt="wires placed for laser" width=500>
-
-Place the laser in the slot/groove in the bottom section of the teeth.
-
-<img src="/lessons/images/assembly/laser_setting_1.jpg" alt="laser setting in lower section" width=500>
-
-Gently push the laser towards the front of the mouth where the opening is.  
-
-The small groove of the laser lines up perfectly with the small cross-bridge piece of plastic and makes for a great alignment for the laser shooting out of the front of the shark.
-
-<img src="/lessons/images/assembly/laser_setting_2.jpg" alt="laser slotted" width=500>
-
-
-<img src="/lessons/images/assembly/laser_alignment.jpg" alt="laser alignment" width=500>
-
-
-## Harness the power of LEDs!
-
-Grab your harness and place it in the back section of the head at a 90 degree angle with the "key" portion of the harness pointing towards the right eye.
-
-<img src="/lessons/images/assembly/harness_install_1.jpg" alt="ninety degree harness install step one" width=500>
-
-The key should slot down into the center piece of the back framing portion of the head.
-
-<img src="/lessons/images/assembly/harness_install_2.jpg" alt="ninety degree harness install step two" width=500>
-
-You can see in the image above how the tab barely sticks out of the center area.  Center the harness as best you can.
-
-<img src="/lessons/images/assembly/LED_harness_centered.jpg" alt="LED harness centered" width=500>
-
-Grab the front cap connector piece.
-
-With your rover's head upside down, begin to slot the cap connector in place with the thicker tab on the side of the left eye.
-
-There are a number of tabs that slot into each other with this step so be careful not to force anything if it doesn't glide smoothly.
-
-<img src="/lessons/images/assembly/front_cap_connector_install.jpg" alt="front cap connector install" width=500>
-
-Once you have fully slotted the front cap connector into place and appropriately centered the LED harness into place, you can do a final adjustment of the LEDs to point towards the eyes, and you will have your completed head unit!
-
-<img src="/lessons/images/assembly/completed_head.jpg" alt="completed head unit" width=500>
-
-Slot your head into place onto the front of the chassis!  Don't pinch any wires!
-
-Refer to the following photo for how to wire your head's components to the board.
-
-| LED wire color     | Pico pin |
-|--------------------|----------|
-| Red LED wire       | GP22     |
-| Ground LED wire    | GND      |
-| Green LED wire     | GP21     |   
-| Blue **LED** wire      | GP20     |
-| Blue **laser** wire | GP16     |
-
-
-<img src="/lessons/images/assembly/mounted_head.jpg" alt="the head is on the chassis" width=500>
-
-
-## CAP it all off!
-
-Make sure that no wires are in the way of any pinch points and slot your middle cap piece into position.
-It will secure nicely to the head and tail pieces as seen in the clip below.
-
-<img src="/lessons/images/assembly/capping.gif" alt="capping it all" width=500>
-
-
-
-### CONGRATULATIONS!  You have completed your shark ROVER assembly.
-
-Happy Hunting.
-
-
-[back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/tail_chassis.md)
+![Head In Place](../images/assembly/head/head_in_place.jpg)
+*Visual: The fully assembled head unit mounted and ready.*
