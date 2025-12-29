@@ -16,33 +16,36 @@ Before beginning the assembly, ensure you have the following four printed parts 
 
 ## Assembly Steps
 
-### 1. Electronics Preparation
-If you haven't already, prepare the sub-assemblies:
-* Insert the **Laser Module** into the center-front slot of the **Teeth & Gums** piece.
-* Ensure the LEDs are loaded correctly into the **LED Harness**.
+### 1. Electronics Preparation & Jaw Sub-Assembly
+First, prepare the jaw unit before placing it on the rover:
+* **Laser:** Insert the **Laser Module** into the center-front slot of the **Teeth & Gums** piece.
+* **Chin:** Take the **Chin Piece** and slide it up from underneath the **Teeth & Gums** piece.
+    * The chin slides into the single long slot at the far back of the gum piece.
+    * Ensure the two tabs from the chin protrude upward through the slot.
 
 ![Laser Insertion](../images/assembly/head/teeth_lasers.jpg)
-![Laser Front View](../images/assembly/head/teeth_laser_front.jpg)
-*Visual Check: Ensure the laser is seated flush in the front slot.*
+![Chin Assembly](../images/assembly/head/chin_with_teeth.jpg)
+*Visual Check: The Laser is seated flush, and the Chin is firmly slotted into the Gums.*
 
-### 2. Install the Chin
-Take the **Chin Piece** and slide it up from underneath the **Teeth & Gums** piece.
-* The chin should slide into the single long slot located at the far back of the gum piece.
-* Ensure the two tabs from the chin piece protrude upward through the slot.
+### 2. Mount Jaw to Rover Body
+Now that the Chin and Gums are assembled (with the laser inside), place this unit onto the rover body.
+* Position the sub-assembly onto the front of the chassis.
+* Ensure it is seated correctly before proceeding to the wiring steps.
 
-![Chin Installed](../images/assembly/head/chin_with_teeth.jpg)
 ![Chin Side View](../images/assembly/head/chin_with_teeth_side.jpg)
-*Visual Check: Verify the chin fits snugly against the gums.*
+*Visual: The Jaw unit sitting in place on the rover chassis.*
 
 ### 3. Insert the LED Harness
+With the jaw unit now mounted on the rover:
 * **Wire Management:** Move the laser wires to the side to ensure they do not obstruct the harness path.
-* **Alignment:** Locate the long slot in the middle of the **LED Harness**. This slot must slide *between* the two tabs from the Chin piece (which are now sticking up through the gums).
-* **Orientation:** Before inserting, confirm the wire order matches the harness assembly (red, black, green, blue) and orient the harness so the wires exit toward the rear of the head; the red wire should align with the left-most pin when viewing the head from the front (see `lessons/assembly/rgb.md` for detailed harness assembly and pin order).
+* **Alignment:** Locate the long slot in the middle of the **LED Harness**. This slot must slide *between* the two tabs from the Chin piece (which are sticking up through the gums).
+* **Orientation:** Confirm the wire order matches the harness assembly (Red, Black, Green, Blue) and orient the harness so wires exit toward the rear.
 * **Insertion:** Slide the LED harness down into the long slot.
 * **Safety Check:** Verify that no wires are pinched during this process.
 
-![Harness Insertion](../images/assembly/head/INSERT_HARNESS_IMAGE_HERE.jpg)
-*Visual needed: Top-down view showing the LED harness sliding between the chin tabs.*
+![Placing Harness](../images/assembly/head/placing_harness.jpg)
+![Harness Set](../images/assembly/head/harness_set.jpg)
+*Visual: Top-down view showing the LED harness sliding between the chin tabs while on the rover.*
 
 ### 4. Attach the Head Top
 To finalize the head assembly:
@@ -52,32 +55,34 @@ To finalize the head assembly:
     * The head should line up with the two small slots on the gum piece.
 4.  **Snap Fit:** Press down until you hear a satisfying snap, ensuring the assembly is secure.
 
-![Head Attachment](../images/assembly/head/INSERT_HEAD_ATTACH_IMAGE_HERE.jpg)
-*Visual needed: Diagram showing the "Catch and Rotate" motion to attach the head.*
+![Head Alignment on Lip](../images/assembly/head/head_on_lip.jpg)
+![Head Lowering](../images/assembly/head/head_lowering.jpg)
+*Visual: The "Catch and Rotate" motion to attach the head.*
 
-### 5. Final Wiring & Mounting
+### 5. Final Connection
 * **Connect the Laser and LED wires according to the Wiring Table below.** See `lessons/assembly/rgb.md` for harness assembly details.
+
+> **Note:** The head assembly can be installed **prior** to attaching the middle cap.
 
 **Wiring (canonical)**
 
 - **LED Harness** (female ends to Pico):
-  - RED  -> **GP22**
+  - RED   -> **GP22**
   - BLACK -> **GND**
   - GREEN -> **GP21**
-  - BLUE -> **GP20**
+  - BLUE  -> **GP20**
 
 - **Laser Module** (signal/pwm):
   - SIGNAL -> **GP16** (PWM)
-  - GND -> **GND**
-  - POWER -> **3.3V** or as specified by your laser module (check the module specs)
+  - GND    -> **GND**
+  - POWER  -> **3.3V** or as specified by your laser module (check the module specs)
   - **Software note:** the laser is instantiated on pin 16 in `code/main.py` (e.g., `Laser(16)`).
 
 > **Safety:** Do not point the laser at people, animals, or reflective surfaces. Use brief test pulses only.
 
-**Testing the harness (recommended before final mounting)**
+**Testing the harness**
+1. Run the simple LED blink example from `lessons/Led.md` to verify colors/pins.
+2. Use `laser.fire(1)` from `code/laser.py` to briefly test the laser.
 
-1. With the Pico powered and connected, run the simple LED blink example from `lessons/Led.md` (or `lessons/led_pwm.md` for PWM tests) to verify the LED harness colors/pins.
-2. Use the `Laser` class from `code/laser.py` (for example, `laser.fire(1)`) to test the laser briefly — verify it turns on and is seated correctly.
-3. Confirm no wires are pinched and that the harness sits flush in its slot.
-
-* Slide the fully assembled head onto the rover body.
+![Head In Place](../images/assembly/head/head_in_place.jpg)
+*Visual: The fully assembled head unit mounted and ready.*
