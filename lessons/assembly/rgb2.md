@@ -23,6 +23,9 @@ Before connecting anything, identify the pins on your RGB LEDs.
 
 ### 2. Connect the Wires
 We need to connect both LEDs to the same four wires (Parallel connection) so they light up in unison.
+
+Make sure the slot order (left-to-right) matches: **red**, **black (ground)**, **green**, **blue**.
+
 1.  **Group the Pins:** Align the two LEDs so their pins match (Red to Red, Ground to Ground, etc.).
 2.  **Insert into Connectors:** Insert the corresponding pin pairs into the female ends of the DuPont wires.
     * All **Red** pins -> Red Wire
@@ -57,4 +60,12 @@ We need to connect both LEDs to the same four wires (Parallel connection) so the
 
 ---
 
-**Next Step:** Proceed to [Head Assembly](head_assembly.md) to install this harness into the rover.
+## Wiring to Pico
+
+Now connect the female end of the wires to the Pico.
+
+**Wiring (canonical for the head harness):** RED -> **GP22**, BLACK -> **GND**, GREEN -> **GP21**, BLUE -> **GP20**. See the image below which is a zoomed in view of the [overall wiring diagram](../images/overall_layout.PNG).
+
+> **Note:** These mappings are the canonical head wiring — see `lessons/assembly/head.md` for the head installation and final wiring table.
+
+**Next Step:** Proceed to [Head Assembly](head.md) to install this harness into the rover.

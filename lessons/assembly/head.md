@@ -7,7 +7,7 @@ Before beginning the assembly, ensure you have the following four printed parts 
 * **Head Top:** 3D printed part with the top of the head and eyes already pre-assembled.
 * **Chin Piece:** Includes two upward-facing tabs/slots.
 * **Teeth & Gums:** 3D printed part featuring a laser slot and alignment slots.
-* **LED Harness:** Pre-loaded with LEDs and wiring.
+* **LED Harness:** Pre-loaded with LEDs and wiring — see `lessons/assembly/rgb.md` for harness assembly instructions.
 * **Laser Module**
 
 ![Jaw Components](../images/assembly/head/head_parts.jpg)
@@ -47,19 +47,7 @@ With the jaw unit now mounted on the rover:
 ![Harness Set](../images/assembly/head/harness_set.jpg)
 *Visual: Top-down view showing the LED harness sliding between the chin tabs while on the rover.*
 
-### 4. Attach the Head Top
-To finalize the head assembly:
-1.  **Route Wires:** Position your wires out of the way to ensure a clean fit.
-2.  **Front Alignment:** Locate the small lip under the nose of the **Head Top** piece. Catch this lip on the overhang located directly above the laser slot (between the front two teeth of the gum piece).
-3.  **Rotate & Lock:** Once the nose is caught, rotate the bottom-back of the head down into the gums.
-    * The head should line up with the two small slots on the gum piece.
-4.  **Snap Fit:** Press down until you hear a satisfying snap, ensuring the assembly is secure.
-
-![Head Alignment on Lip](../images/assembly/head/head_on_lip.jpg)
-![Head Lowering](../images/assembly/head/head_lowering.jpg)
-*Visual: The "Catch and Rotate" motion to attach the head.*
-
-### 5. Final Connection
+### 4. Final Connection
 * **Connect the Laser and LED wires according to the Wiring Table below.** See `lessons/assembly/rgb.md` for harness assembly details.
 
 > **Note:** The head assembly can be installed **prior** to attaching the middle cap.
@@ -83,6 +71,18 @@ To finalize the head assembly:
 **Testing the harness**
 1. Run the simple LED blink example from `lessons/Led.md` to verify colors/pins.
 2. Use `laser.fire(1)` from `code/laser.py` to briefly test the laser.
+
+### 5. Attach the Head Top
+To finalize the head assembly:
+1.  **Route Wires:** Position your wires out of the way to ensure a clean fit.
+2.  **Front Alignment:** Locate the small lip under the nose of the **Head Top** piece. Catch this lip on the overhang located directly above the laser slot (between the front two teeth of the gum piece).
+3.  **Rotate & Lock:** Once the nose is caught, rotate the bottom-back of the head down into the gums.
+    * The head should line up with the two small slots on the gum piece.
+4.  **Snap Fit:** Press down until you hear a satisfying snap, ensuring the assembly is secure.
+
+![Head Alignment on Lip](../images/assembly/head/head_on_lip.jpg)
+![Head Lowering](../images/assembly/head/head_lowering.jpg)
+*Visual: The "Catch and Rotate" motion to attach the head.*
 
 ![Head In Place](../images/assembly/head/head_in_place.jpg)
 *Visual: The fully assembled head unit mounted and ready.*
