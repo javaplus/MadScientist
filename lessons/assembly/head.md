@@ -7,7 +7,7 @@ Before beginning the assembly, ensure you have the following four printed parts 
 * **Head Top:** 3D printed part with the top of the head and eyes already pre-assembled.
 * **Chin Piece:** Includes two upward-facing tabs/slots.
 * **Teeth & Gums:** 3D printed part featuring a laser slot and alignment slots.
-* **LED Harness:** Pre-loaded with LEDs and wiring — see `lessons/assembly/rgb.md` for harness assembly instructions.
+* **LED Harness:** Pre-loaded with LEDs and wiring — see the [LED harness assembly](rgb.md) for harness assembly instructions.
 * **Laser Module**
 
 ![Jaw Components](../images/assembly/head/head_parts.jpg)
@@ -48,7 +48,7 @@ With the jaw unit now mounted on the rover:
 *Visual: Top-down view showing the LED harness sliding between the chin tabs while on the rover.*
 
 ### 4. Final Connection
-* **Connect the Laser and LED wires according to the Wiring Table below.** See `lessons/assembly/rgb.md` for harness assembly details.
+* **Connect the Laser and LED wires according to the Wiring Table below.** See the [LED harness assembly](rgb.md) for harness assembly details.
 
 > **Note:** The head assembly can be installed **prior** to attaching the middle cap.
 
