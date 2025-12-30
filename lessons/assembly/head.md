@@ -69,7 +69,7 @@ With the jaw unit now mounted on the rover:
 > **Safety:** Do not point the laser at people, animals, or reflective surfaces. Use brief test pulses only.
 
 **Testing the harness**
-1. Run the simple LED blink example from `lessons/Led.md` to verify colors/pins.
+1. Run the simple LED blink example from the [LED lesson](../Led.md) to verify colors/pins.
 2. Use `laser.fire(1)` from `code/laser.py` to briefly test the laser.
 
 ### 5. Attach the Head Top

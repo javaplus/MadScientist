@@ -66,6 +66,6 @@ Now connect the female end of the wires to the Pico.
 
 **Wiring (canonical for the head harness):** RED -> **GP22**, BLACK -> **GND**, GREEN -> **GP21**, BLUE -> **GP20**. See the image below which is a zoomed in view of the [overall wiring diagram](../images/overall_layout.PNG).
 
-> **Note:** These mappings are the canonical head wiring — see `lessons/assembly/head.md` for the head installation and final wiring table.
+> **Note:** These mappings are the canonical head wiring — see the [Head assembly](head.md) for the head installation and final wiring table.
 
 **Next Step:** Proceed to [Head Assembly](head.md) to install this harness into the rover.
