@@ -3,7 +3,7 @@
 ## Parts Required
 
 * **2x RGB LEDs (5mm):** These must be **Common Cathode** (where the long pin is Ground).
-* **4x DuPont Wires (Female-to-Female or Female-to-Male):** Prepared to receive the LED pins.
+* **4x DuPont Wires (Female-to-Female):** Prepared to receive the LED pins.
 * **Printed Harness Shell:** Two halves that snap together (part of the `head_parts` print).
 
 ![RGB and Harness Parts](../images/assembly/head/rgb_parts.jpg)
@@ -36,6 +36,7 @@ Make sure the slot order (left-to-right) matches: **red**, **black (ground)**, *
 
 ![Connecting Pins](../images/assembly/head/rgb1.jpg)
 ![Wires Connected](../images/assembly/head/rgb2.jpg)
+![Wires Connected 2](../images/assembly/head/rgb3.jpg)
 
 ### 3. Seat in the Harness
 1.  **Align the Junctions:** Take the lower half of the 3D printed harness.
@@ -43,20 +44,18 @@ Make sure the slot order (left-to-right) matches: **red**, **black (ground)**, *
     * The plastic housing of the DuPont wire should sit just outside or flush with the internal stops.
     * The LED bulbs should be sticking out of the front.
 
-![Seating the Wires](../images/assembly/head/rgb3.jpg)
+![Seating the Wires](../images/assembly/head/rgb4.jpg)
 
 ### 4. Close the Assembly
 1.  **Snap Shut:** Take the top half of the harness shell and press it down onto the bottom half.
 2.  **Secure:** Squeeze firmly until the harness snaps shut, locking the wires in place.
 
-![Closing the Harness](../images/assembly/head/rgb4.jpg)
+![Final Adjustment](../images/assembly/head/rgb5.jpg)
+*Visual: The completed harness with LEDs angled for the eyes.*
 
 ### 5. Final Adjustment
 1.  **Bend the LEDs:** Gently pull the two LEDs slightly apart and angle them outward.
 2.  **Aim:** The goal is to angle them so that when the harness is inserted into the shark head, the lights shine directly into the eye sockets.
-
-![Final Adjustment](../images/assembly/head/rgb5.jpg)
-*Visual: The completed harness with LEDs angled for the eyes.*
 
 ---
 
