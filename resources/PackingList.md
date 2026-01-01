@@ -27,8 +27,10 @@
 - [ ] 1 Chassis
 - [ ] 1 Pico Plate
 - [ ] 4 x wheels
-- [ ] 2 or 4 x wheel/tranny inserts
-- [ ] Shark Head
+- [ ] 2 tranny inserts
+- [ ] Chin/Front Connector
+- [ ] Teeth Gums
+- [ ] Shark Head with Eyes
 - [ ] Shark Body
 - [ ] Shark Tail
 - [ ] Tail tip
@@ -38,11 +40,9 @@
 - [ ] Battery door
 - [ ] Battery door key
 - [ ] Switch holder
-- [ ] Teeth
 
 #### Treads  
-- [ ] 2 Cups of 16 treads each
-- [ ] 20 inch piece of filament  
+- [ ] 2 treads
 
 ## Small Parts Cup
 - [ ] 2 RGB LEDs 
@@ -50,8 +50,6 @@
 - [ ] 1 Power switch
 - [ ] 1 Printed Power Switch Extender
 - [ ] 1 Voltage regulator
-- [ ] 1 Left eye
-- [ ] 1 Right eye
 - [ ] 1 Buzzer(optional)
 - [ ] 2 Blue LEDS(optional)
 - [ ] 2 LEDs other color(optional)
