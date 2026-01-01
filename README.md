@@ -47,7 +47,6 @@ The links in this section are to labs which walk you through working with the va
 [Pico and Chassis Together](/lessons/assembly/plate_chassis.md)  
 [Tail Tip/Photoresistor](/lessons/assembly/tail.md)  
 [Tail Connection](/lessons/assembly/tail_chassis.md)  
-[RGB LED Assembly](/lessons/assembly/rgb.md)  
 [Head, RGB Leds, and adding the cap!](/lessons/assembly/head.md)  
 
 # Install the Code
@@ -62,3 +61,24 @@ The links in this section are to labs which walk you through working with the va
 # BlueTooth Remote
 
 [Mad Scientist App](https://github.com/javaplus/mad_scientist_app)
+
+---
+
+## 🦈 Wiring Reference
+
+![Overall Wiring Diagram](lessons/images/overall_layout.PNG)
+
+**Use the image above for the main layout!**
+
+> ⚠️ **One Addition (The Buzzer)**  
+> The diagram is missing the buzzer, which we added later.  
+> **Signal:** Connect to `GP15` (Right next to the Laser on `GP16`)  
+> **Ground:** Connect to any `GND`
+
+**Summary of Pins:**
+- **Motors:** `GP10`, `GP11`, `GP12`, `GP13`
+- **Buzzer:** `GP15`
+- **Laser:** `GP16`
+- **RGB Eyes:** `GP20` (Blue), `GP21` (Green), `GP22` (Red)
+
+See [head wiring details](/lessons/assembly/rgb.md) for head wiring details.
