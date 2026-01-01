@@ -63,7 +63,6 @@ With the jaw unit now mounted on the rover:
 - **Laser Module** (signal/pwm):
   - SIGNAL -> **GP16** (PWM)
   - GND    -> **GND**
-  - POWER  -> **3.3V** or as specified by your laser module (check the module specs)
   - **Software note:** the laser is instantiated on pin 16 in `code/main.py` (e.g., `Laser(16)`).
 
 > **Safety:** Do not point the laser at people, animals, or reflective surfaces. Use brief test pulses only.
