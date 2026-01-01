@@ -52,7 +52,7 @@ Now we are going to connect the photoresistor in the tail to the Pico.  If you h
 
 ![Tail Wires](/lessons/images/assembly/tail_wires_circle.jpg)
 
-Connect the red wire to the `3V3` pin on the Pico which is 4 pins down from the `VSYS` power pin the voltage regulator is connected to.
+Connect the red wire to the `3V3` pin on the Pico which is 3 pins down from the `VSYS` power pin the voltage regulator is connected to.
 Connect the blue or yellow wire from the photoresistor to the `GP28_A2` pin which is 2 pins below the `3V3` pin.
 
 Now we simply connect the black wire to a GND pin on the Pico.  We are using the AGND pin on the Pico which is directly below the `GP28_A2` pin. 
