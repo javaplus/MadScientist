@@ -6,9 +6,9 @@
 
 In this step, we will take the Pico plate with the Pico and motor controller and attach it to the chassis.  
 
-Before we can put the plate down on the chassis, we need to connect the motors to the motor controllers pins that stick out below the plate.  Position the chassis so that the hitch is facing towards you.  The motor controller should be at the back of the chassis.
+Before we can put the plate down on the chassis, we need to connect the motors to the motor controllers pins that stick out below the plate.  Position the chassis so that the hitch is facing towards you and the motor controller is at the opposite side of the chassis.
 See below picture for proper orientation.   
-Connect the front motor to the `motor A` pins on the motor controller.  The ``motor A`` pins are the first two pins on the left in the picture below.  Connect the rear motor to the `motor B` pins.  Run the wires for the rear motor over the battery.
+Connect the front motor to the `motor A` pins on the motor controller. The ``motor A`` pins are the first two pins on the left in the picture below.  Connect the rear motor to the `motor B` pins.  Run the wires for the rear motor over the battery. You don't have to worry about the color of the wire and which pin it goes to.  As long as the front motor wires are connected to the `motor A` pins and the rear motor is connected to `motor B` pins, then which wire (red vs black) connects to which pin doesn't matter.   The reason the color doesn't matter is because the motor controller can send power in both directions to a motor and therefore we can control in the code which way to send the power to get the motors to spin in the direction we want.
 
 <img alt="Pico Plate bottom view" height="500" src="/lessons/images/assembly/pico_plate_on_chassis_bottom.jpg"/>
 
