@@ -43,7 +43,7 @@ If you see an error about a **picozero** library or module, be sure to follow th
 
 If there are no errors, it's time to test it out!
 
-Since testing it out means using the [mad scientist app]([https://github.com/javaplus/mad_scientist_app](https://github.com/javaplus/mad_scientist_app/blob/main/README.md)) to control the motors, you may want to lift the Rover off the ground while connected to the USB cable.  You can use one of the included clear dixie cups upside down under the Rover to keep the tracks off the ground.
+Since testing it out means using the [mad scientist app](https://github.com/javaplus/mad_scientist_app/blob/main/README.md) to control the motors, you may want to lift the Rover off the ground while connected to the USB cable.  You can use one of the included clear dixie cups upside down under the Rover to keep the tracks off the ground.
 
 <img alt="Rover Lift" src="/lessons/images/assembly/lift.jpg" width="500"/>
 Now open the mad scientist app and connect to the Rover.  Be sure to keep the power switch off on the Rover.  
