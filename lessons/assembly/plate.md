@@ -10,7 +10,11 @@
 - 4 x 10cm female to female wires (recommend a combination of blue, yellow, and green)
 - 1 x 10cm black or white female to female wire 
 
+***Pico WH, Pico Plate, and pegs(Note colors may be different than pictured)**
 <img alt="Pico Plate Parts" src="../images/assembly/pico_plate_parts.jpg" width="500"/>
+
+***5 10cm female to female wires**  
+<img alt="Colored wires" src="../images/assembly/motor_controller_wires.jpg" width="500"/>
 
 
 ### Pico Installation
