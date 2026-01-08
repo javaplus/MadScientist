@@ -4,7 +4,7 @@
 
 ### Parts
 - 9 volt battery connector
-- 9 volt battery
+- 9 volt battery (not pictured)
 - Power switch
 - Power switch holder
 - 10cm red female to female wire
