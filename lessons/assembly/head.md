@@ -95,3 +95,6 @@ You probably already have the code installed and the mobile app, but if you don'
 - [Mobile app](https://github.com/javaplus/mad_scientist_app/blob/main/README.md)
 
 After installing the code on the shark and getting the mobile app controls, take your shark on an adventure!
+Turning the shark on, should cause the RGB LEDS to blink blue showing that it is trying to pair via bluetooth with the mobile app.  
+In the mobile app, your shark name should show up in the list (You did remember to change the line of code to put your [unique shark name](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/code_install.md#main) in there didn't you?? ).
+When you see your shark name in the list, click `connect` and then your shark's eyes should turn green showing its connected.  Now you are ready to drive!
