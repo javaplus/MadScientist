@@ -85,3 +85,13 @@ To finalize the head assembly:
 
 ![Head In Place](../images/assembly/head/head_in_place.jpg)
 *Visual: The fully assembled head unit mounted and ready.*
+
+### Finito!
+
+Congratulations! You've finished the Shark Rover... now it's time to try it out in its full glory.
+You probably already have the code installed and the mobile app, but if you don't install them now:
+
+- [Install Shark Code](/lessons/assembly/code_install.md)  
+- [Mobile app](https://github.com/javaplus/mad_scientist_app/blob/main/README.md)
+
+After installing the code on the shark and getting the mobile app controls, take your shark on an adventure!
