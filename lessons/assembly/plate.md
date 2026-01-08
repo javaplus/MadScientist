@@ -16,6 +16,9 @@
 ***5 10cm female to female wires**  
 <img alt="Colored wires" src="../images/assembly/motor_controller_wires.jpg" width="500"/>
 
+***Motor Controller**  
+<img alt="Motor Controller" src="../images/motor_controller.PNG" width="150"/>
+
 
 ### Pico Installation
 
