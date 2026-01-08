@@ -52,7 +52,8 @@ Actually, if you already have your wheels and tracks installed, you may want to 
 
 You should be able to install the code and use the mobile app to test the basic drivability of your rover.
 
-[Install Code](/lessons/assembly/code_install.md)
+- [Install Shark Code](/lessons/assembly/code_install.md)  
+- [Mobile app](https://github.com/javaplus/mad_scientist_app/blob/main/README.md)
 
 
 [back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/power.md)                
