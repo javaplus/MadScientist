@@ -44,8 +44,8 @@ BLE_CHARACTERISTIC_UUID = bluetooth.UUID(0x2A6E)  # Temperature
 BLE_APPEARANCE = 0x0300  # Thermometer
 BLE_ADVERTISING_INTERVAL = 2000
 
-# Buzzer on pin 1
-buzzer = Buzzer(1)
+# Buzzer on pin 15
+buzzer = Buzzer(15)
 
 # Instantiate the motor controller
 motor_controller = MotorController()
