@@ -46,6 +46,18 @@ Once you've selected your device, you should see the Shell change to show the ve
 
 NOTE: Your exact version of MicroPython may be slightly different than the screenshot above, but be sure you see `Raspberry Pi Pico W` in the output.  Again, the `W` is important!
 
+### Operating System Qwirks
+
+If you're running Thonny with Flatpak on Linux, you may need to add yourself to the `dialout` group:
+
+1. `sudo usermod -aG disk,dialout $USER`
+
+On some operating systems, like Fedora Atomic setups, you may need to allow the `dialup` group
+be to assignable first:
+
+1. `grep -E '^dialout:' /usr/lib/group | sudo tee -a /etc/group`
+2. ensure it's added with `cat /etc/group | grep dialout`
+3. now run `sudo usermod -aG disk,dialout $USER`
 
 ### Install picozero library
 
