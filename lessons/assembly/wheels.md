@@ -1,6 +1,6 @@
 # Wheels and Tracks
 
-### Wheels and Tranny
+### Wheels and Transmission
 
 
 ### Parts
@@ -8,7 +8,7 @@
 - 4 wheels
 - 2 transmission pieces
 
-<img alt="Wheels and Tranny" src="/lessons/images/assembly/wheels_tranny.jpg" width="500"/>
+<img alt="Wheels and Transmission" src="/lessons/images/assembly/wheels_transmission.jpg" width="500"/>
 
 Now let's install the wheels.  
 
@@ -16,10 +16,10 @@ Take your 4 wheels and snap them on the chassis.  Make sure the flat side is aga
 
 <img alt="Wheels installed 2" src="/lessons/images/assembly/wheels_installed1.jpg" width="500"/>
 
-Now install the 2 transmission pieces.  The axles have a D shape.  The tranny parts have a D shaped slot in the center.  Match the holes to put the tranny onto the axle.  
-The easiest way to do this is to start inserting the tranny piece into the wheel until it hits the axle while holding the motor from sliding back.  Then rotate the wheel and the tranny till the D shaped hole and the axle line up and you can push the tranny in flush with the outside of the wheel.
+Now install the 2 transmission pieces.  The axles have a D shape.  The transmission parts have a D shaped slot in the center.  Match the holes to put the transmission onto the axle.  
+The easiest way to do this is to start inserting the transmission piece into the wheel until it hits the axle while holding the motor from sliding back.  Then rotate the wheel and the transmission till the D shaped hole and the axle line up and you can push the transmission in flush with the outside of the wheel.
 
-<img alt="Tranny installed" src="/lessons/images/assembly/wheels_tranny1.jpg" width="500"/>
+<img alt="Transmission installed" src="/lessons/images/assembly/wheels_transmission1.jpg" width="500"/>
 
 ### Tracks
 
