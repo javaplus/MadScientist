@@ -70,8 +70,14 @@ With the jaw unit now mounted on the rover:
 **Testing the harness**
 1. Run the simple LED blink example from the [LED lesson](../Led.md) to verify colors/pins.
 2. Use `laser.fire(1)` from `code/laser.py` to briefly test the laser.
+### 5. Test and Put On Body
 
-### 5. Attach the Head Top
+After connecting the laserl and RGB, it may be a good idea to test functionality before you put the final 3D printed pieces of the shark on.
+Test that the laser lights up when you press the "fire" button and the RGB lights flash when turning it on.  This assumes you have the code installed from the previous steps. - [Install Shark Code](/lessons/assembly/code_install.md)   
+
+Once everything is working, now put the shark body on the mid section.  That is the part with the fins. It Be sure not to pinch any wires and ensure that the bottom of the body is flush with the pico plate.
+
+### 6. Attach the Head Top
 To finalize the head assembly:
 1.  **Route Wires:** Position your wires out of the way to ensure a clean fit.
 2.  **Front Alignment:** Locate the small lip under the nose of the **Head Top** piece. Catch this lip on the overhang located directly above the laser slot (between the front two teeth of the gum piece).
