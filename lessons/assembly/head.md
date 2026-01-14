@@ -61,8 +61,8 @@ With the jaw unit now mounted on the rover:
   - BLUE  -> **GP20**
 
 - **Laser Module** (signal/pwm):
-  - SIGNAL -> **GP16** (PWM)
-  - GND    -> **GND**
+  - SIGNAL -> **GP16** (Red Wire)
+  - GND    -> **GND** (Blue Wire)
   - **Software note:** the laser is instantiated on pin 16 in `code/main.py` (e.g., `Laser(16)`).
 
 > **Safety:** Do not point the laser at people, animals, or reflective surfaces. Use brief test pulses only.
