@@ -19,11 +19,11 @@
 
 Grab your harness and place it in the back section of the head at a 90 degree angle with the "key" portion of the harness pointing towards the right eye.
 
-<img src="/lessons/images/assembly/harness_install_1.jpg" alt="ninety degree harness install step one" width=500>
+<img src="/lessons/images/assembly/head/harness_install_1.jpg" alt="ninety degree harness install step one" width=500>
 
 The key should slot down into the center piece of the back framing portion of the head.
 
-<img src="/lessons/images/assembly/harness_install_2.jpg" alt="ninety degree harness install step two" width=500>
+<img src="/lessons/images/assembly/head/harness_install_2.jpg" alt="ninety degree harness install step two" width=500>
 
 You can see in the image above how the tab barely sticks out of the center area.  Center the harness as best you can.
 
@@ -35,11 +35,11 @@ With your rover's head upside down, begin to slot the cap connector in place wit
 
 There are a number of tabs that slot into each other with this step so be careful not to force anything if it doesn't glide smoothly.
 
-<img src="/lessons/images/assembly/front_cap_connector_install.jpg" alt="front cap connector install" width=500>
+<img src="/lessons/images/assembly/head/front_cap_connector_install.jpg" alt="front cap connector install" width=500>
 
 Once you have fully slotted the front cap connector into place and appropriately centered the LED harness into place, you can do a final adjustment of the LEDs to point towards the eyes, and you will have your completed head unit!
 
-<img src="/lessons/images/assembly/completed_head.jpg" alt="completed head unit" width=500>
+<img src="/lessons/images/assembly/head/completed_head.jpg" alt="completed head unit" width=500>
 
 Slot your head into place onto the front of the chassis!  Don't pinch any wires!
 
