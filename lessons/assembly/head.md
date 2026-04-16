@@ -1,5 +1,7 @@
-# Head Assembly Instructions
+# UA Hackathon Participants: Skip to Old Head instructions using Link Below:
+[Old Head Instructions](/lessons/assembly/head_old.md)
 
+# Head Assembly Instructions
 ## Parts List
 
 Before beginning the assembly, ensure you have the following four printed parts and electronics ready:
