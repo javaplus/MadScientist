@@ -9,34 +9,6 @@ To ensure these kits work for the next person, follow these rules strictly:
 * **No Permanent Changes:** Never cut wires, solder, glue, drill, or sand any parts. 
 * **Hands Off the Repairs:** If a part looks broken, frayed, or won't fit, **stop and ask a facilitator.** Do not attempt your own repairs.
 * **The "Reversible" Rule:** If you can’t undo what you just did in 10 seconds, you’re doing it wrong.
-
----
-
-## 🔍 Step 1: The Visual Audit
-Before building, see how much is already done. **If the head looks complete (eyes, teeth, and laser are in), do not open it.**
-
-**Check your kit for these pre-assembled parts:**
-* [ ] **The Head:** Are eyes, teeth, and laser already installed?
-* [ ] **The Plate:** Is the Pico and Motor Controller already attached?
-* [ ] **Wiring:** Are there already wire harnesses plugged in?
-
----
-
-## ⚡ Step 2: Choose Your Build Path
-Follow the path that matches your kit’s current state.
-
-### Path A: The "Fast Path" (Mostly Assembled)
-*Use this if your head and chassis are already mostly put together.*
-1.  **Wiring:** Open the [Overall Wiring Diagram](lessons/images/overall_layout.PNG). This is your **Source of Truth**. Connect only the remaining loose wires.
-2.  **Firmware:** Flash or verify the code using the [Firmware Guide](lessons/firmware.md).
-3.  **Bench Test:** Power on and test the LEDs and motors *before* you snap the head onto the body.
-
-### Path B: The "Full Build" (Missing Parts)
-*Only follow these specific guides for the parts missing from your kit:*
-1.  **Brain & Power:** [Pico/Motor Plate](lessons/assembly/plate.md) → [Chassis Integration](lessons/assembly/plate_chassis.md) → [Power System](lessons/assembly/power.md).
-2.  **Movement:** [Motors](lessons/assembly/chassis.md) → [Wheels & Tracks](lessons/assembly/wheels.md).
-3.  **Sensors & Style:** [Head/LEDs](lessons/assembly/head.md) → [RGB Setup](lessons/assembly/rgb.md) → [Tail](lessons/assembly/tail.md).
-
 ---
 
 ## 🔌 Wiring & Connections
@@ -73,3 +45,8 @@ Once your electronics are tested and working:
 * [Full Parts List](resources/PartsList.md)
 
 > **⚠️ LASER SAFETY:** This kit contains a Laser. Never look directly into the beam or point it at anyone’s eyes. (Facilitator will confirm safety protocol before use).
+
+## Assemble Your Shark!
+
+Go To Assembly Instructions:
+[Assembly](README.md#assembly)
