@@ -58,14 +58,15 @@ Take your 5 10cm female to female wires and fish them under the Pico so that the
 
 <img alt="Pico Motor Controller Wires Under 2" src="../images/assembly/motor_controller_wires_under2.jpg" width="500"/>
 
-Connect the following pins using your blue, green, and yellow 4 x 10cm female to female wires 
+Connect the following pins using your blue, green, and yellow 4 x 10cm female to female wires.
+These wires are actually in pairs. So, keep the yellow and blue wire pair next to each other on the motor controller and then Pico and then keep the blue and green pair of wires next to each other on the Pico and motor controller
 
-| Motor controller pin | Pico pin |
-|----------------------|----------|
-| INT1                 | GP13     |
-| INT2                 | GP12     |
-| INT3                 | GP10     |
-| INT4                 | GP11     |
+| Motor controller pin | Pico pin |  Color |
+|----------------------|----------|--------|
+| INT1                 | GP13     | Green  |
+| INT2                 | GP12     | Blue   |
+| INT3                 | GP10     | Blue   |
+| INT4                 | GP11     | Yellow |
 
 
 **NOTE:** These pictures show the black wire connected at this point,  you'll do that in the next step.  
