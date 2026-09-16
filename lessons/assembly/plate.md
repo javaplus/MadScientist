@@ -48,11 +48,18 @@ Using your thumbs on top of the capacitors, snap the motor controller securely i
 
 <img alt="Motor Controller Snap with thumbs" src="../images/assembly/v3/MC_In_Plate2.jpg" width="500"/>
 
-
-The top of the red part of the motor controller should be slightly lower than the top surface of the Pico plate when fully snapped in place.
+The top of the red part of the motor controller should be slightly lower than the top surface of the Pico plate when fully snapped in place as seen in the picture below.
 
 <img alt="Motor Controller In Place" src="../images/assembly/v3/MC_In_Plate3.jpg" width="500"/>
 
+
+## Pico Install
+
+Now take the Pico with the 4 connected wires and place beside the Pico plate to left of the motor controller.  At this time, do not place the Pico on the Pico plate, but just beside it so the wired side of the Pico is next to the motor controller so you can easily connect the wires to the motor controller.  Now connect the wires from the Pico to the motor controller as seen in the picture below with the GP10 and GP11 pins on the Pico connected to the INT 4 and INT 3 connections on the motor controller. Then connect the GP12 and GP13 pins of the Pico to the INT 2 and INT 1 of the motor controller.    
+
+<img alt="Pico and Plate Parts" src="../images/assembly/v3/Pico_to_MC_Wire1.jpg" width="500"/>
+
+<img alt="Pico and Plate Parts" src="../images/assembly/v3/Pico_to_MC_Wire2.jpg" width="500"/>
 
 Turn the Pico so the pins are sticking up in the air and the USB jack is pointing away from you.  Now, place the Pico W on the raised pedestals on the plate.  These should align with the four holes in the Pico.
 
