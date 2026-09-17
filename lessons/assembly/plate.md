@@ -53,70 +53,41 @@ The top of the red part of the motor controller should be slightly lower than th
 <img alt="Motor Controller In Place" src="../images/assembly/v3/MC_In_Plate3.jpg" width="500"/>
 
 
-## Pico Install
+## Wire Pico and Motor Controller
 
-Now take the Pico with the 4 connected wires and place beside the Pico plate to left of the motor controller.  At this time, do not place the Pico on the Pico plate, but just beside it so the wired side of the Pico is next to the motor controller so you can easily connect the wires to the motor controller.  Now connect the wires from the Pico to the motor controller as seen in the picture below with the GP10 and GP11 pins on the Pico connected to the INT 4 and INT 3 connections on the motor controller. Then connect the GP12 and GP13 pins of the Pico to the INT 2 and INT 1 of the motor controller.    
+Now take the Pico with the 4 connected wires and place beside the Pico plate to left of the motor controller.  At this time, do not place the Pico on the Pico plate, but just beside it so the wired side of the Pico is next to the motor controller so you can easily connect the wires to the motor controller.  Now connect the wires from the Pico to the motor controller as seen in the picture below with the GP10 and GP11 pins(Blue and Green wires in the picture) on the Pico connected to the INT 4 and INT 3 connections on the motor controller. Then connect the GP12 and GP13 pins(Yellow and White) of the Pico to the INT 2 and INT 1 of the motor controller. See the pictures below for the correct wiring.
+
+|  Pico pin | Motor controller pin| Color  |
+|-----------|---------------------|--------|
+| GP10      | INT 4               | Blue   |
+| GP11      | INT 3               | Green  |
+| GP12      | INT 2               | Yellow |
+| GP13      | INT 1               | White  |
+
 
 <img alt="Pico and Plate Parts" src="../images/assembly/v3/Pico_to_MC_Wire1.jpg" width="500"/>
 
 <img alt="Pico and Plate Parts" src="../images/assembly/v3/Pico_to_MC_Wire2.jpg" width="500"/>
 
-Turn the Pico so the pins are sticking up in the air and the USB jack is pointing away from you.  Now, place the Pico W on the raised pedestals on the plate.  These should align with the four holes in the Pico.
+### Mount the Pico on the Pico Plate
 
-<img alt="Pico On Plate" src="../images/assembly/pico_on_plate_no_pegs.jpg" width="500"/>
+Now find your 4 pico pins to mount your Pico to the plate. (**NOTE**: Your pins may be a different color than those in the picture below.)
 
-
-Take your 4 plastic pegs and align them with the 4 holes on the Pico W. Do **NOT** push them all the way in yet.  Push the pins **halfway** down into the plate to secure it, but still leaving enough room raise the Pico a bit to route wires underneath it later.
-
-<img alt="Pico On Plate With Pegs" src="../images/assembly/pico_plate_with_pegs.jpg" width="500"/>
+<img alt="Pico and Plate Parts" src="../images/assembly/v3/Pico_Pins_Parts.jpg" width="500"/>
 
 
-## Motor Controller
+Now pick up the Pico and move it over the motor controller so the wires tuck below the Pico as seen below:
+
+<img alt="Mounting Pico to the Plate part 1" src="../images/assembly/v3/Pico_Pins1.jpg" width="500"/>
+<img alt="Mounting Pico to the Plate part 2" src="../images/assembly/v3/Pico_Pins2.jpg" width="500"/>
 
 
-***Motor Controller**  
-<img alt="Motor Controller" src="../images/motor_controller.PNG" width="150"/>
+Now position the Pico, with the wires underneath, so that the 4 holes on the Pico line up with the 4 raised posts on the Pico Plate.  Now insert your pins through the holes to secure the Pico in place.  Try to push the pins all the way down, but don't use too much force and it's ok if the Pico has a little play with it.  As long as the Pico doesn't easily come off the Pico plate, you should be good. In a pinch, using 2 in opposite corners will work. 
+
+<img alt="Mounting Pico to the Plate with pins" src="../images/assembly/v3/Pico_Pins3.jpg" width="500"/>
 
 
+<img alt="Mounting Pico to the Plate with pins" src="../images/assembly/v3/Pico_Pins5.jpg" width="500"/>
 
-
-- Pico plate
-- Motor Controller
-- 4 x plastic pegs
-
-
-#### Wire the Motor Controller
-
-Take your 5 10cm female to female wires and fish them under the Pico so that the female ends are on opposite sides of the Pico.
-
-<img alt="Colored wires" src="../images/assembly/motor_controller_wires.jpg" width="500"/>
-
-<img alt="Pico Motor Controller Wires Under 1" src="../images/assembly/motor_controller_wires_under1.jpg" width="500"/>
-
-<img alt="Pico Motor Controller Wires Under 2" src="../images/assembly/motor_controller_wires_under2.jpg" width="500"/>
-
-Connect the following pins using your blue, green, and yellow 4 x 10cm female to female wires.
-These wires are actually in pairs. So, keep the yellow and blue wire pair next to each other on the motor controller and then Pico and then keep the blue and green pair of wires next to each other on the Pico and motor controller
-
-| Motor controller pin | Pico pin |  Color |
-|----------------------|----------|--------|
-| INT1                 | GP13     | Green  |
-| INT2                 | GP12     | Blue   |
-| INT3                 | GP10     | Blue   |
-| INT4                 | GP11     | Yellow |
-
-
-**NOTE:** These pictures show the black wire connected at this point,  you'll do that in the next step.  
-<img alt="Pico Motor Controller Wires topdown" src="../images/assembly/pico_plate_motor_controller_topdown.jpg" width="500"/>
-
-<img alt="Pico Motor Controller Wires Ran Close up" src="../images/assembly/pico_plate_motor_controller_closeup.jpg" width="500"/>
-
-
-Take the black or white 10cm female to female wire and connect it to the (-) negative terminal on the motor controller to a ground on the Pico.  We find the ground pin that is 3 down from the top right is best for this due to wire management.
-
-<img alt="Pico Motor Controller Wires Ran" src="../images/assembly/pico_plate_motor_controller_topdown_arrow.jpg" width="500"/>  
-<img alt="Pico Motor Controller Wires Ran" src="../images/assembly/pico_plate_motor_controller_closeup_usb.jpg" width="500"/>
-At this point, the motor controller is just missing a cable to its (+) positive terminal and the 4 Motor pins on the bottom are unconnected.  We will connect those when we put the plate on the chassis.
-Now, fully press down the 4 pegs that hold the Pico in place to secure it.  Don't use a ton of force and don't worry if they don't go all the way in.  They just need to keep the Pico from moving around or coming off the plate.
 
 [next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/chassis.md)
