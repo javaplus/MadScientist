@@ -86,12 +86,55 @@ At this time, make sure the switch is turned off.  To turn off the power switch,
 - 10cm White Female to Female wire
 - 10cm 3 way connector
 
-<img alt="Voltage Regulator" src="../images/assembly/v3/PositivePowerParts.jpg" width="500"/>
+<img alt="Positive Power Parts" src="../images/assembly/v3/PositivePowerParts.jpg" width="500"/>
+
+Take the two 10cm female to female wires and connect them to the 3 way connector.     
+
+<img alt="Two wires on connector" src="../images/assembly/v3/PositivePowerConnector.jpg" width="500"/>
+
+Now plug unconnected end coming from the switch into the 3 way connector.  This should be the 10cm red wire that is connected the switch.  Plug it's free end that is inside the chassis into the 3 way connector.  
+
+<img alt="Switch wire on connector" src="../images/assembly/v3/PositivePowerConnectorChassis.jpg" width="500"/>  
+
+Now we will use a small piece of tape to hold the 3 wires on the 3 way connector and cover any bare metal on the connector. So, take a small piece of tape and place it on the 3 ends of the wires and make sure it goes past the end of the connector.  
+
+<img alt="Tape connector 1" src="../images/assembly/v3/PositivePowerConnectorChassisTaped.jpg" width="500"/>  
+
+Now wrap the tape around the connector and over onto the other side of the wire ends.  Again ensure that all bare metal is covered otherwise you could cause a short and damage electronics.
+
+<img alt="Tape connector wrapped" src="../images/assembly/v3/PositivePowerConnectorChassisTaped2.jpg" width="500"/>  
+
+### Voltage Regulator Install
 
 The voltage regulator converts our 9 volt power source down to a steady 5 volts, which is what is required to operate the Pico.
+
+Grab the voltage regulator and 10cm red female to female wire.  
+<img alt="Voltage Regulator parts" src="../images/assembly/v3/VoltageRegulatorParts.jpg" width="250"/>
+
+
+
 The 3 pins from left to right are our input, ground, and output as seen in the picture above.
 
-Grab your chassis with installed battery, battery switch, and motors.  Also, grab the voltage regulator and the red Y female to female cable.
+Connect your red female to female wire to the right most pin.  If the wire is too tight to fit on or too lose try rotating the wire connector 90 degrees and re-insert the wire onto the voltage regulator pin.  Try to push the wire up onto the pin as much as you can but be careful not to bend the pins on the voltage regulator or poke yourself. 
+
+<img alt="Voltage Regulator Right wire connected" src="../images/assembly/v3/VoltageRegulatorPositive.jpg" width="250"/>
+
+Now take the one of the black wires from the battery connector and connect it to the middle pin on the voltage regulator.  Use the shortest of the black wires.  Again, remember to rotate the wire connector 90 degrees if you struggle to get a good fit.
+
+<img alt="Voltage Regulator ground wire connected" src="../images/assembly/v3/VoltageRegulatorBatteryConnnector.jpg" width="250"/>
+
+Now take the red wire from the 3 way connector and connect it to the left most pin (the only free pin) of the voltage regulator.
+
+<img alt="Voltage Regulator input wire connected" src="../images/assembly/v3/VoltageRegulatorBatteryConnnector2.jpg" width="500"/>
+
+Now we need to tape the voltage regulator wires.  Take a small piece of tape and put it over the wire ends and the bare pins from the voltage regulator as seen in the picture below.
+
+<img alt="Voltage Regulator input wire connected" src="../images/assembly/v3/VoltageRegulatorBatteryConnnector4.jpg" width="500" />
+
+Now wrap the tape around to cover the back as well as seen in the image below.  This is to keep the wires on the voltage regulator as well as keeping anything from touching the bare pins and causing a short.
+
+<img alt="Voltage Regulator input wire connected" src="../images/assembly/v3/VoltageRegulatorBatteryConnnector5.jpg" width="500" />
+
 
 <img alt="Chassis, Voltage Reg, Y wire" src="../images/assembly/power_regulator.jpg" width="500"/>
 
