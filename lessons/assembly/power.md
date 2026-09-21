@@ -33,7 +33,7 @@ Make a note of which direction is off and on.  Off will be when the switch is in
   
 Now push the power switch and wires into the rectangular slot, pushing the red wires against the angled piece.  The red wires should make a sharp right angle inside the switch holder.  This helps hold the wires in place.  This can be a tight fit. See more instructions after picture if struggling.
 
-<img alt="Switch in switch holder" src="../images/assembly/v3/PowerSwitchInstall3.jpg" width="500"/>
+<img alt="Switch in switch holder" src="../images/assembly/v3/PowerSwitchInstall3.jpg" width="250"/>
 
 Fitting the power switch in the switch holder can be a very tight fit.  Borrow a pair of pliers or use two strong thumbs on each side of the black switch to push it into place.
 
@@ -86,7 +86,7 @@ At this time, make sure the switch is turned off.  To turn off the power switch,
 - 10cm White Female to Female wire
 - 10cm 3 way connector
 
-<img alt="Positive Power Parts" src="../images/assembly/v3/PositivePowerParts.jpg" width="500"/>
+<img alt="Positive Power Parts" src="../images/assembly/v3/PositivePowerParts.jpg" width="250"/>
 
 Take the two 10cm female to female wires and connect them to the 3 way connector.     
 
@@ -115,7 +115,7 @@ Grab the voltage regulator and 10cm red female to female wire.
 
 The 3 pins from left to right are our input, ground, and output as seen in the picture above.
 
-Connect your red female to female wire to the right most pin.  If the wire is too tight to fit on or too lose try rotating the wire connector 90 degrees and re-insert the wire onto the voltage regulator pin.  Try to push the wire up onto the pin as much as you can but be careful not to bend the pins on the voltage regulator or poke yourself. 
+Connect your red female to female wire to the right most pin.  If the wire is too tight to fit on or too lose try rotating the wire connector 90 degrees and re-insert the wire onto the voltage regulator pin.  Try to push the wire up onto the pin as much as you can but be careful not to bend the pins on the voltage regulator or poke yourself. If you do slightly bend the pins, it's not a big deal, just gently bend them back flat.  Constantly bending the pins can weaken them.
 
 <img alt="Voltage Regulator Right wire connected" src="../images/assembly/v3/VoltageRegulatorPositive.jpg" width="250"/>
 
@@ -136,26 +136,29 @@ Now wrap the tape around to cover the back as well as seen in the image below.  
 <img alt="Voltage Regulator input wire connected" src="../images/assembly/v3/VoltageRegulatorBatteryConnnector5.jpg" width="500" />
 
 
-<img alt="Chassis, Voltage Reg, Y wire" src="../images/assembly/power_regulator.jpg" width="500"/>
+### Battery Install
 
-Connect the single end of the red Y wire to the far right of the voltage regulator.  This is the voltage output pin.  Push the female end up as far as you can, usually up to where the pin enlarges.
-Be careful not to bend or break the pins on the voltage regulator.  If you do slightly bend the pins, it's not a big deal, just gently bend them back flat.  Constantly bending the pins can weaken them.
+Make sure your power switch is still in the off position. Grab your battery and connect it to the battery connector:
 
-<img alt="Voltage Reg, Y wire" src="../images/assembly/power_regulator_positive_y.jpg" width="500"/>
+<img alt="Battery Connected" src="../images/assembly/v3/Battery1.jpg" width="500" />
 
-Connect one of the black ground wires from the battery connector to the middle pin.
+Now let's go ahead and install the battery.  While the top pico plate is off, it's easiest to install the battery through the top.    
+<details>
+<summary>Removing the Battery</summary>
+After your Rover is built, you will be accessing the battery through the bottom by removing switch key. To allow the battery door to come off.  
+</details>  
 
-<img alt="Voltage Reg Ground" src="../images/assembly/power_regulator_negative_wire.jpg" width="500"/>
+Put the battery flat on top of the battery door as you see in the picture below.  Make sure no wires are under the battery.
 
-Connect the 10cm red wire that comes from the power switch to the far left pin on the regulator.
+<img alt="Battery In Chassis" src="../images/assembly/v3/Battery2.jpg" width="500" />
 
-<img alt="Voltage Reg Input" src="../images/assembly/power_regulator_power_switch.jpg" width="500"/>
 
-<img alt="Voltage Reg Input" src="../images/assembly/power_regulator_power_switch_2.jpg" width="500"/>
+Now move the voltage regulator on top of the battery.  Use one of the pegs on the chassis to set the voltage regulator on. Allow the peg from the chassis to go through the hole in the top of the voltage regulator as seen below. Make sure the voltage regulator is flat with it's taped pins over the battery.  
 
-Carefully move the voltage regulator on top of the battery without disconnecting any of the wires.  The hole on top of the voltage regulator should go on one of the posts beside the battery.
+<img alt="Voltage Regulator On Battery" src="../images/assembly/v3/Battery3.jpg" width="500" />
 
-<img alt="Voltage Reg In Chassis" src="../images/assembly/power_regulator_in_chassis.jpg" width="500"/>
+This completes this part of the installation.  If possible use a voltmeter to test
+
 
 [back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/wheels.md)
 
