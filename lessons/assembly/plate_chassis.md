@@ -6,24 +6,36 @@
 
 In this step, we will take the Pico plate with the Pico and motor controller and attach it to the chassis.  
 
-Before we can put the plate down on the chassis, we need to connect the motors to the motor controllers pins that stick out below the plate.  Position the chassis so that the hitch is facing towards you and the motor controller is at the opposite side of the chassis.
+### Connecting the Motors
+
+Before we can put the plate down on the chassis, we need to connect the motors to the motor controllers pins that stick out below the plate.  Position the chassis so that the hitch is facing towards you which means the power switch also is closest to you.  Then position the pico plate with the motor controller at the opposite side of the chassis.
 See below picture for proper orientation.   
-Connect the front motor to the `motor A` pins on the motor controller. The ``motor A`` pins are the first two pins on the left in the picture below.  Connect the rear motor to the `motor B` pins.  Run the wires for the rear motor over the battery. You don't have to worry about the color of the wire and which pin it goes to.  As long as the front motor wires are connected to the `motor A` pins and the rear motor is connected to `motor B` pins, then which wire (red vs black) connects to which pin doesn't matter.   The reason the color doesn't matter is because the motor controller can send power in both directions to a motor and therefore we can control in the code which way to send the power to get the motors to spin in the direction we want.
 
-<img alt="Pico Plate bottom view" height="500" src="../images/assembly/pico_plate_on_chassis_bottom.jpg"/>
+<img alt="Pico Plate bottom view" height="500" src="../images/assembly/v3/PicoPlateInstallChassis.jpg"/>
 
-Close up:
+Now you will connect the motor wires to the motor controller pins that stick down through the pico plate. Connect the front motor to the `motor A` pins on the motor controller. The ``motor A`` pins are the first two pins on the left in the picture above. 
 
-<img alt="Pico Plate bottom view closeup" src="../images/assembly/pico_plate_on_chassis_bottom_closeup.jpg" width="500"/>
+<img alt="Pico Plate Motor A pins connected" width="500" src="../images/assembly/v3/PicoPlateMotor.jpg"/>
+
+ Connect the rear motor to the `motor B` pins.  Run the wires for the rear motor over the battery. You don't have to worry about the color of the wire and which pin it goes to.  As long as the front motor wires are connected to the `motor A` pins and the rear motor is connected to `motor B` pins, then which wire connects to which pin doesn't matter.   The reason it doesn't matter is because the motor controller can send power in both directions to a motor and therefore we can control in the code which way to send the power to get the motors to spin in the direction we want.
+
+<img alt="Pico Plate Motor B pins connected" src="../images/assembly/v3/PicoPlateMotor2.jpg" width="500"/>
+
+### Running the Power Wires
+
+Now we need to route all the unconnected wires from the power up through the Pico Plate.  So, you should have 2 black ground wires and 2 positive wires(one red and one white).  Be sure to know which wire is coming straight from the 3 way connector and which is coming from the Voltage Regulator.  The one coming from the 3 way connector is carrying 9volts and could damage the Pico if we accidentally plugged it in there.  In our picture the white wire is carrying the 9volts and will go to the motor controller eventually.  For now, just run all 4 wires through the slots in the bottom right of the Pico Plate. Their position in the slots doesn't matter, just have them all poke through to the other side of the Pico plate.
+
+<img alt="Power Cables Through Pico Plate" src="../images/assembly/v3/PowerCablesPicoPlate.jpg" width="500"/>
+
+With the 4 power wires through the Pico plate, you can set plate on top of the chassis. Don't worry about snapping the Pico Plate in place. At this point, just let the Pico Plate rest on top of the chassis.
+
+<img alt="Power Cables Through Pico Plate Top View" src="../images/assembly/v3/PowerCablesPicoPlate2.jpg" width="500"/>
 
 
-Run the two ends of the red Y power cable from the voltage regulator up through the Pico plate and through the vertical slot to the right of the motor controller:
+Now we will try to push the Pico Plate into is final recessed position on the chassis.  To do this, start by positioning the Pico Plate inside the top of the chassis.
 
-<img alt="Positive Power Cable Through Pico Plate" src="../images/assembly/pico_plate_bottom_power_cable.jpg" width="500"/>
+<img alt="Pico Plate On Chassis" src="../images/assembly/v3/PowerCablesPicoPlate3.jpg" width="500"/>
 
-Run the ground (black) wire from the battery connector up through the same vertical slot in the plate:
-
-<img alt="Ground Cable Through Pico Plate" src="../images/assembly/pico_plate_bottom_power_cable_2.jpg" width="500"/>
 
 Carefully push the plate down onto the chassis.  Make sure that the wires aren't disconnected or pinched between the plate and chassis.  The plate should sit flush with the cutout in the front and rear of the chassis.
 
