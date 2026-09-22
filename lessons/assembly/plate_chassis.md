@@ -39,8 +39,7 @@ Now we will try to push the Pico Plate into is final recessed position on the ch
 
 Your goal now is to carefully push the plate down onto the chassis. Make sure that the wires aren't disconnected or pinched between the plate and chassis. You may need to pull up on the ends of the power wires to bring slack up above the Pico Plate.  Continue to gently push the Pico plate down onto the chassis while keeping the wires from getting pinched. The plate should sit flush with the cutout in the front and rear of the chassis.
 
-<img alt="Pico Plate on Chassis Flush back" src="../images/assembly/v3/
-PicoPlateChassisPushDown.jpg" width="500"/>  
+<img alt="Pico Plate on Chassis Flush back" src="../images/assembly/v3/PicoPlateChassisPushDown.jpg" width="500"/>  
 
 <img alt="Pico Plate on Chassis Flush back 2" src="../images/assembly/v3/PicoPlateChassisPushDown2.jpg" width="500"/>  
 
