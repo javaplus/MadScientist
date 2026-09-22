@@ -37,26 +37,40 @@ Now we will try to push the Pico Plate into is final recessed position on the ch
 <img alt="Pico Plate On Chassis" src="../images/assembly/v3/PowerCablesPicoPlate3.jpg" width="500"/>
 
 
-Carefully push the plate down onto the chassis.  Make sure that the wires aren't disconnected or pinched between the plate and chassis.  The plate should sit flush with the cutout in the front and rear of the chassis.
+Your goal now is to carefully push the plate down onto the chassis. Make sure that the wires aren't disconnected or pinched between the plate and chassis. You may need to pull up on the ends of the power wires to bring slack up above the Pico Plate.  Continue to gently push the Pico plate down onto the chassis while keeping the wires from getting pinched. The plate should sit flush with the cutout in the front and rear of the chassis.
 
-<img alt="Pico Plate on Chassis" src="../images/assembly/pico_plate_on_chassis_power_cables.jpg" width="500"/>
+<img alt="Pico Plate on Chassis Flush back" src="../images/assembly/v3/
+PicoPlateChassisPushDown.jpg" width="500"/>  
 
-Now it's time to connect the power cables from the voltage regulator and battery to the Pico and motor controller.
+<img alt="Pico Plate on Chassis Flush back 2" src="../images/assembly/v3/PicoPlateChassisPushDown2.jpg" width="500"/>  
 
-Take the two red wires and connect one to the Pico's VSYS pin (left side, second down from the top in the below picture).  The other red wire goes to the (+) pin on the motor controller.  
+Ensure the Pico is pushed down and flush with the front and back edges of the chassis.  You may have to reposition the wires underneath a few times and tuck them down in crevices by the motors to get it to fit flush.
+
+<img alt="Pico Plate on Chassis Flush Front" src="../images/assembly/v3/PicoPlateChassisPowerCables.jpg" width="500"/>
+
+
+Now it's time to connect the power cables from the voltage regulator.  Connect either of the ground (black) wires to the (-) pin on the motor controller and connect the 9Volt positive wire (should be white) to the (+) pin on the motor controller.  The negative/ground pin is the one 
+
+<img alt="Motor Controller Power Wires" src="../images/assembly/v3/MotorControllerPower2.jpg" width="500"/>
+
+Now we need to connect the power to the Pico. 
+Take the positive wire coming from the voltage regulator that should carry our 5 volts the Pico's VSYS pin (left side, second down from the ).  The other ground wire (black) connects right beside the VSYS pin into a GND(ground) pin on the Pico.  See the picture below and be sure to notice there is one single empty pin to the left of the positive wire and your red wire is connected to the second pin from the left in the picture below. There is always ground 3 pins in from any side on the Pico.
 
 Here's a pinout diagram if you want to use it instead of the pictures:  
 <details><summary> Click here to hide/show Pico Pin Out.</summary> 
  <img src="../images/picoPinOut.PNG"/>
 </details>
 
+
+<img alt="Pico Power Wires" src="../images/assembly/v3/PicoPowerConnected.jpg" width="500"/>
+
 The ground/black wire goes to a ground pin on the Pico.  We recommend the ground pin right next to the VSYS.  That is 3 pins down from the top left in the picture.
 
-<img alt="Pico Plate on Chassis Power Connnected" src="../images/assembly/pico_plate_power_wire_routing_top.jpg" width="500"/>
+### Test the Motors
 
-<img alt="Pico Plate on Chassis USB Side" src="../images/assembly/pico_plate_usb_side.jpg" width="500"/>
+TODO: Add instructions to test the motors via a simple program on they load on the Pico.  Similar to the motor controller lesson. Preferably the same code.
 
-<img alt="Pico Plate Front Installed" src="../images/assembly/pico_plate_installed_front.jpg" width="500"/>
+### Install Rover Code
 
 Congratulations! You are super close to having a mobile rover!
 
