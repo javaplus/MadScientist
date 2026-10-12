@@ -3,7 +3,7 @@
 ### Parts
 
 - Chassis
-- 2 motors
+- 2 motors (your wire colors may be different)
 - 2 hex plugs
 
 <img alt="Chassis and Motors Not Installed" src="../images/assembly/v3/Chassis_Motor_Parts.jpg" width="500"/>
@@ -18,7 +18,7 @@ There may be two tabs attached to the inside bottom of your chassis.  If they ar
 ### Add Motors
 
 Orient the chassis with the "hitch" to the right (see picture below).
-The motors have a flat top and bottom and rounded sides.  When inserting the motors, a flat side should rest against the bottom of the chassis so that the wires are horizontal.
+The motors are the same even if they may have different colored wires. The colors on the wires don't mean anything. The important part is that each motor has a flat top and bottom and rounded sides.  When inserting the motors, the flat side should rest against the bottom of the chassis so that the wires are horizontal.
 Insert one motor into the top left and one into the bottom right.  Make sure the shaft extends out of the chassis as much as possible.  
 There is a small tab on the floor of the chassis behind each motor.  Make sure the motor is pushed in so that the tab is behind the motor.
 
