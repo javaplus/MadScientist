@@ -24,7 +24,7 @@ Get the power switch holder and feed the two red wires through the rectangular h
 <img alt="Switch wires through switch holder" src="../images/assembly/v3/PowerSwitchInstallChassis3.jpg" width="500"/>
 
 
-Connect one wire to the middle pin, and the other to either side.  The side that you connect the second or outer wire to will determine where the switch needs to be in order to be "on".  If a wire feels too lose on the pin, pull the wire off and try rotating the end of the wire 90 degrees and then reconnect it to the power switch. We find just rotating the connector 90degrees can make the wires fit on pins better.  They will still be slightly loose on the switch, but will be held securely in the next couple steps.
+Connect one wire to the middle pin, and the other to either side.  The side that you connect the second or outer wire to will determine where the switch needs to be in order to be "on".  If a wire feels too loose on the pin, pull the wire off and try rotating the end of the wire 90 degrees and then reconnect it to the power switch. We find just rotating the connector 90degrees can make the wires fit on pins better.  They will still be slightly loose on the switch, but will be held securely in the next couple steps.
 
 <img alt="Switch wires Installed" src="../images/assembly/v3/PowerSwitchInstall2.jpg" width="500"/>
 
