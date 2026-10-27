@@ -8,10 +8,8 @@
 - [ ] 1 Motor Controller
 - [ ] 1 USB Cable
 
-
 ### Lighting / Sensing:
 - [ ] 1 IR LED wired with resistor
-
 
 ## Wires (all female-to-female unless noted)
 
@@ -43,8 +41,6 @@
 - [ ] Battery door
 - [ ] Battery door key
 - [ ] Switch holder
-
-#### Treads
 - [ ] 2 treads
 
 ## Small Parts Cup
@@ -55,8 +51,13 @@
 - [ ] 1 Printed Power Switch Extender
 - [ ] 1 Voltage regulator
 - [ ] 2 Hex Plugs
+- [ ] 2 Pieces of filament for tracks
 - [ ] 1 Buzzer (optional)
 - [ ] 2 Blue LEDs (optional)
 - [ ] 2 Other-color LEDs (optional)
+
+## Other
+- [ ] 2 Strips of Tape
+
 
 
