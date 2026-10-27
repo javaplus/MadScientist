@@ -17,7 +17,7 @@
 - [ ] 2 x White 10cm
 - [ ] 1 x Yellow 10cm
 - [ ] 1 x 3-way power connector
-- [ ] 1 x 9V battery connector with switch lead
+- [ ] 1 x 9V battery connector
 - [ ] 1 15cm red
 - [ ] 1 15cm black
 - [ ] 1 15cm blue
