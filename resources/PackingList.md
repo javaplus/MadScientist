@@ -2,13 +2,10 @@
 
 ## Main Electronics
 
-### Chassis:
 - [ ] 1 Pico WH
 - [ ] 2 Motors
 - [ ] 1 Motor Controller
 - [ ] 1 USB Cable
-
-### Lighting / Sensing:
 - [ ] 1 IR LED wired with resistor
 
 ## Wires (all female-to-female unless noted)
