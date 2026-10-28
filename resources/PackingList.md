@@ -10,16 +10,16 @@
 
 ## Wires (all female-to-female unless noted)
 
-- [ ] 4 x Red 10cm
-- [ ] 1 x Black 10cm
+- [ ] 5 x Red 10cm
+- [ ] 2 x Black 10cm
 - [ ] 2 x Blue 10cm
 - [ ] 2 x Green 10cm
 - [ ] 2 x White 10cm
 - [ ] 1 x Yellow 10cm
 - [ ] 1 x 3-way power connector
 - [ ] 1 x 9V battery connector
-- [ ] 1 15cm red
-- [ ] 1 15cm black
+- [ ] 2 15cm red
+- [ ] 2 15cm black
 - [ ] 1 15cm blue
 
 ## Main 3D Printed Parts
