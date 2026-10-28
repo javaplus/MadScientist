@@ -49,7 +49,7 @@
 - [ ] 1 Voltage regulator
 - [ ] 2 Hex Plugs
 - [ ] 2 Pieces of filament for tracks
-- [ ] 1 Buzzer (optional)
+- [ ] 1 Buzzer
 - [ ] 2 Blue LEDs (optional)
 - [ ] 2 Other-color LEDs (optional)
 
