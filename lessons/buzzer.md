@@ -25,7 +25,7 @@ Connect the buzzer to the Raspberry Pi Pico. We will use **GP15** for this examp
 
 The Raspberry Pi Pico is a digital device, meaning it usually only sends "On" (3.3V) or "Off" (0V) signals. To make different sounds (or dim LEDs), we use **Pulse Width Modulation (PWM)**.
 
-![PWM Duty Cycle Diagram](lessons/images/Pulse-Width-Modulation.jpg)  
+![PWM Duty Cycle Diagram](images/Pulse-Width-Modulation.jpg)  
 *Figure: PWM creates an analog-like signal by switching on and off rapidly.*
 
 PWM turns the digital pin on and off extremely fast—thousands of times per second. This creates a "square wave" that the buzzer vibrates to, creating sound.
