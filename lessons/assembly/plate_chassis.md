@@ -84,4 +84,4 @@ You should be able to install the code and use the mobile app to test the basic 
 [back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/power.md)                
 
 
-[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/tail.md)
+[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/ir_receiver_assembly.md)
