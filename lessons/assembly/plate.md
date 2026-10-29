@@ -6,7 +6,8 @@
 - Pico WH  
 - 4 x 10cm female to female wires (recommend a combination of blue, yellow, white, and green)
 
-***Pico WH and wires(Note colors may be different than pictured)**
+***Pico WH and wires(Note colors may be different than pictured)**  
+
 <img alt="Pico Plate Parts" src="../images/assembly/v3/Pico_Wire_Parts.jpg" width="500"/>
 
 ## Prepare Pico Wires for Motor Controller
