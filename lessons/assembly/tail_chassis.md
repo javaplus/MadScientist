@@ -1,7 +1,7 @@
 # Attaching the Tail
 
 ### Parts
-- Tail with Tail Tip and Photoresistor installed
+- Tail with Tail Tip and IR Receiver installed
 - Plastic power switch
 - Tail connector
 
@@ -23,6 +23,8 @@ Zoomed View of Switch:
 ![Power Switch on Chassis](/lessons/images/assembly/power_switch_on_chassis.jpg)
 
 ### Tail Connector
+
+***PLEASE NOTE:* In some of the pictures you may see the head attached.  You should not have your head attached at this point.  Attaching the head comes later.**  
 
 Now take the tail connector piece and slide the square frame over the power box that contains the power switch.  Note that the 3 slots go up towards the top and the first two slots should go over the chassis.  The thinner vertical part of the frame goes in the vertical slot of the power switch.  See the pictures below for correct orientation and installation.
 
@@ -48,16 +50,16 @@ Once tail is slid correctly into the tail connector slots, the tail should lock 
 
 ### Wire the Tail
 
-Now we are going to connect the photoresistor in the tail to the Pico.  If you have a lot of excess wire sticking out of the tail, you may want to loop them into a really loose knot.
+Now we are going to connect the TSOP38238 IR receiver in the tail to the Pico.  If you have a lot of excess wire sticking out of the tail, you may want to loop them into a really loose knot.
 
 ![Tail Wires](/lessons/images/assembly/tail_wires_circle.jpg)
 
 Connect the red wire to the `3V3` pin on the Pico which is 3 pins down from the `VSYS` power pin the voltage regulator is connected to.
-Connect the blue or yellow wire from the photoresistor to the `GP28_A2` pin which is 2 pins below the `3V3` pin.
+Connect the blue or yellow signal wire from the TSOP38238 IR receiver to the `GP28_A2` pin which is 2 pins below the `3V3` pin.
 
 Now we simply connect the black wire to a GND pin on the Pico.  We are using the AGND pin on the Pico which is directly below the `GP28_A2` pin. 
 
-NOTE: The 3 photoresistor wires are marked with yellow lines in the pictures below:
+NOTE: The 3 TSOP38238 IR receiver wires are marked with yellow lines in the pictures below (the tail is at the bottom of the picture):
 
 ![Tail Wires connected](/lessons/images/assembly/tail_wires_attached.jpg)
 
