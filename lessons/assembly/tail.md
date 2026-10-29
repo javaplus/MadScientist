@@ -21,7 +21,8 @@ Position the tail upside down (flat side facing up) and grab your wired IR Recei
 
 Now with the IR Receiver window facing you, firmly hold the wire ends that are connected to the pins of the receiver and carefully bend the receiver back away from you.  You want to put a small bend (about 40 degrees) so that when the pins rest against the horizontal bar the window will face towards the ground (parallel with the flat part of the tail).    
   
- See image below:
+ See image below:  
+ 
 <img alt="Tail IR Receiver Bent" src="../images/assembly/v3/IrReceiverTailIInstall3.jpg" width="500">
 
 
