@@ -68,3 +68,7 @@ Now connect the female end of the wires to the Pico.
 > **Note:** These mappings are the canonical head wiring — see the [Head assembly](head.md) for the head installation and final wiring table.
 
 **Next Step:** Proceed to [Head Assembly](head.md) to install this harness into the rover.
+
+[back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/tail_chassis.md)
+
+[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/head.md)

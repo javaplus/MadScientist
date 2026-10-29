@@ -51,7 +51,8 @@ The links in this section are to labs which walk you through working with the va
 [Pico and Chassis Together](/lessons/assembly/plate_chassis.md)  
 [IR Receiver Assembly](/lessons/assembly/ir_receiver_assembly.md)  
 [Tail Tip/IR Receiver](/lessons/assembly/tail.md)  
-[Tail Connection](/lessons/assembly/tail_chassis.md)  
+[Tail Connection](/lessons/assembly/tail_chassis.md)
+[RGB Assembly](/lessons/assembly/rgb.md)  
 [Head, RGB Leds, and adding the cap!](/lessons/assembly/head.md)  
 
 # Install the Code
