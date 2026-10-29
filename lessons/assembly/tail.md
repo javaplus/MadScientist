@@ -3,20 +3,11 @@
 ### Parts
 
 - Tail
-- Opaque tail tip
-- Photoresistor
+- Tail tip
+- IR Receiver
 
-![Parts for Tail](/lessons/images/assembly/tail_parts.jpg)
+![Parts for Tail](/lessons/images/assembly/v3/TailParts.jpg)
 
-The instructions for this part were hard to put into words... Actually, my reviewers told me I sucked at it, so here's a video of this assembly since the written instructions may not be clear:
-
-
-### Video
-[Tail Assembly Video](https://youtu.be/BuBBeq6uPUs)
-
-
-
-Written instructions below:
 
 ### Insert Photoresistor
 
