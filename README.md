@@ -49,7 +49,8 @@ The links in this section are to labs which walk you through working with the va
 [Wheels and Tracks](/lessons/assembly/wheels.md)  
 [Power Components](/lessons/assembly/power.md)  
 [Pico and Chassis Together](/lessons/assembly/plate_chassis.md)  
-[Tail Tip/Photoresistor](/lessons/assembly/tail.md)  
+[IR Receiver Assembly](/lessons/assembly/ir_receiver_assembly.md)  
+[Tail Tip/IR Receiver](/lessons/assembly/tail.md)  
 [Tail Connection](/lessons/assembly/tail_chassis.md)  
 [Head, RGB Leds, and adding the cap!](/lessons/assembly/head.md)  
 

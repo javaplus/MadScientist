@@ -7,7 +7,7 @@
 - TSOP38238 IR Receiver
 - Piece of tape
 
-![IR Receiver Parts](/lessons/images/assembly/v3/IrReceiverParts.jpg)
+<img src="../images/assembly/v3/IrReceiverParts.jpg" alt="IR Receiver Parts" width="500" />
 
 ### 1. Identify the receiver pins
 The TSOP38238 has three leads. Looking at the receiver from the front with the black IR window facing you, which means the flat part is down and the rounded part is facing up. In this orientation with the pins facing down, the pins are:
@@ -27,17 +27,17 @@ Connect the three wires to the receiver pins as follows:
 
 Push the wires carefully yet firmly onto the pins.  Remember to turn the wire ends 90degrees if they are not snug or too snug.  The exact wire colors are not critical, but this color scheme matches the rest of the project and makes debugging easier.
 
-![IR Receiver Wired](/lessons/images/assembly/v3/IrReceiverWired.jpg)
+<img src="../images/assembly/v3/IrReceiverWired.jpg" alt="IR Receiver Wired" width="500" />
 
-![IR Receiver Wired Second View](/lessons/images/assembly/v3/IrReceiverWired2.jpg)
+<img src="../images/assembly/v3/IrReceiverWired2.jpg" alt="IR Receiver Wired Second View" width="500" />
 
 
 ### 3. Tape the wires in place
 Use a small piece of tape to secure the receiver and keep the wires from moving around. Try to get the tape around the wire ends and cover most of the metal pins coming from the IR Receiver.  Be sure leave the IR window (the rounded part) clear and visible. 
 
-![IR Receiver Complete](/lessons/images/assembly/v3/IrReceiverTaped.jpg)
+<img src="../images/assembly/v3/IrReceiverTaped.jpg" alt="IR Receiver Complete" width="500" />
 
-![IR Receiver Complete Second View](/lessons/images/assembly/v3/IrReceiverTaped2.jpg)
+<img src="../images/assembly/v3/IrReceiverTaped2.jpg" alt="IR Receiver Complete Second View" width="500" />
 
 ### Wiring summary
 - `Red` = `VCC`
