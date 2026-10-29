@@ -1,6 +1,3 @@
-# UA Hackathon Participants: Skip to Old Head instructions using Link Below:
-[Old Head Instructions](/lessons/assembly/head_old.md)
-
 # Head Assembly Instructions
 ## Parts List
 
@@ -9,25 +6,48 @@ Before beginning the assembly, ensure you have the following four printed parts 
 * **Head Top:** 3D printed part with the top of the head and eyes already pre-assembled.
 * **Chin Piece:** Includes two upward-facing tabs/slots.
 * **Teeth & Gums:** 3D printed part featuring a laser slot and alignment slots.
-* **LED Harness:** Pre-loaded with LEDs and wiring — see the [LED harness assembly](rgb.md) for harness assembly instructions.
-* **Laser Module**
+* **LED Harness:** Pre-loaded with LEDs and wiring  
+* **Laser Module** or **IR LED**
 
+### Parts with LASER
 ![Jaw Components](../images/assembly/head/head_parts.jpg)
+
+### Modified Parts for IR LED
+
+If doing the IR version of the kit, instead of a laser, you will have an IR LED and the teeth will have a slightly longer tube to hold the IR LED.  
+
+![IR LED Components](../images/assembly/v3/IRLedParts.jpg)
 
 ---
 
 ## Assembly Steps
 
 ### 1. Electronics Preparation & Jaw Sub-Assembly
-First, prepare the jaw unit before placing it on the rover:
-* **Laser:** Insert the **Laser Module** into the center-front slot of the **Teeth & Gums** piece.
-* **Chin:** Take the **Chin Piece** and slide it up from underneath the **Teeth & Gums** piece.
-    * The chin slides into the single long slot at the far back of the gum piece.
-    * Ensure the two tabs from the chin protrude upward through the slot.
+First, prepare the jaw unit before placing it on the rover:  
+Take your **Laser** or **IR LED** and insert it into the center-front slot of the **Teeth & Gums** piece.
 
+Laser Installed:  
 ![Laser Insertion](../images/assembly/head/teeth_lasers.jpg)
-![Chin Assembly](../images/assembly/head/chin_with_teeth.jpg)
-*Visual Check: The Laser is seated flush, and the Chin is firmly slotted into the Gums.*
+
+IR LED Installed:
+![IR LED Insertion](../images/assembly/v3/ChinParts1.jpg)
+
+**Chin:** Take the **Chin Piece** and slide it up from underneath the **Teeth & Gums** piece.
+    * The chin slides into the single long slot at the far back of the gum piece.
+    * Ensure the two tabs from the chin protrude upward through the slot.  
+
+Laser Version:  
+![Chin Assembly](../images/assembly/head/chin_with_teeth.jpg)  
+*Visual Check: The Laser is seated flush, and the Chin is firmly slotted into the Gums.*  
+
+IR LED Version:  
+![Chin Assembly IR](../images/assembly/v3/ChinOnTeeth1.jpg)  
+*The IR LED should just be in the tube/slot just enough to hold it, it should be less than half way down into the tube.*
+
+
+
+
+
 
 ### 2. Mount Jaw to Rover Body
 Now that the Chin and Gums are assembled (with the laser inside), place this unit onto the rover body.
@@ -37,12 +57,12 @@ Now that the Chin and Gums are assembled (with the laser inside), place this uni
 ![Chin Side View](../images/assembly/head/chin_with_teeth_side.jpg)
 *Visual: The Jaw unit sitting in place on the rover chassis.*
 
-### 3. Insert the LED Harness
+### 3. Insert the RGB LED Harness
 With the jaw unit now mounted on the rover:
-* **Wire Management:** Move the laser wires to the side to ensure they do not obstruct the harness path.
+* **Wire Management:** Move the laser/IR LED wires to the side to ensure they do not obstruct the harness path.
 * **Alignment:** Locate the long slot in the middle of the **LED Harness**. This slot must slide *between* the two tabs from the Chin piece (which are sticking up through the gums).
 * **Orientation:** Confirm the wire order matches the harness assembly (Red, Black, Green, Blue) and orient the harness so wires exit toward the rear.
-* **Insertion:** Slide the LED harness down into the long slot.
+* **Insertion:** Slide the RGB LED harness down into the long slot.
 * **Safety Check:** Verify that no wires are pinched during this process.
 
 ![Placing Harness](../images/assembly/head/placing_harness.jpg)
@@ -50,7 +70,7 @@ With the jaw unit now mounted on the rover:
 *Visual: Top-down view showing the LED harness sliding between the chin tabs while on the rover.*
 
 ### 4. Final Connection
-* **Connect the Laser and LED wires according to the Wiring Table below.** See the [LED harness assembly](rgb.md) for harness assembly details.
+* **Connect the Laser/IR LED and RGB LED wires according to the Wiring Table below.** See the [LED harness assembly](rgb.md) for harness assembly details.
 
 > **Note:** The head assembly can be installed **prior** to attaching the middle cap.
 
@@ -62,7 +82,7 @@ With the jaw unit now mounted on the rover:
   - GREEN -> **GP21**
   - BLUE  -> **GP20**
 
-- **Laser Module** (signal/pwm):
+- **Laser Module** or **IR LED** (signal/pwm):
   - SIGNAL -> **GP16** (Red Wire)
   - GND    -> **GND** (Blue Wire)
   - **Software note:** the laser is instantiated on pin 16 in `code/main.py` (e.g., `Laser(16)`).
@@ -74,8 +94,8 @@ With the jaw unit now mounted on the rover:
 2. Use `laser.fire(1)` from `code/laser.py` to briefly test the laser.
 ### 5. Test and Put On Body
 
-After connecting the laserl and RGB, it may be a good idea to test functionality before you put the final 3D printed pieces of the shark on.
-Test that the laser lights up when you press the "fire" button and the RGB lights flash when turning it on.  This assumes you have the code installed from the previous steps. - [Install Shark Code](/lessons/assembly/code_install.md)   
+After connecting the laser/IR LED and RGB, it may be a good idea to test functionality before you put the final 3D printed pieces of the shark on.
+Test that the laser lights up when you press the "fire" button on the mobile app and the RGB lights flash when turning it on.  This assumes you have the code installed from the previous steps. - [Install Shark Code](/lessons/assembly/code_install.md)   
 
 Once everything is working, now put the shark body on the mid section.  That is the part with the fins. It Be sure not to pinch any wires and ensure that the bottom of the body is flush with the pico plate.
 
