@@ -67,7 +67,63 @@ The ground/black wire goes to a ground pin on the Pico.  We recommend the ground
 
 ### Test the Motors
 
-TODO: Add instructions to test the motors via a simple program on they load on the Pico.  Similar to the motor controller lesson. Preferably the same code.
+Once the Pico is connected to the motor controller and the motors are plugged in, you can test the motors with a simple program.  This will run the motors forward for a few seconds, stop, then run them backward for a few seconds so you can verify both motors are connected and spinning in the correct direction.
+This is kind of like a unit test just before we install the actual shark driving code.
+
+```python
+from machine import Pin, PWM
+import utime
+
+print("Testing rover motors")
+
+# Motor A = GP10 and GP11
+left_motor_forward = PWM(Pin(10))
+left_motor_backward = PWM(Pin(11))
+
+# Motor B = GP12 and GP13
+right_motor_forward = PWM(Pin(12))
+right_motor_backward = PWM(Pin(13))
+
+# Set PWM frequency for all motor pins
+for motor in (left_motor_forward, left_motor_backward, right_motor_forward, right_motor_backward):
+    motor.freq(1000)
+
+
+def set_motor_direction(direction, speed):
+    if direction == 'forward':
+        left_motor_forward.duty_u16(speed)
+        left_motor_backward.duty_u16(0)
+        right_motor_forward.duty_u16(speed)
+        right_motor_backward.duty_u16(0)
+    elif direction == 'backward':
+        left_motor_forward.duty_u16(0)
+        left_motor_backward.duty_u16(speed)
+        right_motor_forward.duty_u16(0)
+        right_motor_backward.duty_u16(speed)
+    else:
+        left_motor_forward.duty_u16(0)
+        left_motor_backward.duty_u16(0)
+        right_motor_forward.duty_u16(0)
+        right_motor_backward.duty_u16(0)
+
+
+def stop():
+    set_motor_direction('stop', 0)
+
+
+while True:
+    set_motor_direction('forward', 20000)
+    utime.sleep(2)
+    stop()
+    utime.sleep(1)
+
+    set_motor_direction('backward', 20000)
+    utime.sleep(2)
+    stop()
+    utime.sleep(1)
+```
+
+Copy this program into Thonny and then run on the Pico and watch the wheels or tracks.  If the motors move forward for 2 seconds and then backward, they are wired correctly.  If one or both motors do not spin double-check the wiring and ensure a wire hasn't come close.  Feel free to ask an assistant if they are available.
 
 ### Install Rover Code
 
