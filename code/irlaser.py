@@ -1,7 +1,7 @@
 from machine import Pin
 import asyncio
 import utime
-from ir_tx import NEC
+from ir_tx.nec import NEC
 
 
 class IRLaser:

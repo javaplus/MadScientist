@@ -64,4 +64,14 @@ be to assignable first:
 Go to this link and follow just the few steps to [install the picozero library.](https://picozero.readthedocs.io/en/latest/gettingstarted.html#install-picozero-from-pypi-in-thonny)
 
 
+### Install the ir_tx NEC library
+
+The IR LED uses Peter Hinch's `micropython_ir` transmitter package.  Because this library is hosted on GitHub (not PyPI), it can't be installed through Thonny's *Manage Packages* menu.  So, you need to download the library from Github.
+
+1. Download the repo as a ZIP from [https://github.com/peterhinch/micropython_ir](https://github.com/peterhinch/micropython_ir) and unzip it. (Alternatively, just clone the repo)
+2. In Thonny, open **View → Files** to show the file browser.
+3. Navigate to the unzipped folder and find the `ir_tx` and `ir_rx` directories.
+4. Right-click the `ir_tx` and the `ir_rx` folders and choose **Upload to /** to copy the whole folder to the root of the Pico.
+
+
 Now you should be good to go!!!
