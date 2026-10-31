@@ -164,6 +164,10 @@ async def execute_command(command_with_data, characteristic):
     elif command == "fire":
         print("Fire dee lazzers!!")
         fireevent.fire()
+    elif command == "calibrate":
+        print("Calibrate command ignored — photoresistor replaced by IR receiver")
+    elif command == "sensitivity":
+        print("Sensitivity command ignored — photoresistor replaced by IR receiver")
     elif command == "trim":
         print("Set Trim!!")
         motor_controller.setTrim(int(command_data))
