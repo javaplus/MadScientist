@@ -47,7 +47,6 @@ Connect the components as follows:
 2. A wire from the other end of the resistor to the **long leg (anode / +)** of the IR LED.
 3. A wire from the **short leg (cathode / -)** of the IR LED to a **GND** pin on the Pico.
 
-<img alt="IR LED Wiring Diagram" src="images\simple_led2_bb.png" width="500"/>
 
 > **Tip:** If the LED does not appear to transmit, try flipping it — you may have the legs reversed.
 
