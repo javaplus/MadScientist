@@ -6,7 +6,7 @@
 * **4x DuPont Wires (Female-to-Female):** Prepared to receive the LED pins.
 * **Printed Harness Shell:** Two halves that snap together (part of the `head_parts` print).
 
-![RGB and Harness Parts](../images/assembly/head/rgb_parts.jpg)
+<img src="../images/assembly/head/rgb_parts.jpg" alt="RGB and Harness Parts" width="500">
 *Visual: The disassembled harness shell, LEDs, and wires.*
 
 ---
@@ -16,27 +16,28 @@
 ### 1. Identify LED Pinout
 Before connecting anything, identify the pins on your RGB LEDs.
 * The **Longest Pin** is the **Common Ground (Cathode)**.
-* When holding the LED so the pins point down and the flat side of the lens is to the left, the order is generally: **Red, Common (Ground), Green, Blue**.
+* When holding the LED so the pins point down and the longest pin is second from the left, then the order is: **Red, Common (Ground), Green, Blue**.
 
+<img src="../images/assembly/RGD_Diagram.png" alt="RGB LED diagram" width="500">
 
 > **Note:** We are using **Common Cathode** LEDs. If you wire this up and the colors are inverted or don't work, verify your LED type.
 
 ### 2. Connect the Wires
 We need to connect both LEDs to the same four wires (Parallel connection) so they light up in unison.
 
-Make sure the slot order (left-to-right) matches: **red**, **black (ground)**, **green**, **blue**.
+Make sure the slot order (left-to-right) matches: **red**, **black (ground)**, **green**, **blue** as seen in the image above.  Remember the black wire goes to the common ground which is the longest pin.
 
 1.  **Group the Pins:** Align the two LEDs so their pins match (Red to Red, Ground to Ground, etc.).
 2.  **Insert into Connectors:** Insert the corresponding pin pairs into the female ends of the DuPont wires.
-    * All **Red** pins -> Red Wire
-    * All **Ground** pins -> Black Wire
-    * All **Green** pins -> Green Wire
-    * All **Blue** pins -> Blue Wire
+    * **Red** pins -> Red Wire
+    * **Ground** pins -> Black Wire
+    * **Green** pins -> Green Wire
+    * **Blue** pins -> Blue Wire
 3.  *Tip:* Ensure the connection is snug. If using a specific connector housing (like in the image), push the pins in until they lock.
 
-![Connecting Pins](../images/assembly/head/rgb1.jpg)
-![Wires Connected](../images/assembly/head/rgb2.jpg)
-![Wires Connected 2](../images/assembly/head/rgb3.jpg)
+<img src="../images/assembly/head/rgb1.jpg" alt="Connecting Pins" width="500">
+<img src="../images/assembly/head/rgb2.jpg" alt="Wires Connected" width="500">
+<img src="../images/assembly/head/rgb3.jpg" alt="Wires Connected 2" width="500">
 
 ### 3. Seat in the Harness
 1.  **Align the Junctions:** Take the lower half of the 3D printed harness.
@@ -44,13 +45,13 @@ Make sure the slot order (left-to-right) matches: **red**, **black (ground)**, *
     * The plastic housing of the DuPont wire should sit just outside or flush with the internal stops.
     * The LED bulbs should be sticking out of the front.
 
-![Seating the Wires](../images/assembly/head/rgb4.jpg)
+<img src="../images/assembly/head/rgb4.jpg" alt="Seating the Wires" width="500">
 
 ### 4. Close the Assembly
 1.  **Snap Shut:** Take the top half of the harness shell and press it down onto the bottom half.
 2.  **Secure:** Squeeze firmly until the harness snaps shut, locking the wires in place.
 
-![Final Adjustment](../images/assembly/head/rgb5.jpg)
+<img src="../images/assembly/head/rgb5.jpg" alt="Final Adjustment" width="500">
 *Visual: The completed harness with LEDs angled for the eyes.*
 
 ### 5. Final Adjustment
