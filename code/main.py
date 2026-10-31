@@ -15,11 +15,10 @@ from discogame import DiscoGame
 from wtfgame import WTFGame
 from buzzer import Buzzer
 from fireevent import FireEvent
-from laser import Laser
+from irlaser import IRLaser
 from drivegame import DriveGame
 
 
-laser = Laser(16)
 photoresistor = ADC(28)
 photoresistor_value = 0
 ## When calibrating what is the baseline
@@ -36,6 +35,12 @@ rgb = RGBLED(red = 22, green = 21, blue = 20)
 
 # ROVER_NAME needs to be a unique name for your rover.  It will be the advertised bluetooth device name
 ROVER_NAME = "Put Your Unique Groovy Shark Name Here"
+
+# SHARK_ID is the unique 8-bit numeric ID (0–255) for this rover.
+# It is transmitted as the NEC address and data payload when firing.
+SHARK_ID = 1
+
+laser = IRLaser(16, ROVER_NAME, SHARK_ID)
 
 # Bluetooth parameters
 BLE_NAME = f"{ROVER_NAME}"  # You can dynamically change this if you want unique names

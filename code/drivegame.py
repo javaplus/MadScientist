@@ -1,5 +1,4 @@
 from basegame import BaseGame
-from laser import Laser
 from motor_class import MotorController
 import asyncio
 
