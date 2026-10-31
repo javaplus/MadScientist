@@ -89,9 +89,15 @@ With the jaw unit now mounted on the rover:
 
 > **Safety:** Do not point the laser at people, animals, or reflective surfaces. Use brief test pulses only.
 
-**Testing the harness**
+**Testing the Laser(skip for IR LED)**
 1. Run the simple LED blink example from the [LED lesson](../Led.md) to verify colors/pins.
 2. Use `laser.fire(1)` from `code/laser.py` to briefly test the laser.
+
+**Testing the IR LED**  
+1. Run the code from the [IR LED Lesson](../ir_led.md) to have your IR LED emit an infrared signal.
+2. Use your phone camera to see the IR LED blink.
+
+
 ### 5. Test and Put On Body
 
 After connecting the laser/IR LED and RGB, it may be a good idea to test functionality before you put the final 3D printed pieces of the shark on.
