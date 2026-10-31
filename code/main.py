@@ -5,7 +5,8 @@ import struct
 from sys import exit
 import utime
 from picozero import RGBLED
-from machine import Pin, PWM, ADC
+from machine import Pin, PWM
+from ir_rx.nec import NEC_8
 from hitevent import HitEvent
 # Import the MotorController class
 from motor_class import MotorController
@@ -19,16 +20,24 @@ from irlaser import IRLaser
 from drivegame import DriveGame
 
 
-photoresistor = ADC(28)
-photoresistor_value = 0
-## When calibrating what is the baseline
-photoresistor_baseline_value = 0
-photoresistor_hit_value = 28000
-PHOTORES_HIT_FACTOR = 1.00
 # After being hit you are immune for 2 seconds
 HIT_DEBOUNCE_TIME = 2000
 
-saved_sensitivity = 5
+# IR hit flag and received values — written in the NEC callback (soft ISR),
+# read and cleared in the read_ir_receiver() async task.
+_ir_hit = False
+_ir_addr = 0
+_ir_data = 0
+
+def ir_callback(data, addr, ctrl):
+    global _ir_hit, _ir_addr, _ir_data
+    if data >= 0:  # data < 0 is an NEC repeat code; ignore it
+        _ir_addr = addr
+        _ir_data = data
+        _ir_hit = True  # set last so addr/data are valid when the flag is seen
+
+# IR receiver on pin 28 (TSOP38238) — begins listening immediately
+ir_receiver = NEC_8(Pin(28, Pin.IN), ir_callback)
 
 # RGB  status lights for indicating advertising, connected, and commands recieved.
 rgb = RGBLED(red = 22, green = 21, blue = 20)
@@ -102,63 +111,27 @@ def initializeGame(gamemode):
 
 
 
-### Gets photoresistor value over and over again
-### in an infinite loop sleeping a bit to yield
-### control to other tasks.
-### Calls "been_hit()" when photo_resistor_value exceeds the 
-### photoresistor_hit_value
-async def read_photo_resistor():
-    global photoresistor_value 
-    global hitevent
-    # Keep track of when last hit
+### Polls the IR hit flag set by ir_callback() and fires hitevent
+### when a valid NEC signal is received, with debounce protection.
+async def read_ir_receiver():
+    global _ir_hit
     hit_debounce_counter = utime.ticks_ms()
-    print("reading photo res")
+    print("IR receiver listening")
     while True:
-        photoresistor_value = photoresistor.read_u16()
-        if(photoresistor_value > photoresistor_hit_value):
-            print("Got hit, photores value:" + str(photoresistor_value))
+        if _ir_hit:
+            addr = _ir_addr
+            data = _ir_data
+            _ir_hit = False
+            print(f"IR hit! shark_id:{addr} data:{data}")
             current_time = utime.ticks_ms()
-            # Calculate time passed since last hit
-            time_passed = utime.ticks_diff(current_time,hit_debounce_counter)
-            if (time_passed > HIT_DEBOUNCE_TIME):
+            time_passed = utime.ticks_diff(current_time, hit_debounce_counter)
+            if time_passed > HIT_DEBOUNCE_TIME:
                 hitevent.fire()
-                # Save time we were last hit
                 hit_debounce_counter = utime.ticks_ms()
             else:
                 print("no fire event because of debounce")
-        
-        await asyncio.sleep(0.01)  # Yield control to other tasks
 
-### Set baseline for photores
-def calibratePhotoRes():
-    global photoresistor_baseline_value
-    global saved_sensitivity
-    # Get current value as a baseline
-    photoresistor_baseline_value = photoresistor.read_u16()
-    # set the sensitivity which sets the hit level
-    setPhotoResSensitivity(saved_sensitivity)
-    
-## Set hit factor based on sensitivity value
-def setPhotoResSensitivity(sensitivity_value):
-    global saved_sensitivity
-    # current calibrated baseline
-    global photoresistor_baseline_value
-    # current hit value
-    global photoresistor_hit_value
-    
-    print("Setting sensitivity: Baseline photores value:" + str(photoresistor_baseline_value))
-    # default hit factor to .20, 20%
-    sensitivity_factor = .20
-    # make sure sensitivity value is between 1 and 10
-    if 1 <= sensitivity_value <= 10:
-        sensitivity_factor = sensitivity_value * 0.08
-    
-    saved_sensitivity = sensitivity_value
-    hit_factor = PHOTORES_HIT_FACTOR + sensitivity_factor
-    print("hit factor:" + str(hit_factor))
-    photoresistor_hit_value = photoresistor_baseline_value * hit_factor
-    
-    print("Photores HIT value:" + str(photoresistor_hit_value))
+        await asyncio.sleep(0.01)  # Yield control to other tasks
 
     
     
@@ -191,12 +164,6 @@ async def execute_command(command_with_data, characteristic):
     elif command == "fire":
         print("Fire dee lazzers!!")
         fireevent.fire()
-    elif command == "calibrate":
-        print("Calibrate Photores!!")
-        calibratePhotoRes()
-    elif command == "sensitivity":
-        print("Set hit sensitivity!!")
-        setPhotoResSensitivity(int(command_data))
     elif command == "trim":
         print("Set Trim!!")
         motor_controller.setTrim(int(command_data))
@@ -259,9 +226,7 @@ async def advertise_n_wait_for_connect():
 async def main():
     global rgb
     global laser
-    calibratePhotoRes()
 
-    
     # Power on, turn red
     rgb.color = (255, 0, 0)
     # stop all motor activity
@@ -271,7 +236,7 @@ async def main():
     while True:        
         tasks = [
             asyncio.create_task(advertise_n_wait_for_connect()),
-            asyncio.create_task(read_photo_resistor())
+            asyncio.create_task(read_ir_receiver())
         ]
         await asyncio.gather(*tasks)
 
