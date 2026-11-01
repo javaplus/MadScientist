@@ -7,6 +7,7 @@
 - [ ] 1 Motor Controller
 - [ ] 1 USB Cable
 - [ ] 1 IR LED wired with resistor
+- [ ] 1 9 Volt Battery
 
 ## Wires (all female-to-female unless noted)
 
