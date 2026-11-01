@@ -12,7 +12,7 @@
 
 Now let's install the wheels.  
 
-Take your 4 wheels and snap them on the chassis.  Make sure the flat side is against the chassis.  Once they snap on, give them a spin with your hand to make sure they can spin freely without much resistance. 
+Take your 4 wheels and snap them on the chassis.  Make sure the flat side is against the chassis.  Once they snap on, give them a spin with your hand to make sure they can spin freely without much resistance.  If the wheels do not spin easily, then you may need to sand off some rough edges or just turn them back and forth a many times while on the chassis to wear down any burs.  If you can't get them to move freely, ask for new wheels.
 
 <img alt="Wheels installed 2" src="../images/assembly/wheels_installed1.jpg" width="500"/>
 
@@ -29,6 +29,7 @@ The easiest way to do this is to start inserting the transmission piece into the
 
 <img alt="Track Pieces" src="../images/assembly/wheels_treads_parts.jpg" width="500"/>
 
+It's recommend that you flex each piece of your track to help loosen the joints between each individual track piece.  Just try to wiggle each piece in the tread up and down to work the joint to make it move smoothly.
 Before putting the tracks on the wheels, test putting your small piece of filament through the holes on each end of the tracks.  Due to 3D printing variables, there can be some material left in the holes that need cleaned out. So, shove your filament through the holes, to ensure a clean hole and the ability to get the filament through.
 
 <img alt="Track Pieces Testing" src="../images/assembly/v3/tracks_test1.jpg" width="500"/>
