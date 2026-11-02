@@ -71,4 +71,4 @@ Your tail is now attached and ready for some swimming!
 [back](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/tail.md)
 
 
-[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/head.md)
+[next](https://github.com/javaplus/MadScientist/blob/main/lessons/assembly/rgb.md)
