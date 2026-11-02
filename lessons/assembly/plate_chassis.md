@@ -112,12 +112,12 @@ def stop():
 
 
 while True:
-    set_motor_direction('forward', 20000)
+    set_motor_direction('forward', 40000)
     utime.sleep(2)
     stop()
     utime.sleep(1)
 
-    set_motor_direction('backward', 20000)
+    set_motor_direction('backward', 40000)
     utime.sleep(2)
     stop()
     utime.sleep(1)
